@@ -78,7 +78,7 @@ get_header(); ?>
         </div>
     </section>
     <section>
-    <aside class="image-bg-fixed-height-2"></aside>
+        <aside class="image-bg-fixed-height-2"></aside>
     </section>
     <section>
         <div class="container">
@@ -94,9 +94,68 @@ get_header(); ?>
                         <p>
                             included in Sir William Slingo’s report on the Engineering Department’s work during the First World War indicates the routes of Zeppelins that took  part in the raid of 2nd and 3rd of May 1917. Upon the Engineering Department identifying the location of Enemy Aircraft this information would be wired to the Intelligence Department of the War Office immediately.  The signals were intercepted by the Engineering Department’s ‘Direction Finding Stations’ set up at Peterborough, Seaham Harbour, Westgate and, latterly, Falkirk in Scotland.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="">
+                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="">
+                        <p>
+                            The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
+                        </p>
+                        <aside class="floated-quote">
+                            <blockquote>
+                                The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated
+                            </blockquote>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <aside class="image-bg-fixed-height-3"></aside>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <p>
+                            Perhaps one of the more stirring and action-packed roles of the Engineering Department were the administration and staffing of Cable Ships throughout the First World War. These ships were responsible for laying the cables required for trans-channel telecommunications to work. Such was the prominence of the cable ships of the Engineering Department, they even played a major part on the day war was declared. With war imminently due to be declared between the United Kingdom and Germany, according to Sir William Slingo’s report ‘the cables connecting England and Germany were disconnected on this side on the evening of the 4th and before War was declared, but on receipt of remonstrance from Germany, communication was temporarily restored’. The Engineering Department duly cut the cable again when war was announced officially just hours later.
+                        </p>
+                        <p>
+                            The ship in this photograph is the ‘Monarch’ one of the Engineering Department’s cable ships from the First World War that was leased to the Grand Fleet of the Royal Navy and based at Scapa Flow. It struck a mine on 8th September 1915 whilst proceeding to repair the cable between Beachy Head and Havre sinking almost immediately and with the loss of three lives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <p>
+                            Within The National Archives there are several references to the bravery and danger undertaken by the staff of the General Post Office’s Engineering Department who staffed these cable ships.
+                        </p>
+                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" height="800" /></div>
+                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" height="800" /></div>
+                        <p>
+                            These letters from the records of the Treasury highlight the responsibilities that were placed upon these men. In some cases, it became necessary for those of a relatively junior rank to essentially take on the role of ranks much higher than their own – e.g. Commander or Chief Officers for example. This was often undertaken for a reasonable period of time. Operations could be dangerous, with the risk of hostile action, meaning that these men had to be of a brave character. With such undertakings, it can be no surprise that it was deemed fair to provide these men with ‘substitution payments’ for their work.
+                        </p>
+                        <p>
+                            With a great number of the Engineering Department’s workforce enlisting in the army, thousands of temporary workers were drafted in by the Post Office to replace them. Of great significance was the fact that many new recruits were female. Some employers refused to let married women work for them, so it tended to be single or widowed women who took up jobs outside of the home. However, within the Post Office, thousands of women, whether married or single, were employed. In such settings, these women were able to prove a variety of skills and aptitudes and the broad depth of capabilities. They now carried out a variety of tasks, including working a switchboard, instead of being confined to secretarial roles such as a typist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <aside class="image-bg-fixed-height-4"></aside>
@@ -107,7 +166,38 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <div class="section-title">
                         <p>
-                            The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
+                            This document from BT Archives interestingly states that it was a well-regarded opinion that the female ‘night telephonist’ was more adept at the job than her male counterpart. Once males and females worked alongside one another, this comparison was much more easily identifiable. Such a description acts to quash ideas that women were not capable of undertaking the same duties as men, because of certain characteristics that they were perceived to possess. For example, women were deemed “too emotional” for certain tasks (including having the right to vote) yet it is this sex who is described, in this example, as responding more appropriately when under extreme pressure.
                         </p>
+                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2018.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <p>
+                            Within Sir William Slingo’s report a fascinating and vivid graph exists appearing (at first glance)  to suggest that as the number of workmen in employment, below the rank of inspector, fell during the war, the number of female assistants rose above them. Looking closely at the graph axes indicates that this was not the case (male staff being measured in thousands and females in hundreds) but it interesting to note that the very existence of the graph implies that the female experience and contribution to work at the Engineering Department was worthy of note and comment at this time
+                        </p>
+                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2019.jpg" alt="">
+                        <p>
+                            As the above information suggests, and the array of vivid and interesting documentation and images confirm, the Engineering Department of the General Post Office (the historical antecedent of British Telecom) played a major role during the First World War supplying the British military services and the civilian populace of Great Britain with the crucial means of communication, whilst playing a significant part in technological innovation. The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office, held at BT Archives in High Holborn, and also throughout the vast array of First World War material held at The National Archives in Kew.
+                        </p>
+                        <aside class="floated-quote">
+                            <blockquote>
+                                The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office
+                            </blockquote>
+                        </aside>
+                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2021.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <aside class="image-bg-fixed-height-5"></aside>
     </section>
 <?php get_footer(); ?>
