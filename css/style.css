@@ -1,0 +1,266 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Version:	1.0
+Date published:	04/03/2016
+Designed by: Punal C
+Primary use: Long form template
+
+[Table of contents]
+
+1. General
+2. Header
+3. Footer
+4. Components
+
+-------------------------------------------------------------------*/
+
+/*--------------------
+Import Google Fonts
+--------------------*/
+
+/* font for headings, text, tags */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
+
+/*--------------------
+1. General
+--------------------*/
+
+body {
+	margin: 0px;
+	font-family: "Open Sans", Sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	letter-spacing: 0.4px;
+	font-family: "Open Sans", Sans-serif;
+	color: #232323;
+}
+
+p {
+	font-family: "Open Sans", Sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 23px;
+	letter-spacing: 0.2px;
+	color: #797979;
+}
+
+
+.intro-text span {
+	margin-top: 200px;
+}
+
+
+/*--------------------
+1.1 Reset bootstrap
+--------------------*/
+
+.row-0-gutter {
+	margin-left: -13px;
+	margin-right: -13px;
+}
+
+.col-0-gutter {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.col-sm-4 {
+	padding: 20px 0 20px 0;
+}
+
+.col-sm-8 {
+	padding: 20px 0 20px 0;
+}
+
+.col-sm-6 {
+	padding: 20px;
+}
+
+blockquote {
+	border: none;
+}
+
+
+
+/*--------------------
+3. Header
+--------------------*/
+
+header {
+	background-image: url(../images/demo/TCE_361_ARC03005.jpg);
+	background-repeat: none;
+	background-position: center 60%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+}
+
+.intro-text {
+	padding-top: 208px;
+	padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	.intro-text {
+		padding-bottom: 631px;
+	}
+}
+
+
+.intro-text .intro-heading {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 48px;
+	margin-bottom: 25px;
+	letter-spacing: -3px;
+	word-spacing: 10px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+	.intro-text .intro-heading {
+		line-height: 95px;
+		font-size: 77px;
+		margin-bottom: 50px;
+	}
+}
+
+
+
+/*--------------------
+3. Section
+--------------------*/
+
+section {
+	background-color: #ffffee;
+}
+
+.section-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*.full-width-bg {
+	background-image: url(../images/demo/Image%209.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}*/
+
+.full-width {
+	margin-bottom: 20px;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.full-width img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 50%;
+	min-height: 50%;
+}
+
+/*--------------------
+4. Components
+--------------------*/
+
+
+blockquote{
+	display:block;
+	padding: 40px 20px 15px 50px;
+	margin: 30px auto 30px auto;
+	position: relative;
+
+	/*Font*/
+	font-size:x-large;
+	line-height: 1.8;
+	color: #c76c0c;
+	font-weight: 600;
+	text-align: center;
+	width: 80%;
+}
+
+blockquote::before{
+	content: open-quote;
+
+	/*Font*/
+	font-size: 60px;
+	font-weight: bold;
+	color: #999;
+
+	/*Positioning*/
+	position: absolute;
+	left: 10px;
+	top:5px;
+}
+
+blockquote::after{
+	/*Reset to make sure*/
+	content: "";
+}
+
+blockquote a{
+	text-decoration: none;
+	background: #eee;
+	cursor: pointer;
+	padding: 0 3px;
+	color: #c76c0c;
+}
+
+blockquote a:hover{
+	color: #666;
+}
+
+blockquote em{
+	font-style: italic;
+}
+
+
+/*--------------------
+5. Footer
+--------------------*/
+
+footer {
+	padding: 30px;
+	background-color: #000;
+}
+
+footer p {
+	color: #B7B7B7;
+	margin: 0;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.6px;
+}
+
+footer p a {
+	color: #fff;
+}
+
+footer p a span {
+	color: #23AD21;
+	font-size: 10px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
