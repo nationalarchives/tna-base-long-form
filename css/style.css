@@ -285,6 +285,7 @@ footer p a span {
 	}
 	.intro-text {
 		padding-top: 285px;
+	}
 }
 
 
@@ -293,11 +294,25 @@ footer p a span {
 	height: 1000px;
 	background-size: cover;
 }
+@media (max-width: 768px) {
+	.image-bg-fixed-height-2 {
+		background: url(../images/demo/zepplin.jpg) no-repeat 41% 75% scroll;
+		height: 240px;
+		background-size: cover;
+	}
+}
 
 .image-bg-fixed-height-3 {
 	background: url(../images/demo/Image%2014.jpg) no-repeat 50% 75% scroll;
 	height: 1000px;
 	background-size: cover;
+}
+@media (max-width: 768px) {
+	.image-bg-fixed-height-3 {
+		background: url(../images/demo/Image%2014.jpg) no-repeat 41% 75% scroll;
+		height: 240px;
+		background-size: cover;
+	}
 }
 
 .image-bg-fixed-height-4 {
@@ -305,9 +320,23 @@ footer p a span {
 	height: 1000px;
 	background-size: cover;
 }
+@media (max-width: 768px) {
+	.image-bg-fixed-height-4 {
+		background: url(../images/demo/Image%2017.jpg) no-repeat 41% 75% scroll;
+		height: 240px;
+		background-size: cover;
+	}
+}
 
 .image-bg-fixed-height-5 {
 	background: url(../images/demo/Image%2020.jpg) no-repeat 50% 75% scroll;
 	height: 1000px;
 	background-size: cover;
+}
+@media (max-width: 768px) {
+	.image-bg-fixed-height-5 {
+		background: url(../images/demo/Image%2020.jpg) no-repeat 41% 75% scroll;
+		height: 240px;
+		background-size: cover;
+	}
 }
