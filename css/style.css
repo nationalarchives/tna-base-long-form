@@ -194,7 +194,7 @@ blockquote{
 	font-style: italic;
 
 	/*Font*/
-	font-size:x-large;
+	font-size:xx-large;
 	line-height: 1.8;
 	color: black;
 	font-weight: 600;
@@ -203,22 +203,22 @@ blockquote{
 }
 
 blockquote::before{
-	content: open-quote;
+	content: "'";
 
 	/*Font*/
-	font-size: 60px;
+	font-size: 86px;
 	font-weight: bold;
-	color: #999;
+	color: #c76c0c;
 
 	/*Positioning*/
 	position: absolute;
-	left: 10px;
-	top:5px;
+	left: 3px;
+	top: 0px;
 }
 
 blockquote::after{
 	/*Reset to make sure*/
-	content: "";
+	/*content: "'";*/
 }
 
 blockquote a{
@@ -270,7 +270,6 @@ footer p a span {
 
 .image-bg-fluid-height {
 	background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat center center scroll;
-	padding: 100px 0;
 }
 
 .image-bg-fixed-height {
@@ -278,6 +277,16 @@ footer p a span {
 	height: 1000px;
 	background-size: cover;
 }
+@media (max-width: 768px) {
+	.image-bg-fixed-height {
+		background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat 41% 75% scroll;
+		height: 477px;
+		background-size: cover;
+	}
+	.intro-text {
+		padding-top: 285px;
+}
+
 
 .image-bg-fixed-height-2 {
 	background: url(../images/demo/zepplin.jpg) no-repeat 50% 75% scroll;

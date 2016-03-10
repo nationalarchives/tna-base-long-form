@@ -5,8 +5,7 @@ Template Name: Long form template
 get_header(); ?>
     <body>
     <header class="image-bg-fixed-height">
-        <div class="container">
-            <!--<h1>Technology and the First World War</h1>-->
+        <div class="container-fluid">
             <div class="intro-text">
                 <h1 class="intro-heading">Technology and the First World War</h1>
             </div>
@@ -26,13 +25,10 @@ get_header(); ?>
                             Logistics play an extraordinarily important part in the success or failure of soldiers in any battle. However, telecommunications is another aspect of life at war that is of incredible importance, often going unnoticed in historical representations of military activities in the First World War.
                         </p>
                         <p>
-                            The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices
+                            The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
-                        <!--<div class="col-sm-4"><img src="../images/demo/image 3.jpg" height="570" /></div>-->
                         <div class="col-sm-4"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570"></div>
                         <div class="col-sm-8"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" /></div>
-                        <p>the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
-                        </p>
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
                         </p>
@@ -42,7 +38,7 @@ get_header(); ?>
                             </blockquote>
                         </aside>
                         <p>
-                            Sound Ranging is the name given to the application of physics via equipment - such as hot wire microphones - to determine the location of enemy artillery. Sound ranging can also be used to direct artillery guns at enemy coordinates. TNA houses a selection of documents that demonstrate the work being completed into sound ranging at this time. Photographs from the Ministry of Aviation picture apparatus used in conducting experiments into the crucial practice of sound ranging in order to develop this technology
+                            Sound Ranging is the name given to the application of physics via equipment - such as hot wire microphones - to determine the location of enemy artillery. Sound ranging can also be used to direct artillery guns at enemy coordinates. TNA houses a selection of documents that demonstrate the work being completed into sound ranging at this time. Photographs from the Ministry of Aviation picture apparatus used in conducting experiments into the crucial practice of sound ranging in order to develop this technology.
                         </p>
                         <p>
                             Furthermore, records belonging to the Geographical Section of the General Staff reveal some wonderful illustrative diagrams. The complexity of the diagram series possibly indicates the importance of developing more accurate and scientific Sound Ranging apparatus. That the Engineering Department of the Post Office were contributing to these experiments aptly indicates the crucial role the department was playing in the British war effort.
@@ -69,9 +65,6 @@ get_header(); ?>
                         <p>
                             The nature of telecommunications meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
                         </p>
-                        <!--<div class="col-sm-6">
-                            <img src="../images/demo/image 9.jpg" />
-                        </div>-->
                     </div>
                 </div>
             </div>
