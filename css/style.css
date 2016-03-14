@@ -30,27 +30,13 @@ body {
 	margin: 0px;
 	/*font-family: "Open Sans", Sans-serif;*/
 	background-color:#ffffee;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 300;
-	letter-spacing: 0.4px;
-	font-family: 'Bitter', serif;
-	color: #232323;
-}
 
 p {
 	font-family: "Open Sans", Sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 23px;
-	letter-spacing: 0.2px;
-	color: #797979;
+	margin: auto;
 }
 
 
@@ -109,6 +95,8 @@ blockquote {
 .intro-text {
 	padding-top: 310px;
 	/*padding-bottom: 50px;*/
+	width: 756.391px;
+	margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -125,15 +113,14 @@ blockquote {
 	margin-bottom: 25px;
 	word-spacing: 10px;
 	color: #FFFFFF;
-	text-shadow: 1px 1px 1px rgb(0, 0, 0);
-	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 @media (min-width: 768px) {
 	.intro-text .intro-heading {
-		line-height: 95px;
-		font-size: 77px;
-		margin-bottom: 50px;
+		font-size: 4em;
+		line-height: 1.2em;
+		letter-spacing: .5px;
 	}
 }
 
@@ -145,7 +132,23 @@ blockquote {
 
 section {
 	background-color: #ffffee;
+	/*max-width: 756.391px;*/
 }
+
+/*.container {
+	/!*max-width: 1240px!important;*!/
+	width: 100%!important;
+	/!*padding: 0!important;*!/
+}*/
+
+.container-lf {
+	max-width: 756.391px;
+	margin: auto;
+}
+
+/*.container {
+	max-width: 1240px;!important;
+}*/
 
 .section-title {
 	margin-top: 20px;
@@ -190,35 +193,32 @@ blockquote{
 	padding: 40px 20px 15px 50px;
 	margin: 30px auto 30px auto;
 	position: relative;
-	font-family: 'Bitter', serif;
-	font-style: italic;
 
 	/*Font*/
-	font-size:xx-large;
-	line-height: 1.8;
-	color: black;
-	font-weight: 600;
+	font-size: 1.7em;
 	text-align: center;
 	width: 80%;
 }
 
 blockquote::before{
-	content: "'";
-
-	/*Font*/
-	font-size: 86px;
-	font-weight: bold;
+	content: "\201C";
+	/*color: rgba(0,0,0,.1);*/
 	color: #c76c0c;
-
-	/*Positioning*/
+	opacity: 0.2;
+	font-family: "Times New Roman", Georgia, Serif;
 	position: absolute;
-	left: 3px;
-	top: 0px;
+	/* margin-left: -100px; */
+	/* position: absolute; */
+	margin-top: -140px;
+	font-size: 10em;
+	left: -9px;
 }
 
-blockquote::after{
-	/*Reset to make sure*/
-	/*content: "'";*/
+blockquote p{
+	font-family: 'Bitter', serif;
+	color: #333;
+	margin-bottom: 1.5em;
+	font-weight: 500;
 }
 
 blockquote a{
@@ -231,10 +231,6 @@ blockquote a{
 
 blockquote a:hover{
 	color: #666;
-}
-
-blockquote em{
-	font-style: italic;
 }
 
 
@@ -273,8 +269,7 @@ footer p a span {
 }
 
 .image-bg-fixed-height {
-	background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat 50% 75% scroll;
-	height: 1000px;
+	background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat center center scroll;
 	background-size: cover;
 }
 @media (max-width: 768px) {
@@ -339,4 +334,23 @@ footer p a span {
 		height: 240px;
 		background-size: cover;
 	}
+}
+
+#cd-vertical-nav {
+	position: fixed;
+	right: 40px;
+	top: 50%;
+	bottom: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1;
+	display: block;
+	background-color: transparent;
+}
+
+.cd-label {
+	background-color: white;
 }
