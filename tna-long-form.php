@@ -67,15 +67,15 @@ get_header(); ?>
                         <p>
                             The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
-                        <div class="col-md-6"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570"></div>
-                        <div class="col-md-6"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" /></div>
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570">
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" />
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
                         </p>
                         <aside class="floated-quote">
                             <blockquote>
                                 <p>
-                                For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, <a>British Armies in France</a>.
+                                For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France.
                                 </p>
                             </blockquote>
                         </aside>
@@ -89,10 +89,10 @@ get_header(); ?>
                             The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunications would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communication equipment indicate the way in which evolution of telecommunications in this period went hand in hand with military technology
                         </p>
                         <div class="col-md-6">
-                            <img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
                         </div>
                         <div class="col-md-6">
-                            <img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
                         </div>
                         <p>
                             The development of the throat microphone also proved a significant advancement as it, of course, allowed pilots to use their aircraft telephones without using their hands. Captain B.S. Cohen’s October 1919 report into Aircraft Telephones refers to some of the engineering work carried out to develop aircraft telephones such as the ‘hands free’ kit,
