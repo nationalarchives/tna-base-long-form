@@ -4,6 +4,46 @@ Template Name: Long form template
 */
 get_header(); ?>
     <body>
+    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#section1" data-number="1">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Header</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section2" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Section 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section3" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Section 3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section4" data-number="4">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Section 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section5" data-number="5">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Section 5</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section6" data-number="6">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label arrow_box">Section 6</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header class="image-bg-fixed-height">
         <div class="container-fluid">
             <div class="intro-text">
@@ -12,7 +52,7 @@ get_header(); ?>
         </div>
     </header>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -27,14 +67,16 @@ get_header(); ?>
                         <p>
                             The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
-                        <div class="col-sm-4"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570"></div>
-                        <div class="col-sm-8"><img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" /></div>
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570">
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" />
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
                         </p>
                         <aside class="floated-quote">
                             <blockquote>
-                                For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, <a>British Armies in France</a>.
+                                <p>
+                                For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France.
+                                </p>
                             </blockquote>
                         </aside>
                         <p>
@@ -46,8 +88,12 @@ get_header(); ?>
                         <p>
                             The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunications would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communication equipment indicate the way in which evolution of telecommunications in this period went hand in hand with military technology
                         </p>
-                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" height="800" /></div>
-                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" height="800" /></div>
+                        <div class="col-md-6">
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
+                        </div>
                         <p>
                             The development of the throat microphone also proved a significant advancement as it, of course, allowed pilots to use their aircraft telephones without using their hands. Captain B.S. Cohen’s October 1919 report into Aircraft Telephones refers to some of the engineering work carried out to develop aircraft telephones such as the ‘hands free’ kit,
                         </p>
@@ -74,7 +120,7 @@ get_header(); ?>
         <aside class="image-bg-fixed-height-2"></aside>
     </section>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -93,18 +139,20 @@ get_header(); ?>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="">
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="">
+                        <div class="col-md-6"><img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt=""></div>
+                        <div class="col-md-6"><img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt=""></div>
                         <p>
                             The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
                         </p>
                         <aside class="floated-quote">
                             <blockquote>
+                                <p>
                                 The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated
+                                </p>
                             </blockquote>
                         </aside>
                     </div>
@@ -114,7 +162,7 @@ get_header(); ?>
     </section>
     <section>
         <aside class="image-bg-fixed-height-3"></aside>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -130,15 +178,19 @@ get_header(); ?>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
                         <p>
                             Within The National Archives there are several references to the bravery and danger undertaken by the staff of the General Post Office’s Engineering Department who staffed these cable ships.
                         </p>
-                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" height="800" /></div>
-                        <div class="col-sm-6"><img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" height="800" /></div>
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" />
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" class="img-responsive"/>
+                        </div>
                         <p>
                             These letters from the records of the Treasury highlight the responsibilities that were placed upon these men. In some cases, it became necessary for those of a relatively junior rank to essentially take on the role of ranks much higher than their own – e.g. Commander or Chief Officers for example. This was often undertaken for a reasonable period of time. Operations could be dangerous, with the risk of hostile action, meaning that these men had to be of a brave character. With such undertakings, it can be no surprise that it was deemed fair to provide these men with ‘substitution payments’ for their work.
                         </p>
@@ -154,7 +206,7 @@ get_header(); ?>
         <aside class="image-bg-fixed-height-4"></aside>
     </section>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
@@ -168,7 +220,7 @@ get_header(); ?>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
