@@ -81,6 +81,14 @@ ol, ul {
 	list-style: none;
 }
 
+/*--------------------
+1.1 Reset Base-Sass
+--------------------*/
+ol li, ul li {
+	margin: 0 0 -0.25em;
+	line-height: 1.6;
+}
+
 
 /*--------------------
 3. Header
@@ -175,6 +183,8 @@ section {
 	position: relative;
 	width: 100%;
 	height: auto;
+	box-shadow: 2px 2px 5px #eee;
+	border: 1px solid #999;
 }
 
 .full-width img {
@@ -391,7 +401,7 @@ footer p a span {
 #cd-vertical-nav {
 	position: fixed;
 	right: 40px;
-	top: 50%;
+	top: 40%;
 	bottom: auto;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -448,14 +458,13 @@ footer p a span {
 }
 .no-touch #cd-vertical-nav .cd-dot {
 	position: relative;
-	/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-	top: 8px;
-	height: 35px;
-	width: 35px;
+	top: 15px;
+	height: 25px;
+	width: 25px;
 	border-radius: 50%;
-	/*border-color: #008484;*/
-	border: 5px solid #122b40;
-	background-color: #d88683;
+	/* border-color: #008484; */
+	/* border: 5px solid #ebab00; */
+	background-color: #999;
 	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
 	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
 	transition: transform 0.2s, background-color 0.5s;
@@ -467,11 +476,11 @@ footer p a span {
 }
 .no-touch #cd-vertical-nav .cd-label {
 	position: relative;
-	margin-right: 10px;
-	padding: .4em .5em;
+	margin-right: 15px;
+	padding: 1em 1em;
 	color: white;
 	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 1em;
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
 	transition: transform 0.2s, opacity 0.2s;
@@ -481,4 +490,25 @@ footer p a span {
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
+	border-radius: 7%;
+}
+
+.arrow_box {
+	position: relative;
+	background: #999;
+}
+.arrow_box:after {
+	left: 93%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(153, 153, 153, 0);
+	border-left-color: #999;
+	border-width: 15px;
+	margin-top: -15px;
+	border-radius: 25px;
 }

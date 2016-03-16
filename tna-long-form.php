@@ -9,37 +9,37 @@ get_header(); ?>
             <li>
                 <a href="#section1" data-number="1">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Header</span>
+                    <span class="cd-label arrow_box">Header</span>
                 </a>
             </li>
             <li>
                 <a href="#section2" data-number="2">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Section 2</span>
+                    <span class="cd-label arrow_box">Section 2</span>
                 </a>
             </li>
             <li>
                 <a href="#section3" data-number="3">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Section 3</span>
+                    <span class="cd-label arrow_box">Section 3</span>
                 </a>
             </li>
             <li>
                 <a href="#section4" data-number="4">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Section 4</span>
+                    <span class="cd-label arrow_box">Section 4</span>
                 </a>
             </li>
             <li>
                 <a href="#section5" data-number="5">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Section 5</span>
+                    <span class="cd-label arrow_box">Section 5</span>
                 </a>
             </li>
             <li>
                 <a href="#section6" data-number="6">
                     <span class="cd-dot"></span>
-                    <span class="cd-label">Section 6</span>
+                    <span class="cd-label arrow_box">Section 6</span>
                 </a>
             </li>
         </ul>
