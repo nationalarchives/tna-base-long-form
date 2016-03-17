@@ -9,7 +9,7 @@ get_header(); ?>
             <li>
                 <a href="#section1" data-number="1">
                     <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Technology and the First World War</span>
+                    <span class="cd-label arrow_box">Technology and the First World War</span>
                 </a>
             </li>
             <li>
@@ -42,6 +42,18 @@ get_header(); ?>
                     <span class="cd-label arrow_box active">Section 6</span>
                 </a>
             </li>
+            <!--<li>
+                <a href="#section7" data-number="7">
+                    <span class="cd-dot active-dot"></span>
+                    <span class="cd-label arrow_box active">Section 7</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section8" data-number="8">
+                    <span class="cd-dot active-dot"></span>
+                    <span class="cd-label arrow_box active">Home front protection</span>
+                </a>
+            </li>-->
         </ul>
     </nav>
     <header class="image-bg-fixed-height">
@@ -265,42 +277,31 @@ get_header(); ?>
         <p class="wp-cation-text">Caption: IMAGE%203</p>
     </section>
 <!--<script>
-    $(document).ready(function () {
-        $(document).on("scroll", onScroll);
+    function orient() {
+        if (window.orientation == 0 || window.orientation == 180) {
+            $("body").attr("class", "portrait");
+            orientation = 'portrait';
 
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-            $(document).off("scroll");
+            return false;
+        }
+        else if (window.orientation == 90 || window.orientation == -90) {
+            $("body").attr("class", "landscape");
+            orientation = 'landscape';
 
-            $('a').each(function () {
-                $(this).removeClass('active');
-            })
-            $(this).addClass('active');
+            return false;
+        }
+    }
 
-            var target = this.hash;
-            $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
-            }, 500, 'swing', function () {
-                window.location.hash = target;
-                $(document).on("scroll", onScroll);
-            });
-        });
+    /* Call orientation function on page load */
+    $(function(){
+        orient();
     });
 
-    function onScroll(event){
-        var scrollPosition = $(document).scrollTop();
-        $('nav a').each(function () {
-            var currentLink = $(this);
-            var refElement = $(currentLink.attr("href"));
-            if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-                $('nav ul li a').removeClass("active");
-                currentLink.addClass("active");
-            }
-            else{
-                currentLink.removeClass("active");
-            }
-        });
-    }
+    /* Call orientation function on orientation change */
+    $(window).bind( 'orientationchange', function(e){
+        orient(
+            $("span.cd-label").removeClass("active")
+        );
+    });
 </script>-->
 <?php get_footer(); ?>
