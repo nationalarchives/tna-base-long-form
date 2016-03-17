@@ -426,7 +426,7 @@ footer p a span {
 }
 
 .cd-label {
-	background-color: white;
+	background-color: #999;
 }
 
 .no-touch #cd-vertical-nav li {
@@ -514,27 +514,31 @@ footer p a span {
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-	border-radius: 7%;
 	box-shadow: 1px 1px 3px #999;
 }
 
 .arrow_box {
+	width: auto;
+	height: auto;
+	background-color: #999;
 	position: relative;
-	background: #999;
-	box-shadow: 1px 1px 3px #999;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
 }
-.arrow_box:after {
-	left: 93%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
+
+.arrow_box:after, .arrow_box:before {
+	content: ' ';
 	height: 0;
-	width: 0;
+	left: 100%;
 	position: absolute;
-	pointer-events: none;
-	border-color: rgba(153, 153, 153, 0);
-	border-left-color: #999;
-	border-width: 15px;
-	margin-top: -15px;
-	border-radius: 25px;
+	width: 0;
+	top: 50%;
+	width: auto;
+	height: auto;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #999;
+	border-bottom: 10px solid transparent;
+	margin-top: -10px;
 }
