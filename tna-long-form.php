@@ -9,7 +9,7 @@ get_header(); ?>
             <li>
                 <a href="#section1" data-number="1">
                     <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box">Technology and the First World War</span>
+                    <span class="cd-label arrow_box active">Technology and the First World War</span>
                 </a>
             </li>
             <li>
