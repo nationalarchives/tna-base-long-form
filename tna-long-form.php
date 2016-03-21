@@ -51,9 +51,9 @@ get_header(); ?>
                 <h1 class="intro-heading">Technology and the First World War</h1>
             </div>
         </div>
+        <p class="wp-cation-text">Caption: IMAGE%203</p>
     </section>
-    <p class="wp-cation-text">Caption: IMAGE%203</p>
-    <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
+    <h2><a href="#" class="sr-only">Some title</a></h2>
     <section class="scrollable-section active-section" data-section-title="What is this">
         <div class="container-lf">
             <div class="row">

@@ -258,6 +258,16 @@ blockquote a:hover{
 	clear: both;
 	margin: .5em;
 	text-align: center;
+	top: 0px;
+}
+
+.wp-cation-inline {
+	position: relative;
+	font-size: .8em;
+	color: #666;
+	clear: both;
+	margin: .5em;
+	text-align: center;
 }
 
 
@@ -455,22 +465,6 @@ footer p a span {
 	-o-transform: scale(0.6);
 	transform: scale(0.6);
 }
-/*.no-touch #cd-vertical-nav a:hover span {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-}*/
-
-/*.no-touch #cd-vertical-nav a:hover .cd-dot {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-	background-color: #008484;
-	border: none;
-}*/
 
 .no-touch #cd-vertical-nav a:hover .cd-label {
 	opacity: 1;
