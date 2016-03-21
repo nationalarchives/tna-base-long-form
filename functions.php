@@ -28,7 +28,9 @@ add_action( 'wp_head', 'dequeue_parent_style', 9999 );
 function tna_child_styles() {
     wp_register_style( 'tna-parent-styles', get_template_directory_uri() . '/css/base-sass.css.min', array(), EDD_VERSION, 'all' );
     wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
+    wp_register_script('long-form', get_stylesheet_directory_uri(). '/js/long-form.js','','1.1', true);
     wp_enqueue_style( 'tna-parent-styles' );
     wp_enqueue_style( 'tna-child-styles' );
+    wp_enqueue_script( 'long-form' );
 }
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );

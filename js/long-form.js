@@ -26,3 +26,28 @@ $(function(){
 $(window).bind( 'orientationchange', function(e){
     orient();
 });*/
+
+
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $("span.cd-label").css("opacity", 1 - scroll / 400);
+
+    //When it goes past the header.
+    if (scroll >= 400 ) {
+        $("span.cd-dot").removeClass("active-dot", 1000);
+        $("span.cd-dot, span.cd-label").hover(
+            function(){
+                $('span.cd-dot').addClass('active-dot')
+                $('span.cd-label').addClass('active')
+            },
+            function(){
+                $('span.cd-dot').removeClass('active-dot')
+                $('span.cd-label').removeClass('active')
+            }
+        )
+    }
+    //When going back to the top.
+    else if ( scroll < 400 ) {
+        $("span.cd-dot").addClass("active-dot", 1000);
+    }
+});

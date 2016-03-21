@@ -3,68 +3,57 @@
 Template Name: Long form template
 */
 get_header(); ?>
-    <body>
-    <nav id="cd-vertical-nav">
+<main role="main">
+    <div id="cd-vertical-nav">
         <ul>
             <li>
-                <a href="#section1" data-number="1">
+                <a href="#section1" data-number="1" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Technology and the First World War</span>
                 </a>
             </li>
             <li>
-                <a href="#section2" data-number="2">
+                <a href="#section2" data-number="2" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Air warfare</span>
                 </a>
             </li>
             <li>
-                <a href="#section3" data-number="3">
+                <a href="#section3" data-number="3" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Ships</span>
                 </a>
             </li>
             <li>
-                <a href="#section4" data-number="4">
+                <a href="#section4" data-number="4" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Home front protection</span>
                 </a>
             </li>
             <li>
-                <a href="#section5" data-number="5">
+                <a href="#section5" data-number="5" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Broadly - trenches</span>
                 </a>
             </li>
             <li>
-                <a href="#section6" data-number="6">
+                <a href="#section6" data-number="6" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Section 6</span>
                 </a>
             </li>
-            <!--<li>
-                <a href="#section7" data-number="7">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Section 7</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section8" data-number="8">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Home front protection</span>
-                </a>
-            </li>-->
         </ul>
-    </nav>
-    <header class="image-bg-fixed-height">
+    </div>
+    <section class="image-bg-fixed-height scrollable-section active-section" data-section-title="Welcome">
         <div class="container-fluid">
             <div class="intro-text">
                 <h1 class="intro-heading">Technology and the First World War</h1>
             </div>
         </div>
-    </header>
+    </section>
     <p class="wp-cation-text">Caption: IMAGE%203</p>
-    <section>
+    <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
+    <section class="scrollable-section active-section" data-section-title="What is this">
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -80,9 +69,9 @@ get_header(); ?>
                         <p>
                             The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg" height="570">
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
                         <p class="wp-cation-text">Caption: IMAGE%203</p>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" height="570" />
+                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" />
                         <p class="wp-cation-text">Caption: IMAGE%203</p>
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
@@ -135,7 +124,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section>
+    <section class="scrollable-section active-section" data-section-title="HTML">
         <aside class="image-bg-fixed-height-2"></aside>
         <p class="wp-cation-text">Caption: IMAGE%203</p>
     </section>
@@ -276,32 +265,29 @@ get_header(); ?>
         <aside class="image-bg-fixed-height-5"></aside>
         <p class="wp-cation-text">Caption: IMAGE%203</p>
     </section>
-<!--<script>
-    function orient() {
-        if (window.orientation == 0 || window.orientation == 180) {
-            $("body").attr("class", "portrait");
-            orientation = 'portrait';
+    <!--<script>
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            $("span.cd-label").css("opacity", 1 - scroll / 400);
 
-            return false;
-        }
-        else if (window.orientation == 90 || window.orientation == -90) {
-            $("body").attr("class", "landscape");
-            orientation = 'landscape';
-
-            return false;
-        }
-    }
-
-    /* Call orientation function on page load */
-    $(function(){
-        orient();
-    });
-
-    /* Call orientation function on orientation change */
-    $(window).bind( 'orientationchange', function(e){
-        orient(
-            $("span.cd-label").removeClass("active")
-        );
-    });
-</script>-->
+            //When it goes past the header.
+            if (scroll >= 400 ) {
+                $("span.cd-dot").removeClass("active-dot", 1000);
+                $("span.cd-dot, span.cd-label").hover(
+                    function(){
+                        $('span.cd-dot').addClass('active-dot')
+                        $('span.cd-label').addClass('active')
+                    },
+                    function(){
+                        $('span.cd-dot').removeClass('active-dot')
+                        $('span.cd-label').removeClass('active')
+                    }
+                )
+            }
+            //When going back to the top.
+            else if ( scroll < 400 ) {
+                $("span.cd-dot").addClass("active-dot", 1000);
+            }
+        });
+    </script>-->
 <?php get_footer(); ?>
