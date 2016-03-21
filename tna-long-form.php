@@ -7,37 +7,37 @@ get_header(); ?>
     <div id="cd-vertical-nav">
         <ul>
             <li>
-                <a href="#section1" data-number="1" class="hover">
+                <a href="#section1" data-title="Technology and the First World War" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Technology and the First World War</span>
                 </a>
             </li>
             <li>
-                <a href="#section2" data-number="2" class="hover">
+                <a href="#section2" data-title="Air warfare" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Air warfare</span>
                 </a>
             </li>
             <li>
-                <a href="#section3" data-number="3" class="hover">
+                <a href="#section3" data-title="Ships" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Ships</span>
                 </a>
             </li>
             <li>
-                <a href="#section4" data-number="4" class="hover">
+                <a href="#section4" data-title="Home front protection" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Home front protection</span>
                 </a>
             </li>
             <li>
-                <a href="#section5" data-number="5" class="hover">
+                <a href="#section5" data-title="Broadly - trenches" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Broadly - trenches</span>
                 </a>
             </li>
             <li>
-                <a href="#section6" data-number="6" class="hover">
+                <a href="#section6" data-title="Section 6" class="hover">
                     <span class="cd-dot active-dot"></span>
                     <span class="cd-label arrow_box active">Section 6</span>
                 </a>
@@ -45,6 +45,7 @@ get_header(); ?>
         </ul>
     </div>
     <section class="image-bg-fixed-height scrollable-section active-section" data-section-title="Welcome">
+        <h2 class="sr-only">Some title</h2>
         <div class="container-fluid">
             <div class="intro-text">
                 <h1 class="intro-heading">Technology and the First World War</h1>

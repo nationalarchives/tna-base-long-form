@@ -99,7 +99,7 @@ aside {
 
 .intro-header {
 	background-image: url(../images/demo/TCE_361_ARC03005.jpg);
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-position: center 60%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
