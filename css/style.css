@@ -16,19 +16,11 @@ Primary use: Long form template
 -------------------------------------------------------------------*/
 
 /*--------------------
-Import Google Fonts
---------------------*/
-
-/* font for headings, text, tags */
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
-
-/*--------------------
 1. General
 --------------------*/
 
 body {
 	margin: 0px;
-	/*font-family: "Open Sans", Sans-serif;*/
 	background-color:#ffffee;
 
 }
