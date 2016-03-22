@@ -4,60 +4,68 @@ Template Name: Long form template
 */
 get_header(); ?>
 <main role="main">
-    <div id="cd-vertical-nav">
-        <ul>
-            <li>
-                <a href="#section1" data-title="Technology and the First World War" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Technology and the First World War</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section2" data-title="Air warfare" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Air warfare</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section3" data-title="Ships" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Ships</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section4" data-title="Home front protection" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Home front protection</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section5" data-title="Broadly - trenches" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Broadly - trenches</span>
-                </a>
-            </li>
-            <li>
-                <a href="#section6" data-title="Section 6" class="hover">
-                    <span class="cd-dot active-dot"></span>
-                    <span class="cd-label arrow_box active">Section 6</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <section class="image-bg-fixed-height scrollable-section active-section" data-section-title="Welcome">
-        <h2 class="hidden"><a href="#" class="sr-only">Some title</a></h2>
-        <div class="container-fluid">
-            <div class="intro-text">
-                <h1 class="intro-heading">Technology and the First World War</h1>
-            </div>
+
+    <section>
+        <div id="cd-vertical-nav">
+            <ul>
+                <li>
+                    <a href="#section1" data-title="Technology and the First World War" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Technology and the First World War</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section2" data-title="Air warfare" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Air warfare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section3" data-title="Ships" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Ships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section4" data-title="Home front protection" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Home front protection</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section5" data-title="Broadly - trenches" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Broadly - trenches</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section6" data-title="Section 6" class="hover">
+                        <span class="cd-dot active-dot"></span>
+                        <span class="cd-label arrow_box active">Section 6</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <p class="wp-cation-text">Caption: IMAGE%203</p>
     </section>
-    <h2><a href="#" class="sr-only">Some title</a></h2>
+    <section class="scrollable-section active-section" data-section-title="Welcome">
+        <aside class="image-bg-fixed-height">
+            <h2 class="hidden"><a href="#" class="sr-only">Some title</a></h2>
+            <div class="container-fluid">
+                <div class="intro-text">
+                    <h1 class="intro-heading">Technology and the First World War</h1>
+                </div>
+            </div>
+            <figure class="wp-cation-text">
+                <figcaption>Caption: IMAGE%203</figcaption>
+            </figure>
+        </aside>
+    </section>
+
     <section class="scrollable-section active-section" data-section-title="What is this">
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
+                    <h2><a href="#" class="sr-only">Some title</a></h2>
                     <div class="section-title">
                         <p>It is difficult to overstate the impact of the First World War on global society. From the significant political consequences, to the military and medical legacies, the effects of the First World War on the development of society can still be seen today.
                         </p>
@@ -71,9 +79,13 @@ get_header(); ?>
                             The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
                         <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" />
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
                         </p>
@@ -95,17 +107,23 @@ get_header(); ?>
                         </p>
                         <div class="col-md-6">
                             <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
-                            <p class="wp-cation-text">Caption: IMAGE%203</p>
+                            <figure class="wp-cation-text">
+                                <figcaption>Caption: IMAGE%203</figcaption>
+                            </figure>
                         </div>
                         <div class="col-md-6">
                             <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
-                            <p class="wp-cation-text">Caption: IMAGE%203</p>
+                            <figure class="wp-cation-text">
+                                <figcaption>Caption: IMAGE%203</figcaption>
+                            </figure>
                         </div>
                         <p>
                             The development of the throat microphone also proved a significant advancement as it, of course, allowed pilots to use their aircraft telephones without using their hands. Captain B.S. Cohen’s October 1919 report into Aircraft Telephones refers to some of the engineering work carried out to develop aircraft telephones such as the ‘hands free’ kit,
                         </p>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%209.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             and in images from the report we see men operating a throat microphone as part of a kite balloon telephone.
                         </p>
@@ -116,7 +134,9 @@ get_header(); ?>
                             The role of communications and the importance of having reliable telecommunications in the First World War was of total, fundamental importance. Of course, front line telecommunications were of great significance, as transferring information and orders up and down the chain of command, and to and from headquarters to the front line, could mean the difference between success and failure. One important and well used method of transferring intelligence and operational updates in warfare was the portable morse code machine, used by the British army throughout the conflict and often in trench holes.
                         </p>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2010.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             The nature of telecommunications meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
                         </p>
@@ -125,11 +145,15 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <section class="scrollable-section active-section" data-section-title="HTML">
         <h2 class="sr-only">Some title</h2>
         <aside class="image-bg-fixed-height-2"></aside>
-        <p class="wp-cation-text">Caption: IMAGE%203</p>
+        <figure class="wp-cation-text">
+            <figcaption>Caption: IMAGE%203</figcaption>
+        </figure>
     </section>
+
     <section>
         <div class="container-lf">
             <div class="row">
@@ -142,7 +166,9 @@ get_header(); ?>
                             The Engineering Department of the Post Office was tasked by the War Office to work on intercepting the wireless signals that were often used to navigate enemy aircraft, including the infamous ‘Zeppelins’ that killed over 500 people in Britain during the First World War. This fantastic map
                         </p>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2012.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             included in Sir William Slingo’s report on the Engineering Department’s work during the First World War indicates the routes of Zeppelins that took  part in the raid of 2nd and 3rd of May 1917. Upon the Engineering Department identifying the location of Enemy Aircraft this information would be wired to the Intelligence Department of the War Office immediately.  The signals were intercepted by the Engineering Department’s ‘Direction Finding Stations’ set up at Peterborough, Seaham Harbour, Westgate and, latterly, Falkirk in Scotland.
                         </p>
@@ -151,6 +177,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <section>
         <div class="container-lf">
             <div class="row">
@@ -158,9 +185,13 @@ get_header(); ?>
                     <div class="section-title">
                         <h2 class="sr-only">Some title</h2>
                         <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="#">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="#">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
                         </p>
@@ -176,9 +207,12 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <section>
         <aside class="image-bg-fixed-height-3"></aside>
-        <p class="wp-cation-text">Caption: IMAGE%203</p>
+        <figure class="wp-cation-text">
+            <figcaption>Caption: IMAGE%203</figcaption>
+        </figure>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -195,6 +229,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <section>
         <div class="container-lf">
             <div class="row">
@@ -206,11 +241,15 @@ get_header(); ?>
                         </p>
                         <div class="col-md-6">
                             <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" />
-                            <p class="wp-cation-text">Caption: IMAGE%203</p>
+                            <figure class="wp-cation-text">
+                                <figcaption>Caption: IMAGE%203</figcaption>
+                            </figure>
                         </div>
                         <div class="col-md-6">
                             <img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" class="img-responsive full-width"/>
-                            <p class="wp-cation-text">Caption: IMAGE%203</p>
+                            <figure class="wp-cation-text">
+                                <figcaption>Caption: IMAGE%203</figcaption>
+                            </figure>
                         </div>
                         <p>
                             These letters from the records of the Treasury highlight the responsibilities that were placed upon these men. In some cases, it became necessary for those of a relatively junior rank to essentially take on the role of ranks much higher than their own – e.g. Commander or Chief Officers for example. This was often undertaken for a reasonable period of time. Operations could be dangerous, with the risk of hostile action, meaning that these men had to be of a brave character. With such undertakings, it can be no surprise that it was deemed fair to provide these men with ‘substitution payments’ for their work.
@@ -223,10 +262,15 @@ get_header(); ?>
             </div>
         </div>
     </section>
+
     <section>
+        <h2 class="sr-only">Some title</h2>
         <aside class="image-bg-fixed-height-4"></aside>
-        <p class="wp-cation-text">Caption: IMAGE%203</p>
+        <figure class="wp-cation-text">
+            <figcaption>Caption: IMAGE%203</figcaption>
+        </figure>
     </section>
+
     <section>
         <div class="container-lf">
             <div class="row">
@@ -237,12 +281,15 @@ get_header(); ?>
                             This document from BT Archives interestingly states that it was a well-regarded opinion that the female ‘night telephonist’ was more adept at the job than her male counterpart. Once males and females worked alongside one another, this comparison was much more easily identifiable. Such a description acts to quash ideas that women were not capable of undertaking the same duties as men, because of certain characteristics that they were perceived to possess. For example, women were deemed “too emotional” for certain tasks (including having the right to vote) yet it is this sex who is described, in this example, as responding more appropriately when under extreme pressure.
                         </p>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2018.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section>
         <div class="container-lf">
             <div class="row">
@@ -253,7 +300,9 @@ get_header(); ?>
                             Within Sir William Slingo’s report a fascinating and vivid graph exists appearing (at first glance)  to suggest that as the number of workmen in employment, below the rank of inspector, fell during the war, the number of female assistants rose above them. Looking closely at the graph axes indicates that this was not the case (male staff being measured in thousands and females in hundreds) but it interesting to note that the very existence of the graph implies that the female experience and contribution to work at the Engineering Department was worthy of note and comment at this time
                         </p>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2019.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                         <p>
                             As the above information suggests, and the array of vivid and interesting documentation and images confirm, the Engineering Department of the General Post Office (the historical antecedent of British Telecom) played a major role during the First World War supplying the British military services and the civilian populace of Great Britain with the crucial means of communication, whilst playing a significant part in technological innovation. The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office, held at BT Archives in High Holborn, and also throughout the vast array of First World War material held at The National Archives in Kew.
                         </p>
@@ -263,40 +312,22 @@ get_header(); ?>
                             </blockquote>
                         </aside>
                         <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2021.jpg" alt="">
-                        <p class="wp-cation-text">Caption: IMAGE%203</p>
+                        <figure class="wp-cation-text">
+                            <figcaption>Caption: IMAGE%203</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section>
         <h2 class="sr-only"><a href="#"Some title</a></h2>
         <aside class="image-bg-fixed-height-5"></aside>
-        <p class="wp-cation-text">Caption: IMAGE%203</p>
+        <figure class="wp-cation-text">
+            <figcaption>Caption: IMAGE%203</figcaption>
+        </figure>
     </section>
-    <!--<script>
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            $("span.cd-label").css("opacity", 1 - scroll / 400);
+</main>
 
-            //When it goes past the header.
-            if (scroll >= 400 ) {
-                $("span.cd-dot").removeClass("active-dot", 1000);
-                $("span.cd-dot, span.cd-label").hover(
-                    function(){
-                        $('span.cd-dot').addClass('active-dot')
-                        $('span.cd-label').addClass('active')
-                    },
-                    function(){
-                        $('span.cd-dot').removeClass('active-dot')
-                        $('span.cd-label').removeClass('active')
-                    }
-                )
-            }
-            //When going back to the top.
-            else if ( scroll < 400 ) {
-                $("span.cd-dot").addClass("active-dot", 1000);
-            }
-        });
-    </script>-->
 <?php get_footer(); ?>
