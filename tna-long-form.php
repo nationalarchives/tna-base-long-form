@@ -50,10 +50,10 @@ get_header(); ?>
 
     <section class="scrollable-section active-section" data-section-title="Welcome">
         <aside class="image-bg-fixed-height">
-            <h2 class="hidden"><a href="#" class="sr-only">Some title</a></h2>
             <div class="container-fluid">
                 <div class="intro-text">
                     <h1 class="intro-heading">Technology and the First World War</h1>
+                    <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                 </div>
             </div>
             <figure>
@@ -66,7 +66,7 @@ get_header(); ?>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2><a href="#" class="sr-only">Some title</a></h2>
+                    <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                     <div class="section-title">
                         <p>It is difficult to overstate the impact of the First World War on global society. From the significant political consequences, to the military and medical legacies, the effects of the First World War on the development of society can still be seen today.
                         </p>
@@ -150,7 +150,7 @@ get_header(); ?>
     </section>
 
     <section class="scrollable-section active-section" data-section-title="HTML">
-        <h2 class="sr-only">Some title</h2>
+        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-2"></aside>
         <figure>
             <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
@@ -162,7 +162,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>comes from an Admiralty file containing intelligence photographs of Zeppelins and German Air Bases from 1918-1919.
                         </p>
                         <p>
@@ -186,7 +186,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <figure>
                             <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="#">
                             <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
@@ -220,7 +220,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>
                             Perhaps one of the more stirring and action-packed roles of the Engineering Department were the administration and staffing of Cable Ships throughout the First World War. These ships were responsible for laying the cables required for trans-channel telecommunications to work. Such was the prominence of the cable ships of the Engineering Department, they even played a major part on the day war was declared. With war imminently due to be declared between the United Kingdom and Germany, according to Sir William Slingo’s report ‘the cables connecting England and Germany were disconnected on this side on the evening of the 4th and before War was declared, but on receipt of remonstrance from Germany, communication was temporarily restored’. The Engineering Department duly cut the cable again when war was announced officially just hours later.
                         </p>
@@ -238,7 +238,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>
                             Within The National Archives there are several references to the bravery and danger undertaken by the staff of the General Post Office’s Engineering Department who staffed these cable ships.
                         </p>
@@ -267,7 +267,7 @@ get_header(); ?>
     </section>
 
     <section>
-        <h2 class="sr-only">Some title</h2>
+        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-4"></aside>
         <figure>
             <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
@@ -279,7 +279,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>
                             This document from BT Archives interestingly states that it was a well-regarded opinion that the female ‘night telephonist’ was more adept at the job than her male counterpart. Once males and females worked alongside one another, this comparison was much more easily identifiable. Such a description acts to quash ideas that women were not capable of undertaking the same duties as men, because of certain characteristics that they were perceived to possess. For example, women were deemed “too emotional” for certain tasks (including having the right to vote) yet it is this sex who is described, in this example, as responding more appropriately when under extreme pressure.
                         </p>
@@ -298,7 +298,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 class="sr-only">Some title</h2>
+                        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>
                             Within Sir William Slingo’s report a fascinating and vivid graph exists appearing (at first glance)  to suggest that as the number of workmen in employment, below the rank of inspector, fell during the war, the number of female assistants rose above them. Looking closely at the graph axes indicates that this was not the case (male staff being measured in thousands and females in hundreds) but it interesting to note that the very existence of the graph implies that the female experience and contribution to work at the Engineering Department was worthy of note and comment at this time
                         </p>
@@ -325,10 +325,10 @@ get_header(); ?>
     </section>
 
     <section>
-        <h2 class="sr-only"><a href="#"Some title</a></h2>
+        <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-5"></aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+            <figcaption class="wp-cation-text">Caption: IMAGE%2031234567</figcaption>
         </figure>
     </section>
 </main>
