@@ -229,6 +229,10 @@ figure br {
 	display: none;
 }
 
+figure p {
+	display: none;
+}
+
 .wp-cation-inline {
 	position: relative;
 	font-size: .8em;
