@@ -225,6 +225,10 @@ blockquote a:hover{
 	top: 0px;
 }
 
+figure br {
+	display: none;
+}
+
 .wp-cation-inline {
 	position: relative;
 	font-size: .8em;
