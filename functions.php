@@ -34,3 +34,6 @@ function tna_child_styles() {
     wp_enqueue_script( 'long-form' );
 }
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
+
+
+add_image_size( 'custom-size', 220, 180, true );

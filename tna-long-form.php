@@ -4,7 +4,7 @@ Template Name: Long form template
 */
 get_header(); ?>
 <main role="main">
-
+    <?php global $post ?>
     <section>
         <div id="cd-vertical-nav">
             <ul>
@@ -47,20 +47,32 @@ get_header(); ?>
             </ul>
         </div>
     </section>
-
-    <section class="scrollable-section active-section" data-section-title="Welcome">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <section class="scrollable-section active-section" data-section-title="<?php echo $post->post_name; ?>" id="<?php echo $post->post_name; ?>">
         <aside class="image-bg-fixed-height">
             <div class="container-fluid">
                 <div class="intro-text">
-                    <h1 class="intro-heading">Technology and the First World War</h1>
-                    <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
+                    <h1 class="intro-heading"><?php the_title(); ?></h1>
+                    <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
                 </div>
             </div>
-            <figure>
-                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
-            </figure>
         </aside>
+        <figure>
+            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+        </figure>
+        <div class="container-lf">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+<?php endwhile; else: ?>
+    <p>Sorry, this page does not exist</p>
+<?php endif; ?>
 
     <section class="scrollable-section active-section" data-section-title="What is this">
         <div class="container-lf">
@@ -68,17 +80,6 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                     <div class="section-title">
-                        <p>It is difficult to overstate the impact of the First World War on global society. From the significant political consequences, to the military and medical legacies, the effects of the First World War on the development of society can still be seen today.
-                        </p>
-                        <p>
-                            The legacy of the conflict is illustrated in the history of technology in the United Kingdom. Amongst the various technological developments to medical and military equipment is the significant impression the First World War had on telecommunications. Notably, the changes in telecommunications that became necessary due to the challenges of the period. The Engineering Department of the General Post Office, a government body that became British Telecom (or BT) in 1969, played a significant role in the First World War, and the history of this department in the First World War is a fascinating one that has survived in numerous documents and vivid images held by The National Archives, and at BT Archives themselves.
-                        </p>
-                        <p>
-                            Logistics play an extraordinarily important part in the success or failure of soldiers in any battle. However, telecommunications is another aspect of life at war that is of incredible importance, often going unnoticed in historical representations of military activities in the First World War.
-                        </p>
-                        <p>
-                            The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
-                        </p>
                         <figure>
                             <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
                             <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
