@@ -47,6 +47,7 @@ get_header(); ?>
             </ul>
         </div>
     </section>
+
     <section class="scrollable-section active-section" data-section-title="Welcome">
         <aside class="image-bg-fixed-height">
             <h2 class="hidden"><a href="#" class="sr-only">Some title</a></h2>
