@@ -16,19 +16,11 @@ Primary use: Long form template
 -------------------------------------------------------------------*/
 
 /*--------------------
-Import Google Fonts
---------------------*/
-
-/* font for headings, text, tags */
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
-
-/*--------------------
 1. General
 --------------------*/
 
 body {
 	margin: 0px;
-	/*font-family: "Open Sans", Sans-serif;*/
 	background-color:#ffffee;
 
 }
@@ -99,7 +91,7 @@ aside {
 
 .intro-header {
 	background-image: url(../images/demo/TCE_361_ARC03005.jpg);
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-position: center 60%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -252,6 +244,16 @@ blockquote a:hover{
 }
 	/*Image captions*/
 .wp-cation-text {
+	position: relative;
+	font-size: .8em;
+	color: #666;
+	clear: both;
+	margin: .5em;
+	text-align: center;
+	top: 0px;
+}
+
+.wp-cation-inline {
 	position: relative;
 	font-size: .8em;
 	color: #666;
@@ -455,22 +457,6 @@ footer p a span {
 	-o-transform: scale(0.6);
 	transform: scale(0.6);
 }
-.no-touch #cd-vertical-nav a:hover span {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-}
-
-.no-touch #cd-vertical-nav a:hover .cd-dot {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-	background-color: #008484;
-	border: none;
-}
 
 .no-touch #cd-vertical-nav a:hover .cd-label {
 	opacity: 1;
@@ -502,7 +488,6 @@ footer p a span {
 	margin-right: 15px;
 	padding: 1em 1em;
 	color: white;
-	font-size: 14px;
 	font-size: 1em;
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -540,4 +525,34 @@ footer p a span {
 	border-left: 10px solid #999;
 	border-bottom: 10px solid transparent;
 	margin-top: -10px;
+}
+
+
+.no-touch #cd-vertical-nav .active {
+	position: relative;
+	margin-right: 15px;
+	padding: 1em 1em;
+	color: white;
+	font-size: 1em;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	opacity: 1;
+	box-shadow: 1px 1px 3px #999;
+	transform: scale(.80);
+	-webkit-transform: scale(.80);
+	-moz-transform: scale(.80);
+	-o-transform: scale(.80);
+	-ms-transform: scale(.80);
+}
+
+.no-touch #cd-vertical-nav .active-dot {
+	opacity: 1;
+	transform: scale(.80);
+	-webkit-transform: scale(.80);
+	-moz-transform: scale(.80);
+	-o-transform: scale(.80);
+	-ms-transform: scale(.80);
+	background-color: #008484;
+	border: none;
 }
