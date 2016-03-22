@@ -75,6 +75,10 @@ aside {
 	margin-bottom: .45em;
 }
 
+#goTop {
+	display: none;
+}
+
 
 /*--------------------
 3. Section 1 Header
