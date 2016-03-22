@@ -56,8 +56,8 @@ get_header(); ?>
                     <h1 class="intro-heading">Technology and the First World War</h1>
                 </div>
             </div>
-            <figure class="wp-cation-text">
-                <figcaption>Caption: IMAGE%203</figcaption>
+            <figure>
+                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
             </figure>
         </aside>
     </section>
@@ -79,13 +79,13 @@ get_header(); ?>
                         <p>
                             The Engineering Department of the Post Office was a leading light for technical developments, with Post Office Engineers and commissioned officer in the Royal Engineers,  Major T.F. Purves overseeing the provision of over 200 items of special telecommunications apparatus all modified to fit the needs of British soldiers in the trenches. From modified cavalry field radios to gun spotter’s field communication devices the ability for troops and officers to receive and deliver information up and down the chain of command made for a better equipped army, able to make decisions and react quickly to events.
                         </p>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" />
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" />
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
@@ -107,23 +107,25 @@ get_header(); ?>
                             The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunications would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communication equipment indicate the way in which evolution of telecommunications in this period went hand in hand with military technology
                         </p>
                         <div class="col-md-6">
-                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
-                            <figure class="wp-cation-text">
-                                <figcaption>Caption: IMAGE%203</figcaption>
+
+                            <figure>
+                                <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
+                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
-                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
-                            <figure class="wp-cation-text">
-                                <figcaption>Caption: IMAGE%203</figcaption>
+                            <figure>
+                                <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
+                                <figcaption class="wp-cation-text">Caption: IMAGE%2031234</figcaption>
                             </figure>
                         </div>
                         <p>
                             The development of the throat microphone also proved a significant advancement as it, of course, allowed pilots to use their aircraft telephones without using their hands. Captain B.S. Cohen’s October 1919 report into Aircraft Telephones refers to some of the engineering work carried out to develop aircraft telephones such as the ‘hands free’ kit,
                         </p>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%209.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%209.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             and in images from the report we see men operating a throat microphone as part of a kite balloon telephone.
@@ -134,9 +136,9 @@ get_header(); ?>
                         <p>
                             The role of communications and the importance of having reliable telecommunications in the First World War was of total, fundamental importance. Of course, front line telecommunications were of great significance, as transferring information and orders up and down the chain of command, and to and from headquarters to the front line, could mean the difference between success and failure. One important and well used method of transferring intelligence and operational updates in warfare was the portable morse code machine, used by the British army throughout the conflict and often in trench holes.
                         </p>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2010.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2010.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             The nature of telecommunications meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
@@ -150,8 +152,8 @@ get_header(); ?>
     <section class="scrollable-section active-section" data-section-title="HTML">
         <h2 class="sr-only">Some title</h2>
         <aside class="image-bg-fixed-height-2"></aside>
-        <figure class="wp-cation-text">
-            <figcaption>Caption: IMAGE%203</figcaption>
+        <figure>
+            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
         </figure>
     </section>
 
@@ -166,9 +168,9 @@ get_header(); ?>
                         <p>
                             The Engineering Department of the Post Office was tasked by the War Office to work on intercepting the wireless signals that were often used to navigate enemy aircraft, including the infamous ‘Zeppelins’ that killed over 500 people in Britain during the First World War. This fantastic map
                         </p>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2012.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2012.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             included in Sir William Slingo’s report on the Engineering Department’s work during the First World War indicates the routes of Zeppelins that took  part in the raid of 2nd and 3rd of May 1917. Upon the Engineering Department identifying the location of Enemy Aircraft this information would be wired to the Intelligence Department of the War Office immediately.  The signals were intercepted by the Engineering Department’s ‘Direction Finding Stations’ set up at Peterborough, Seaham Harbour, Westgate and, latterly, Falkirk in Scotland.
@@ -185,13 +187,13 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <div class="section-title">
                         <h2 class="sr-only">Some title</h2>
-                        <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="#">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="#">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
-                        <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="#">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="#">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
@@ -211,8 +213,8 @@ get_header(); ?>
 
     <section>
         <aside class="image-bg-fixed-height-3"></aside>
-        <figure class="wp-cation-text">
-            <figcaption>Caption: IMAGE%203</figcaption>
+        <figure>
+            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
         </figure>
         <div class="container-lf">
             <div class="row">
@@ -241,15 +243,15 @@ get_header(); ?>
                             Within The National Archives there are several references to the bravery and danger undertaken by the staff of the General Post Office’s Engineering Department who staffed these cable ships.
                         </p>
                         <div class="col-md-6">
-                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" />
-                            <figure class="wp-cation-text">
-                                <figcaption>Caption: IMAGE%203</figcaption>
+                            <figure>
+                                <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" />
+                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
-                            <img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" class="img-responsive full-width"/>
-                            <figure class="wp-cation-text">
-                                <figcaption>Caption: IMAGE%203</figcaption>
+                            <figure>
+                                <img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" class="img-responsive full-width"/>
+                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <p>
@@ -267,8 +269,8 @@ get_header(); ?>
     <section>
         <h2 class="sr-only">Some title</h2>
         <aside class="image-bg-fixed-height-4"></aside>
-        <figure class="wp-cation-text">
-            <figcaption>Caption: IMAGE%203</figcaption>
+        <figure>
+            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
         </figure>
     </section>
 
@@ -281,9 +283,9 @@ get_header(); ?>
                         <p>
                             This document from BT Archives interestingly states that it was a well-regarded opinion that the female ‘night telephonist’ was more adept at the job than her male counterpart. Once males and females worked alongside one another, this comparison was much more easily identifiable. Such a description acts to quash ideas that women were not capable of undertaking the same duties as men, because of certain characteristics that they were perceived to possess. For example, women were deemed “too emotional” for certain tasks (including having the right to vote) yet it is this sex who is described, in this example, as responding more appropriately when under extreme pressure.
                         </p>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2018.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2018.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -300,9 +302,9 @@ get_header(); ?>
                         <p>
                             Within Sir William Slingo’s report a fascinating and vivid graph exists appearing (at first glance)  to suggest that as the number of workmen in employment, below the rank of inspector, fell during the war, the number of female assistants rose above them. Looking closely at the graph axes indicates that this was not the case (male staff being measured in thousands and females in hundreds) but it interesting to note that the very existence of the graph implies that the female experience and contribution to work at the Engineering Department was worthy of note and comment at this time
                         </p>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2019.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2019.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             As the above information suggests, and the array of vivid and interesting documentation and images confirm, the Engineering Department of the General Post Office (the historical antecedent of British Telecom) played a major role during the First World War supplying the British military services and the civilian populace of Great Britain with the crucial means of communication, whilst playing a significant part in technological innovation. The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office, held at BT Archives in High Holborn, and also throughout the vast array of First World War material held at The National Archives in Kew.
@@ -312,9 +314,9 @@ get_header(); ?>
                                 <p>The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office</p>
                             </blockquote>
                         </aside>
-                        <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2021.jpg" alt="">
-                        <figure class="wp-cation-text">
-                            <figcaption>Caption: IMAGE%203</figcaption>
+                        <figure>
+                            <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2021.jpg" alt="">
+                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -325,8 +327,8 @@ get_header(); ?>
     <section>
         <h2 class="sr-only"><a href="#"Some title</a></h2>
         <aside class="image-bg-fixed-height-5"></aside>
-        <figure class="wp-cation-text">
-            <figcaption>Caption: IMAGE%203</figcaption>
+        <figure>
+            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
         </figure>
     </section>
 </main>
