@@ -58,7 +58,7 @@ get_header(); ?>
             </div>
         </aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
         <div class="container-lf">
             <div class="row">
@@ -80,17 +80,6 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                     <div class="section-title">
-                        <figure>
-                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%203.jpg">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%202.jpg" />
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
-                        </figure>
-                        <p>
-                            For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France. The letter, dated 15th September 1916 and addressed to The Postmaster General, thanked the officers in the department for the great assistance provided in connection with ‘Sound Ranging’.
-                        </p>
                         <aside class="floated-quote">
                             <blockquote>
                                 <p>
@@ -99,25 +88,25 @@ get_header(); ?>
                             </blockquote>
                         </aside>
                         <p>
-                            Sound Ranging is the name given to the application of physics via equipment - such as hot wire microphones - to determine the location of enemy artillery. Sound ranging can also be used to direct artillery guns at enemy coordinates. TNA houses a selection of documents that demonstrate the work being completed into sound ranging at this time. Photographs from the Ministry of Aviation picture apparatus used in conducting experiments into the crucial practice of sound ranging in order to develop this technology.
+                            Sound Ranging is the name given to the applicaption of physics via equipment - such as hot wire microphones - to determine the locaption of enemy artillery. Sound ranging can also be used to direct artillery guns at enemy coordinates. TNA houses a selection of documents that demonstrate the work being completed into sound ranging at this time. Photographs from the Ministry of Aviation picture apparatus used in conducting experiments into the crucial practice of sound ranging in order to develop this technology.
                         </p>
                         <p>
                             Furthermore, records belonging to the Geographical Section of the General Staff reveal some wonderful illustrative diagrams. The complexity of the diagram series possibly indicates the importance of developing more accurate and scientific Sound Ranging apparatus. That the Engineering Department of the Post Office were contributing to these experiments aptly indicates the crucial role the department was playing in the British war effort.
                         </p>
                         <p>
-                            The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunications would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communication equipment indicate the way in which evolution of telecommunications in this period went hand in hand with military technology
+                            The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunicaptions would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communicaption equipment indicate the way in which evolution of telecommunicaptions in this period went hand in hand with military technology
                         </p>
                         <div class="col-md-6">
 
                             <figure>
                                 <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
-                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                                <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
                             <figure>
                                 <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
-                                <figcaption class="wp-cation-text">Caption: IMAGE%2031234</figcaption>
+                                <figcaption class="wp-caption-text">Caption: IMAGE%2031234</figcaption>
                             </figure>
                         </div>
                         <p>
@@ -126,23 +115,23 @@ get_header(); ?>
 
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%209.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
                             and in images from the report we see men operating a throat microphone as part of a kite balloon telephone.
                         </p>
                         <p>
-                            It is easy to see that both the geography of warfare and the need for quick-fire communication spurred on technological advancements that were adaptable on and off the battlefield.
+                            It is easy to see that both the geography of warfare and the need for quick-fire communicaption spurred on technological advancements that were adaptable on and off the battlefield.
                         </p>
                         <p>
-                            The role of communications and the importance of having reliable telecommunications in the First World War was of total, fundamental importance. Of course, front line telecommunications were of great significance, as transferring information and orders up and down the chain of command, and to and from headquarters to the front line, could mean the difference between success and failure. One important and well used method of transferring intelligence and operational updates in warfare was the portable morse code machine, used by the British army throughout the conflict and often in trench holes.
+                            The role of communicaptions and the importance of having reliable telecommunicaptions in the First World War was of total, fundamental importance. Of course, front line telecommunicaptions were of great significance, as transferring information and orders up and down the chain of command, and to and from headquarters to the front line, could mean the difference between success and failure. One important and well used method of transferring intelligence and operational updates in warfare was the portable morse code machine, used by the British army throughout the conflict and often in trench holes.
                         </p>
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2010.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
-                            The nature of telecommunications meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
+                            The nature of telecommunicaptions meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
                         </p>
                     </div>
                 </div>
@@ -154,7 +143,7 @@ get_header(); ?>
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-2"></aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
     </section>
 
@@ -171,10 +160,10 @@ get_header(); ?>
                         </p>
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2012.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
-                            included in Sir William Slingo’s report on the Engineering Department’s work during the First World War indicates the routes of Zeppelins that took  part in the raid of 2nd and 3rd of May 1917. Upon the Engineering Department identifying the location of Enemy Aircraft this information would be wired to the Intelligence Department of the War Office immediately.  The signals were intercepted by the Engineering Department’s ‘Direction Finding Stations’ set up at Peterborough, Seaham Harbour, Westgate and, latterly, Falkirk in Scotland.
+                            included in Sir William Slingo’s report on the Engineering Department’s work during the First World War indicates the routes of Zeppelins that took  part in the raid of 2nd and 3rd of May 1917. Upon the Engineering Department identifying the locaption of Enemy Aircraft this information would be wired to the Intelligence Department of the War Office immediately.  The signals were intercepted by the Engineering Department’s ‘Direction Finding Stations’ set up at Peterborough, Seaham Harbour, Westgate and, latterly, Falkirk in Scotland.
                         </p>
                     </div>
                 </div>
@@ -190,14 +179,14 @@ get_header(); ?>
                         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <figure>
                             <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.2.jpg" alt="#">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <figure>
                             <img class="full-width img-responsive" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2013.1.jpg" alt="#">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
-                            The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communications would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communications in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communications would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communications, in an attempt to hinder the progress of any invading army.
+                            The role of the Engineering Department of the Post Office in keeping Britain as safe as possible during a time of national crisis cannot be overstated. This wonderful map from a Ministry of Munitions file indicates, in red, the areas of the country where communicaptions would be suspended in times of an emergency, i.e. in the event the German army successfully landed in Great Britain. The wider document, which the map belongs to, states that in the event of invasion responsibility for communicaptions in the country would be ceded from the Engineering Department to the Army Signal Service. Interestingly, under emergency protocols all communicaptions would be suspended in Ireland if Britain was successfully invaded. In Great Britain itself, the map indicates that the East Coast of the country, from Dundee to the south coast would be without communicaptions, in an attempt to hinder the progress of any invading army.
                         </p>
                         <aside class="floated-quote">
                             <blockquote>
@@ -215,7 +204,7 @@ get_header(); ?>
     <section>
         <aside class="image-bg-fixed-height-3"></aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
         <div class="container-lf">
             <div class="row">
@@ -223,7 +212,7 @@ get_header(); ?>
                     <div class="section-title">
                         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                         <p>
-                            Perhaps one of the more stirring and action-packed roles of the Engineering Department were the administration and staffing of Cable Ships throughout the First World War. These ships were responsible for laying the cables required for trans-channel telecommunications to work. Such was the prominence of the cable ships of the Engineering Department, they even played a major part on the day war was declared. With war imminently due to be declared between the United Kingdom and Germany, according to Sir William Slingo’s report ‘the cables connecting England and Germany were disconnected on this side on the evening of the 4th and before War was declared, but on receipt of remonstrance from Germany, communication was temporarily restored’. The Engineering Department duly cut the cable again when war was announced officially just hours later.
+                            Perhaps one of the more stirring and action-packed roles of the Engineering Department were the administration and staffing of Cable Ships throughout the First World War. These ships were responsible for laying the cables required for trans-channel telecommunicaptions to work. Such was the prominence of the cable ships of the Engineering Department, they even played a major part on the day war was declared. With war imminently due to be declared between the United Kingdom and Germany, according to Sir William Slingo’s report ‘the cables connecting England and Germany were disconnected on this side on the evening of the 4th and before War was declared, but on receipt of remonstrance from Germany, communicaption was temporarily restored’. The Engineering Department duly cut the cable again when war was announced officially just hours later.
                         </p>
                         <p>
                             The ship in this photograph is the ‘Monarch’ one of the Engineering Department’s cable ships from the First World War that was leased to the Grand Fleet of the Royal Navy and based at Scapa Flow. It struck a mine on 8th September 1915 whilst proceeding to repair the cable between Beachy Head and Havre sinking almost immediately and with the loss of three lives.
@@ -246,13 +235,13 @@ get_header(); ?>
                         <div class="col-md-6">
                             <figure>
                                 <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.1.jpg" />
-                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                                <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
                             <figure>
                                 <img src="/wp-content/themes/tna-base-long-form/images/demo/Image 15.2.jpg" class="img-responsive full-width"/>
-                                <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                                <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                             </figure>
                         </div>
                         <p>
@@ -271,7 +260,7 @@ get_header(); ?>
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-4"></aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
     </section>
 
@@ -286,7 +275,7 @@ get_header(); ?>
                         </p>
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2018.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -305,10 +294,10 @@ get_header(); ?>
                         </p>
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2019.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                         <p>
-                            As the above information suggests, and the array of vivid and interesting documentation and images confirm, the Engineering Department of the General Post Office (the historical antecedent of British Telecom) played a major role during the First World War supplying the British military services and the civilian populace of Great Britain with the crucial means of communication, whilst playing a significant part in technological innovation. The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office, held at BT Archives in High Holborn, and also throughout the vast array of First World War material held at The National Archives in Kew.
+                            As the above information suggests, and the array of vivid and interesting documentation and images confirm, the Engineering Department of the General Post Office (the historical antecedent of British Telecom) played a major role during the First World War supplying the British military services and the civilian populace of Great Britain with the crucial means of communicaption, whilst playing a significant part in technological innovation. The legacy of this work lives on in the holdings and archival material relating to the Engineering Department of the General Post Office, held at BT Archives in High Holborn, and also throughout the vast array of First World War material held at The National Archives in Kew.
                         </p>
                         <aside class="floated-quote">
                             <blockquote>
@@ -317,7 +306,7 @@ get_header(); ?>
                         </aside>
                         <figure>
                             <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2021.jpg" alt="">
-                            <figcaption class="wp-cation-text">Caption: IMAGE%203</figcaption>
+                            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -329,7 +318,7 @@ get_header(); ?>
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-5"></aside>
         <figure>
-            <figcaption class="wp-cation-text">Caption: IMAGE%2031234567</figcaption>
+            <figcaption class="wp-caption-text">Caption: IMAGE%2031234567</figcaption>
         </figure>
     </section>
 </main>

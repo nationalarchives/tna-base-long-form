@@ -36,4 +36,14 @@ function tna_child_styles() {
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
 
 
-add_image_size( 'custom-size', 220, 180, true );
+function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
+    $src  = wp_get_attachment_image_src( $id, $size, false );
+    $html5 = "<figure>";
+    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
+    if ($caption) {
+        $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
+    }
+    $html5 .= "</figure>";
+    return $html5;
+}
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
