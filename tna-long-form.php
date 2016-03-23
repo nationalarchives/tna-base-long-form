@@ -74,7 +74,7 @@ get_header(); ?>
     <p>Sorry, this page does not exist</p>
 <?php endif; ?>
 
-    <section class="scrollable-section active-section" data-section-title="What is this">
+    <!--<section class="scrollable-section active-section" data-section-title="What is this">
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -304,7 +304,7 @@ get_header(); ?>
         <figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%2031234567</figcaption>
         </figure>
-    </section>
+    </section>-->
 </main>
 
 <?php get_footer(); ?>

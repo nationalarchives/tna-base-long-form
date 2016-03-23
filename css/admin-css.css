@@ -1,0 +1,15 @@
+/*content: "\f161";*/
+
+i.mce-i-icon {
+    /*font: normal 20px/1 '\f161';*/
+    padding: 0;
+    vertical-align: top;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: -2px;
+    padding-right: 2px;
+    content: '\f161';
+    color: red;
+    content: "\f161";
+}
