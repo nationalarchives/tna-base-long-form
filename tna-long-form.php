@@ -80,22 +80,6 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
                     <div class="section-title">
-                        <aside class="floated-quote">
-                            <blockquote>
-                                <p>
-                                For example, in his report on the work of the Engineering Department of the Post Office during the First World War, Engineer-in-Chief Sir William Slingo included a letter from General Douglas Haig, Commanding-in-Chief, British Armies in France.
-                                </p>
-                            </blockquote>
-                        </aside>
-                        <p>
-                            Sound Ranging is the name given to the applicaption of physics via equipment - such as hot wire microphones - to determine the locaption of enemy artillery. Sound ranging can also be used to direct artillery guns at enemy coordinates. TNA houses a selection of documents that demonstrate the work being completed into sound ranging at this time. Photographs from the Ministry of Aviation picture apparatus used in conducting experiments into the crucial practice of sound ranging in order to develop this technology.
-                        </p>
-                        <p>
-                            Furthermore, records belonging to the Geographical Section of the General Staff reveal some wonderful illustrative diagrams. The complexity of the diagram series possibly indicates the importance of developing more accurate and scientific Sound Ranging apparatus. That the Engineering Department of the Post Office were contributing to these experiments aptly indicates the crucial role the department was playing in the British war effort.
-                        </p>
-                        <p>
-                            The First World War is often highlighted as the advent of mechanised warfare. Technological advances to weaponry required the development of apparatus such as that used for Sound Ranging in order to provide the men and women involved with as much chance of survival and success in the face of this new warfare. Of course, the First World War also saw the creation of the Royal Air Force, born of a merger of the British Army’s Royal Flying Corps and the Royal Naval Air Service. The birth of war in the air meant that telecommunicaptions would have to evolve in order to keep intrepid pilots in the loop with intelligence gathering and decision making on the ground. Magnificent images taken from a 1918 handbook of airborne communicaption equipment indicate the way in which evolution of telecommunicaptions in this period went hand in hand with military technology
-                        </p>
                         <div class="col-md-6">
 
                             <figure>
