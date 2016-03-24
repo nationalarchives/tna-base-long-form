@@ -1,7 +1,6 @@
-/*content: "\f161";*/
-
-i.mce-i-icon {
-    /*font: normal 20px/1 '\f161';*/
+i.mce-i-icon:before {
+    font: normal 21px/1 dashicons;
+    content: "\f161";
     padding: 0;
     vertical-align: top;
     speak: none;
@@ -9,7 +8,4 @@ i.mce-i-icon {
     -moz-osx-font-smoothing: grayscale;
     margin-left: -2px;
     padding-right: 2px;
-    content: '\f161';
-    color: red;
-    content: "\f161";
 }

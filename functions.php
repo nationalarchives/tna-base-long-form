@@ -39,7 +39,7 @@ function admin_style() {
     wp_enqueue_style( 'admin-tna-child-styles', get_stylesheet_directory_uri() . '/css/admin-css.css', array(), '0.1', 'all' );
     //wp_enqueue_style( 'admin-tna-child-styles' );
 }
-add_action( 'admin_enqueue_scripts', 'admin_style' );
+add_action( 'admin_print_styles', 'admin_style' );
 
 function insert_image_with_caption($html, $id, $caption, $title, $align, $url, $size, $alt) {
     $src  = wp_get_attachment_image_src( $id, $size, false );
@@ -56,7 +56,7 @@ add_filter( 'image_send_to_editor', 'insert_image_with_caption', 10, 9 );
 
 
 // Hooks your functions into the correct filters
-function my_add_mce_button() {
+function image_align() {
     // check user permissions
     if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) ) {
         return;
@@ -67,17 +67,17 @@ function my_add_mce_button() {
         add_filter( 'mce_buttons', 'my_register_mce_button' );
     }
 }
-add_action('admin_head', 'my_add_mce_button');
+add_action('admin_head', 'image_align');
 
 // Declare script for new button
 function my_add_tinymce_plugin( $plugin_array ) {
-    $plugin_array['my_mce_button'] = 'http://tna-base-dev/wp-content/themes/tna-base-long-form/js/mce-button.js';
+    $plugin_array['image_align'] = 'http://tna-base-dev/wp-content/themes/tna-base-long-form/js/mce-button.js';
     return $plugin_array;
 }
 
 // Register new button in the editor
 function my_register_mce_button( $buttons ) {
-    array_push( $buttons, 'my_mce_button' );
+    array_push( $buttons, 'image_align' );
     return $buttons;
 }
 

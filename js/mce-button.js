@@ -3,10 +3,10 @@
  */
 
 (function() {
-    tinymce.PluginManager.add('my_mce_button', function( editor, url ) {
-        editor.addButton('my_mce_button', {
+    tinymce.PluginManager.add('image_align', function( editor, url ) {
+        editor.addButton('image_align', {
             title: 'My test button',
-            icon: 'icon dashicons-wordpress',
+            icon: 'icon dashicons-wordpress-alt',
             onclick: function() {
                 editor.insertContent('Finally done it');
             }
