@@ -37,7 +37,6 @@ add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
 
 function admin_style() {
     wp_enqueue_style( 'admin-tna-child-styles', get_stylesheet_directory_uri() . '/css/admin-css.css', array(), '0.1', 'all' );
-    //wp_enqueue_style( 'admin-tna-child-styles' );
 }
 add_action( 'admin_print_styles', 'admin_style' );
 
