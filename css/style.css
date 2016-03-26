@@ -140,11 +140,6 @@ section {
 	margin: auto;
 }
 
-.section-title {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
 .full-width {
 	margin-top: 15px;
 	position: relative;
@@ -154,16 +149,7 @@ section {
 	border: 1px solid #ddd;
 }
 
-.full-width img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	min-width: 50%;
-	min-height: 50%;
-}
+
 
 /*--------------------
 4. Components
@@ -507,3 +493,15 @@ figure p {
 	background-color: #008484;
 	border: none;
 }
+
+/*
+.alignright {
+	float: right;
+	width: 50%;
+}
+
+.alignleft {
+	float: left;
+	width: 50%;
+}*/
+
