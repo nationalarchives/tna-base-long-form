@@ -40,19 +40,6 @@ function admin_style() {
 }
 add_action( 'admin_print_styles', 'admin_style' );
 
-function insert_image_with_caption($html, $id, $caption, $title, $align, $url, $size, $alt) {
-    $src  = wp_get_attachment_image_src( $id, $size, false );
-    $html5 = "<figure>";
-    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
-    if ($caption) {
-        $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
-    }
-    $html5 .= "</figure>";
-    return $html5;
-}
-add_filter( 'image_send_to_editor', 'insert_image_with_caption', 10, 9 );
-
-
 
 // Hooks your functions into the correct filters
 function image_align() {
@@ -70,7 +57,7 @@ add_action('admin_head', 'image_align');
 
 // Declare script for new button
 function my_add_tinymce_plugin( $plugin_array ) {
-    $plugin_array['image_align'] = 'http://tna-base-dev/wp-content/themes/tna-base-long-form/js/mce-button.js';
+    $plugin_array['image_align'] = make_path_relative().'/wp-content/themes/tna-base-long-form/js/mce-button.js';
     return $plugin_array;
 }
 
@@ -79,6 +66,45 @@ function my_register_mce_button( $buttons ) {
     array_push( $buttons, 'image_align' );
     return $buttons;
 }
+
+
+function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
+    $src  = wp_get_attachment_image_src( $id, $size, false );
+    $html5 = "<figure>";
+    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
+    if ($caption) {
+        $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
+    }
+    $html5 .= "</figure>";
+    return $html5;
+}
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
+
+/*to be worked on later*/
+
+/*function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
+    $src  = wp_get_attachment_image_src( $id, $size, false );
+    $html = get_image_tag($id, '', $title, $align, $size);
+    if ($size) {
+        $html5 = "<div class='col-md-6'>";
+    }
+    $html5 = "<figure>";
+    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
+    if ($caption) {
+        $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
+    }
+    $html5 .= "</figure>";
+    if ($size) {
+        $html5 .= "</div>&nbsp;";
+    }
+    return $html5;
+}
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );*/
+
+/*to be worked on later*/
+
+
+
 
 
 

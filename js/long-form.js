@@ -51,3 +51,9 @@ $(window).scroll(function(){
         $("span.cd-dot").addClass("active-dot", 1000);
     }
 });
+
+
+//aligns 2 images side by side.
+$(document).ready(function() {
+    $('figure').has('img.alignright').wrap('<div class="col-md-6"></div>');
+});
