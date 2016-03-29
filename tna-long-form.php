@@ -54,7 +54,7 @@ get_header(); ?>
                 <div class="intro-text">
                     <h1 class="intro-heading"><?php the_title(); ?></h1>
                     <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                    <h3 class="sub-heading">A collaborative partnership with BT Archives</h3>
+                    <h3 class="sub-heading">In association with<br> BT Archives</h3>
                 </div>
             </div>
         </aside>
@@ -71,58 +71,41 @@ get_header(); ?>
     <p>Sorry, this page does not exist</p>
 <?php endif; ?>
 
-    <section class="scrollable-section active-section" data-section-title="What is this">
-        <div class="container-lf">
-            <div class="row">
-                <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
-                <div class="col-md-6">
-                    <figure>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 7.jpg" />
-                        <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
-                    </figure>
-                </div>
-                <div class="col-md-6">
-                    <figure>
-                        <img class="img-responsive full-width" src="/wp-content/themes/tna-base-long-form/images/demo/image 8.jpg" />
-                        <figcaption class="wp-caption-text">Caption: IMAGE%2031234</figcaption>
-                    </figure>
-                </div>
-                <p>
-                    The development of the throat microphone also proved a significant advancement as it, of course, allowed pilots to use their aircraft telephones without using their hands. Captain B.S. Cohen’s October 1919 report into Aircraft Telephones refers to some of the engineering work carried out to develop aircraft telephones such as the ‘hands free’ kit,
-                </p>
-                <figure>
-                    <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%209.jpg" alt="">
-                    <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
-                </figure>
-                <p>
-                    and in images from the report we see men operating a throat microphone as part of a kite balloon telephone.
-                </p>
-                <p>
-                    It is easy to see that both the geography of warfare and the need for quick-fire communicaption spurred on technological advancements that were adaptable on and off the battlefield.
-                </p>
-                <p>
-                    The role of communicaptions and the importance of having reliable telecommunicaptions in the First World War was of total, fundamental importance. Of course, front line telecommunicaptions were of great significance, as transferring information and orders up and down the chain of command, and to and from headquarters to the front line, could mean the difference between success and failure. One important and well used method of transferring intelligence and operational updates in warfare was the portable morse code machine, used by the British army throughout the conflict and often in trench holes.
-                </p>
-                <figure>
-                    <img class="full-width" src="/wp-content/themes/tna-base-long-form/images/demo/Image%2010.jpg" alt="">
-                    <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
-                </figure>
-                <p>
-                    The nature of telecommunicaptions meant that it was not only on the Western Front but in other theatres that the importance of the Engineering Department’s work came into sharp focus. The use by the German government of Rigid Inflatable Airships or ‘Zeppelins’, so named after the German pioneer of the airship Count Ferdinand von Zeppelin, was a cause for acute fear throughout mainland Britain during the First World War. Using these airships as bombers and scouts the German Army and Navy conducted many raids on mainland Britain - dropping bombs wherever possible to damage British infrastructure.
-                </p>
-            </div>
-        </div>
-    </section>
+        <?php $args = array(
+                'post_type'      => 'post',
+                'posts_per_page' => - 1,
+                'orderby'        => 'menu_order'
+                );
+            $the_query = new WP_Query ( $args );
 
-    <section class="scrollable-section active-section" data-section-title="HTML">
+            if ( $the_query->have_posts() ) :
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+        ?>
+            <section class="scrollable-section active-section" data-section-title="What is this">
+                <?php if (has_post_thumbnail( $post->ID ) ):  ?>
+                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                    <aside class="image-bg-fixed-height-2" style="background-image: url('<?php echo $image[0]; ?>')">
+                    </aside>
+                <?php endif; ?>
+                <div class="container-lf">
+                    <div class="row">
+                        <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+            </section>
+
+        <?php endwhile; endif; wp_reset_postdata(); ?>
+
+    <!--<section class="scrollable-section active-section" data-section-title="HTML">
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-2"></aside>
         <figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -144,9 +127,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -174,9 +157,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <aside class="image-bg-fixed-height-3"></aside>
         <figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
@@ -196,9 +179,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -229,17 +212,17 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-4"></aside>
         <figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
         </figure>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -256,9 +239,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <div class="container-lf">
             <div class="row">
                 <div class="col-lg-12">
@@ -287,15 +270,15 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section>
+    <!--<section>
         <h2><a href="#" class="sr-only sr-only-focusable">Some title</a></h2>
         <aside class="image-bg-fixed-height-5"></aside>
         <figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%2031234567</figcaption>
         </figure>
-    </section>
+    </section>-->
 </main>
 
 <?php get_footer(); ?>

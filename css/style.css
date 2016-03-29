@@ -269,9 +269,11 @@ figure p {
 
 
 .image-bg-fixed-height-2 {
-	background: url(../images/demo/zepplin.jpg) no-repeat 50% 75% scroll;
 	height: 1000px;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 75%;
+	background-attachment: scroll;
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
