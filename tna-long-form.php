@@ -6,7 +6,8 @@ get_header(); ?>
 <main role="main">
     <?php global $post ?>
     <section>
-        <div id="cd-vertical-nav">
+        <!--This will be the navigation section-->
+        <!--<div id="cd-vertical-nav">
             <ul>
                 <li>
                     <a href="#section1" data-title="Technology and the First World War" class="hover">
@@ -45,7 +46,7 @@ get_header(); ?>
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>-->
     </section>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <section class="scrollable-section active-section" data-section-title="<?php echo $post->post_name; ?>" id="<?php echo $post->post_name; ?>">
