@@ -68,9 +68,6 @@ get_header(); ?>
         }
         ?>
         <?php endif; ?>
-        <!--<figure>
-            <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
-        </figure>-->
         <div class="container-lf">
             <div class="row">
                  <?php the_content(); ?>
