@@ -105,6 +105,18 @@ add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );*/
 
 
 
+/* Change the name of posts */
+function post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Long Form Sections';
+    $submenu['edit.php'][5][0] = 'Sections';
+    $submenu['edit.php'][10][0] = 'Add Sections';
+    $submenu['edit.php'][16][0] = 'Section Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'post_label' );
+
 
 
 

@@ -50,7 +50,9 @@ get_header(); ?>
     </section>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <section class="scrollable-section active-section" data-section-title="<?php echo $post->post_name; ?>" id="<?php echo $post->post_name; ?>">
-        <aside class="image-bg-fixed-height">
+    <?php if (has_post_thumbnail( $post->ID ) ):  ?>
+        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+        <aside class="lf-image-bg-fixed-height" style="background-image: url('<?php echo $image[0]; ?>')">
             <div class="container-fluid">
                 <div class="intro-text">
                     <h1 class="intro-heading"><?php the_title(); ?></h1>
@@ -59,9 +61,16 @@ get_header(); ?>
                 </div>
             </div>
         </aside>
-        <figure>
+        <?php
+        $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
+        if(!empty($get_description)){
+            echo '<figcaption class="wp-caption-text">Caption: ' . $get_description . '</figcaption>';
+        }
+        ?>
+        <?php endif; ?>
+        <!--<figure>
             <figcaption class="wp-caption-text">Caption: IMAGE%203</figcaption>
-        </figure>
+        </figure>-->
         <div class="container-lf">
             <div class="row">
                  <?php the_content(); ?>

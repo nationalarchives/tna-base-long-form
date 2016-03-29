@@ -246,19 +246,16 @@ figure p {
 	text-align: center;
 }
 
-
-
-.image-bg-fluid-height {
-	background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat center center scroll;
-}
-
-.image-bg-fixed-height {
-	background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat center center scroll;
+.lf-image-bg-fixed-height {
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
 }
 @media (max-width: 768px) {
-	.image-bg-fixed-height {
-		background: url(../images/demo/TCE_361_ARC03005.jpg) no-repeat 41% 75% scroll;
+	.lf-image-bg-fixed-height {
+		background-position: 41% 75%;
+		background-attachment: scroll;
 		height: 477px;
 		background-size: cover;
 	}
