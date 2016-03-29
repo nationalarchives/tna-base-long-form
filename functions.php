@@ -68,38 +68,24 @@ function my_register_mce_button( $buttons ) {
 }
 
 
-function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
-    $src  = wp_get_attachment_image_src( $id, $size, false );
-    $html5 = "<figure>";
-    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
-    if ($caption) {
-        $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
-    }
-    $html5 .= "</figure>";
-    return $html5;
-}
-add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
-
-/*to be worked on later*/
-
-/*function html5_insert_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
+function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
     $src  = wp_get_attachment_image_src( $id, $size, false );
     $html = get_image_tag($id, '', $title, $align, $size);
-    if ($size) {
+    if ($size == "medium") {
         $html5 = "<div class='col-md-6'>";
     }
-    $html5 = "<figure>";
+    $html5 .= "<figure>";
     $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
     if ($caption) {
         $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
     }
     $html5 .= "</figure>";
-    if ($size) {
+    if ($size == "medium") {
         $html5 .= "</div>&nbsp;";
     }
     return $html5;
 }
-add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );*/
+add_filter( 'image_send_to_editor', 'align_image', 10, 9 );
 
 /*to be worked on later*/
 

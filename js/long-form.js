@@ -54,7 +54,7 @@ $(window).scroll(function(){
 
 
 //aligns 2 images side by side.
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('figure').has('img.alignright').wrap('<div class="col-md-6"></div>');
     $('figure').has('img.alignleft').wrap('<div class="col-md-6"></div>');
-});
+});*/
