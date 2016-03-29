@@ -86,6 +86,12 @@ get_header(); ?>
                 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
                     <aside class="image-bg-fixed-height-2" style="background-image: url('<?php echo $image[0]; ?>')">
                     </aside>
+                <?php
+                    $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
+                    if(!empty($get_description)){
+                        echo '<figcaption class="wp-caption-text">Caption: ' . $get_description . '</figcaption>';
+                    }
+                ?>
                 <?php endif; ?>
                 <div class="container-lf">
                     <div class="row">
