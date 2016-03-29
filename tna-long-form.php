@@ -54,6 +54,7 @@ get_header(); ?>
                 <div class="intro-text">
                     <h1 class="intro-heading"><?php the_title(); ?></h1>
                     <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
+                    <h3 class="sub-heading">A collaborative partnership with BT Archives</h3>
                 </div>
             </div>
         </aside>

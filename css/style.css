@@ -125,6 +125,24 @@ aside {
 	}
 }
 
+.intro-text .sub-heading {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 48px;
+	margin-bottom: 25px;
+	word-spacing: 10px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+	.intro-text .sub-heading {
+		font-size: 3em;
+		line-height: 1.2em;
+		letter-spacing: .5px;
+	}
+}
+
 
 
 /*--------------------
