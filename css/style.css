@@ -381,6 +381,10 @@ figure p {
 	background-color: transparent;
 }
 
+#cd-vertical-nav > ul {
+	position: relative;
+}
+
 .cd-label {
 	background-color: #999;
 }

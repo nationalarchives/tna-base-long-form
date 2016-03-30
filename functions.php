@@ -1,4 +1,5 @@
 <?php
+
 // Edit as required
 function tnatheme_globals() {
     global $pre_path;
@@ -71,7 +72,7 @@ function my_register_mce_button( $buttons ) {
 function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
     $src  = wp_get_attachment_image_src( $id, $size, false );
     $html = get_image_tag($id, '', $title, $align, $size);
-    if ($size == "medium") {
+    if ($size === "medium") {
         $html5 = "<div class='col-md-6'>";
     }
     $html5 .= "<figure>";
@@ -80,7 +81,7 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
         $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
     }
     $html5 .= "</figure>";
-    if ($size == "medium") {
+    if ($size === "medium") {
         $html5 .= "</div>&nbsp;";
     }
     return $html5;
@@ -103,6 +104,9 @@ function post_label() {
 }
 add_action( 'admin_menu', 'post_label' );
 
+
+
+update_option( 'medium_size_w', 850 );
 
 
 
