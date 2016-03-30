@@ -1,60 +1,44 @@
 /**
  * Created by pchotrani on 17/03/16.
  */
-/*
-function orient() {
-    if (window.orientation == 0 || window.orientation == 180) {
-        $("body").attr("class", "portrait");
-        orientation = 'portrait';
 
-        return false;
-    }
-    else if (window.orientation == 90 || window.orientation == -90) {
-        $("body").attr("class", "landscape");
-        orientation = 'landscape';
+jQuery(document).ready(function($){
+    var contentSections = $('.cd-section'),
+        navigationItems = $('#cd-vertical-nav a');
 
-        return false;
-    }
-}
+    updateNavigation();
+    $(window).on('scroll', function(){
+        updateNavigation();
+    });
 
-/!* Call orientation function on page load *!/
-$(function(){
-    orient($("span.cd-dot").removeClass("active-dot"));
-});
-
-/!* Call orientation function on orientation change *!/
-$(window).bind( 'orientationchange', function(e){
-    orient();
-});*/
+    //smooth scroll to the section
+    navigationItems.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+    //smooth scroll to second section
+    $('.cd-scroll-down').on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
 
 
-$(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $("span.cd-label").css("opacity", 1 - scroll / 400);
-
-    //When it goes past the header.
-    if (scroll >= 400 ) {
-        $("span.cd-dot").removeClass("active-dot", 1000);
-        $("span.cd-dot, span.cd-label").hover(
-            function(){
-                $('span.cd-dot').addClass('active-dot')
-                $('span.cd-label').addClass('active')
-            },
-            function(){
-                $('span.cd-dot').removeClass('active-dot')
-                $('span.cd-label').removeClass('active')
+    function updateNavigation() {
+        contentSections.each(function(){
+            $this = $(this);
+            var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+            if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+                navigationItems.eq(activeSection).addClass('is-selected');
+            }else {
+                navigationItems.eq(activeSection).removeClass('is-selected');
             }
-        )
+        });
     }
-    //When going back to the top.
-    else if ( scroll < 400 ) {
-        $("span.cd-dot").addClass("active-dot", 1000);
+
+    function smoothScroll(target) {
+        $('body,html').animate(
+            {'scrollTop':target.offset().top},
+            600
+        );
     }
 });
-
-
-//aligns 2 images side by side.
-/*$(document).ready(function() {
-    $('figure').has('img.alignright').wrap('<div class="col-md-6"></div>');
-    $('figure').has('img.alignleft').wrap('<div class="col-md-6"></div>');
-});*/
