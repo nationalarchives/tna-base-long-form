@@ -42,7 +42,7 @@ get_header(); ?>
                 <div class="intro-text">
                     <h1 class="intro-heading"><?php the_title(); ?></h1>
                     <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                    <h3 class="sub-heading">In association with<br> BT Archives</h3>
+                    <p style="color: #FFFFFF;">In association with BT Archives</p>
                 </div>
             </div>
         </aside>
@@ -55,7 +55,8 @@ get_header(); ?>
         <?php endif; ?>
         <div class="container-lf">
             <div class="row">
-                 <?php echo make_path_relative(get_the_content()); ?>
+                <?php $the_content = make_path_relative(apply_filters( 'the_content', get_the_content()));
+                    echo make_path_relative(get_the_content()); ?>
             </div>
         </div>
     </section>
@@ -90,7 +91,8 @@ get_header(); ?>
                 <div class="container-lf">
                     <div class="row">
                         <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                        <?php echo make_path_relative(get_the_content()); ?>
+                        <?php $the_content = make_path_relative(apply_filters( 'the_content', get_the_content()));
+                             echo $the_content; ?>
                     </div>
                 </div>
             </section>
