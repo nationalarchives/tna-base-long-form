@@ -6,18 +6,18 @@ function tnatheme_globals() {
     if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
-            'Commercial opportunities' => '/'
+            'BT Archives' => '/btarchives'
         );
     } else {
         $pre_crumbs = array(
-            'About us' => '/about/',
-            'Commercial opportunities' => '/about/commercial-opportunities/'
+            'BT Archives' => '/btarchives/'
         );
-        $pre_path = '/about/commercial-opportunities';
+        $pre_path = '';
     }
 }
 // For live environment
-// tnatheme_globals();
+tnatheme_globals();
+
 function dequeue_parent_style() {
     wp_dequeue_style('tna-styles');
     wp_deregister_style('tna-styles');

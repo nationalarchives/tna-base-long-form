@@ -52,7 +52,7 @@ get_header(); ?>
     <section class="scrollable-section active-section" data-section-title="<?php echo $post->post_name; ?>" id="<?php echo $post->post_name; ?>">
     <?php if (has_post_thumbnail( $post->ID ) ):  ?>
         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-        <aside class="lf-image-bg-fixed-height" style="background-image: url('<?php echo $image[0]; ?>')">
+        <aside class="lf-image-bg-fixed-height" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
             <div class="container-fluid">
                 <div class="intro-text">
                     <h1 class="intro-heading"><?php the_title(); ?></h1>
@@ -70,7 +70,7 @@ get_header(); ?>
         <?php endif; ?>
         <div class="container-lf">
             <div class="row">
-                 <?php the_content(); ?>
+                 <?php echo make_path_relative(get_the_content()); ?>
             </div>
         </div>
     </section>
@@ -91,7 +91,7 @@ get_header(); ?>
             <section class="scrollable-section active-section" data-section-title="What is this">
                 <?php if (has_post_thumbnail( $post->ID ) ):  ?>
                 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                    <aside class="image-bg-fixed-height-2" style="background-image: url('<?php echo $image[0]; ?>')">
+                    <aside class="image-bg-fixed-height-2" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
                     </aside>
                 <?php
                     $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
@@ -103,7 +103,7 @@ get_header(); ?>
                 <div class="container-lf">
                     <div class="row">
                         <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                        <?php the_content(); ?>
+                        <?php echo make_path_relative(get_the_content()); ?>
                     </div>
                 </div>
             </section>
