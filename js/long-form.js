@@ -50,11 +50,7 @@ $("aside.lazy").lazyload({
     effect : "fadeIn"
 });
 
-$('figure > img').on({
-    'click': function(){
-        $('figure > img').attr('src','images/grey.gif');
-    }
-});
+$('figure > img').attr('src','images/grey.gif');
 
 $(function() {
     $("img.lazy").lazyload();
