@@ -76,7 +76,7 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
         $html5 = "<div class='col-md-6'>";
     }
     $html5 .= "<figure>";
-    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width' />";
+    $html5 .= "<img src='$src[0]' data-src='$src[0]' alt='$alt' class='img-responsive full-width lazyload blur-up' />";
     if ($caption) {
         $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
     }
