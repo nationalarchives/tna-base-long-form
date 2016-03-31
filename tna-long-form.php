@@ -86,7 +86,7 @@ get_header(); ?>
                 <section class="cd-section" data-section-title="<?php echo sanitize_title_with_dashes(get_the_title()); ?>" id="<?php echo $post->post_name; ?>">
                 <?php if (has_post_thumbnail( $post->ID ) ):  ?>
                 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-                    <aside class="image-bg-fixed-height-2" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
+                    <aside class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('images/grey.gif'); ?>')">
                     </aside>
                 <?php
                     $get_description = get_post(get_post_thumbnail_id())->post_excerpt;

@@ -19,27 +19,45 @@ function tnatheme_globals() {
 // For live environment
 tnatheme_globals();
 
+
+
+
 function dequeue_parent_style() {
     wp_dequeue_style('tna-styles');
     wp_deregister_style('tna-styles');
 }
 add_action( 'wp_enqueue_scripts', 'dequeue_parent_style', 9999 );
 add_action( 'wp_head', 'dequeue_parent_style', 9999 );
-// Enqueue styles
+
+
+
+
+// Enqueue styles & scripts
 function tna_child_styles() {
     wp_register_style( 'tna-parent-styles', get_template_directory_uri() . '/css/base-sass.css.min', array(), EDD_VERSION, 'all' );
     wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
+    wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
+    wp_deregister_script('jquery');
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', '1.6.1', true);
+    wp_register_script('jquerylazyload', get_stylesheet_directory_uri().'/js/jquery.lazyload.min.js', '', '1.5.0', true);
     wp_register_script('long-form', get_stylesheet_directory_uri(). '/js/long-form.js','','1.1', true);
+
+    wp_enqueue_script( 'jquery' );
     wp_enqueue_style( 'tna-parent-styles' );
     wp_enqueue_style( 'tna-child-styles' );
+    wp_enqueue_script( 'jquerylazyload');
     wp_enqueue_script( 'long-form' );
 }
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
+
+
 
 function admin_style() {
     wp_enqueue_style( 'admin-tna-child-styles', get_stylesheet_directory_uri() . '/css/admin-css.css', array(), '0.1', 'all' );
 }
 add_action( 'admin_print_styles', 'admin_style' );
+
+
 
 
 // Hooks your functions into the correct filters
@@ -62,11 +80,15 @@ function my_add_tinymce_plugin( $plugin_array ) {
     return $plugin_array;
 }
 
+
+
 // Register new button in the editor
 function my_register_mce_button( $buttons ) {
     array_push( $buttons, 'image_align' );
     return $buttons;
 }
+
+
 
 
 function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
@@ -76,7 +98,7 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
         $html5 = "<div class='col-md-6'>";
     }
     $html5 .= "<figure>";
-    $html5 .= "<img src='$src[0]' data-src='$src[0]' alt='$alt' class='img-responsive full-width lazyload blur-up' />";
+    $html5 .= "<img src='$src[0]' data-original='$src[0]' alt='$alt' class='img-responsive full-width lazy' />";
     if ($caption) {
         $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
     }
@@ -106,10 +128,21 @@ add_action( 'admin_menu', 'post_label' );
 
 
 
-update_option( 'medium_size_w', 850 );
 
+add_action('wp_footer', 'jquery_lazy_load', 12);
+function jquery_lazy_load() {
+    $placeholdergif = get_bloginfo('stylesheet_directory').'/images/grey.gif';
+    echo <<<EOF
+<script type="text/javascript">
+jQuery(document).ready(function($){
+if (navigator.platform == "iPad") return;
+jQuery("img").not(".cycle img").lazyload({
+effect:"fadeIn",
+placeholder: "$placeholdergif"
+});
+});
 
-
-
-
+</script>
+EOF;
+}
 
