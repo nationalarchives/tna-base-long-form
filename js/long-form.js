@@ -50,7 +50,7 @@ $("aside.lazy").lazyload({
     effect : "fadeIn"
 });
 
-$('figure > img').attr('src','images/grey.gif');
+$('figure > img').attr('src','wp-content/themes/tna-base-long-form/images/grey.gif');
 
 $(function() {
     $("img.lazy").lazyload();
