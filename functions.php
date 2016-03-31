@@ -110,7 +110,7 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
 }
 add_filter( 'image_send_to_editor', 'align_image', 10, 9 );
 
-/*to be worked on later*/
+/*to be worked on later
 
 
 
@@ -125,24 +125,4 @@ function post_label() {
     echo '';
 }
 add_action( 'admin_menu', 'post_label' );
-
-
-
-
-add_action('wp_footer', 'jquery_lazy_load', 12);
-function jquery_lazy_load() {
-    $placeholdergif = get_bloginfo('stylesheet_directory').'/images/grey.gif';
-    echo <<<EOF
-<script type="text/javascript">
-jQuery(document).ready(function($){
-if (navigator.platform == "iPad") return;
-jQuery("img").not(".cycle img").lazyload({
-effect:"fadeIn",
-placeholder: "$placeholdergif"
-});
-});
-
-</script>
-EOF;
-}
 
