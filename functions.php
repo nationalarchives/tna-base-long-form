@@ -110,6 +110,22 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
 }
 add_filter( 'image_send_to_editor', 'align_image', 10, 9 );
 
+
+function add_lazyload($content) {
+    $dom = new DOMDocument();
+    @$dom->loadHTML($content);
+
+
+    foreach ($dom->getElementsByTagName('img[class=lazy]') as $node) {
+        $oldsrc = $node->getAttribute('src');
+        $node->setAttribute("data-original", $oldsrc );
+        $newsrc = ''.make_path_relative().'/wp-content/themes/tna-base-long-form/images/grey.gif';
+        $node->setAttribute("src", $newsrc);
+    }
+    $newHtml = $dom->saveHtml();
+    return $newHtml;
+}
+
 /*to be worked on later
 
 

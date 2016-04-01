@@ -45,13 +45,13 @@ jQuery(document).ready(function($){
 });
 /*End Navigation*/
 
-
+/*Lazy loading for background images*/
 $("aside.lazy").lazyload({
     effect : "fadeIn"
 });
 
-$('figure > img').attr('src','wp-content/themes/tna-base-long-form/images/grey.gif');
-
-$(function() {
-    $("img.lazy").lazyload();
+$("img.lazy").lazyload({
+    effect : "fadeIn"
 });
+
+//$('figure > img').attr('src','wp-content/themes/tna-base-long-form/images/grey.gif');
