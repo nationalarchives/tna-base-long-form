@@ -2,6 +2,7 @@
  * Created by pchotrani on 17/03/16.
  */
 
+/*Navigation*/
 jQuery(document).ready(function($){
     var contentSections = $('.cd-section'),
         navigationItems = $('#cd-vertical-nav a');
@@ -41,4 +42,16 @@ jQuery(document).ready(function($){
             600
         );
     }
+});
+/*End Navigation*/
+
+
+$("aside.lazy").lazyload({
+    effect : "fadeIn"
+});
+
+$('figure > img').attr('src','wp-content/themes/tna-base-long-form/images/grey.gif');
+
+$(function() {
+    $("img.lazy").lazyload();
 });
