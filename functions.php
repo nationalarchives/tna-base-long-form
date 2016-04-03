@@ -126,8 +126,6 @@ function add_lazyload($content) {
     return $newHtml;
 }
 
-/*to be worked on later
-
 
 
 /* Change the name of posts */
