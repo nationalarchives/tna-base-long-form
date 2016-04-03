@@ -7,7 +7,7 @@
 $(window).scroll(function(){
     if ($(window).scrollTop() > 50){
         $('.cd-label').stop().animate({"opacity":"0"},100);
-        $("#top-menu").hover(function() {
+        $(".cd-label").mouseover(function() {
             $('.cd-label').css("opacity", "1");
         })
         $("#top-menu").hover(function() {
@@ -16,12 +16,15 @@ $(window).scroll(function(){
         $("#top-menu").mouseleave(function() {
             $('.cd-label').css("opacity", "0");
         })
-        $(".cd-label").click(function() {  //use a class, since your ID gets mangled
-            $('.cd-label').css("opacity", "1");      //add the class to the clicked element
+        $(".cd-label").click(function() {
+            $('.cd-label').css("opacity", "1");
         });
     }
     if ($(window).scrollTop() < 50){
         $('.cd-label').stop().animate({"opacity":"1"},100);
+        /*$("#top-menu").mouseout(function() {
+            $("#top-menu").css("opacity", "1");
+        })*/
 
         /*$(".cd-dot").mouseenter(function() {
             $('.cd-label').css("opacity", "1");
@@ -34,6 +37,17 @@ $(window).scroll(function(){
         })*/
     }
 });
+
+
+/*Scroll to script*/
+
+$(".sub-menu").click(function() {
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+});
+
 
 /*
 $("#top-menu").mouseenter(function() {
