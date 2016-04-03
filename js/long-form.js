@@ -43,7 +43,7 @@ $(document).ready(function(){
         var currentScroll = $(this).scrollTop();
 
         // $currentSection is somewhere to place the section we must be looking at
-        var $currentSection
+        var $currentSection = $(this);
 
         // We check the position of each of the sections compared to the windows scroll positon
         $sections.each(function(){
