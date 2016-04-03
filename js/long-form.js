@@ -10,6 +10,9 @@ $(window).scroll(function(){
         $(".cd-label").mouseover(function() {
             $('.cd-label').css("opacity", "1");
         })
+        $(".cd-dot").mouseover(function() {
+            $('.cd-label').css("opacity", "1");
+        })
         $("#top-menu").hover(function() {
             $('#top-menu').css("opacity", "1");
         })
@@ -17,6 +20,9 @@ $(window).scroll(function(){
             $('.cd-label').css("opacity", "0");
         })
         $(".cd-label").click(function() {
+            $('.cd-label').css("opacity", "1");
+        });
+        $(".cd-dot").click(function() {
             $('.cd-label').css("opacity", "1");
         });
     }
