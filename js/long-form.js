@@ -2,72 +2,37 @@
  * Created by pchotrani on 17/03/16.
  */
 
-/*Navigation*/
-
-$(window).scroll(function(){
-    if ($(window).scrollTop() > 50){
-        $('.cd-label').stop().animate({"opacity":"0"},100);
-        $(".cd-label").mouseover(function() {
-            $('.cd-label').css("opacity", "1");
-        })
-        $(".cd-dot").mouseover(function() {
-            $('.cd-label').css("opacity", "1");
-        })
-        $("#top-menu").hover(function() {
-            $('#top-menu').css("opacity", "1");
-        })
-        $("#top-menu").mouseleave(function() {
-            $('.cd-label').css("opacity", "0");
-        })
-        $(".cd-label").click(function() {
-            $('.cd-label').css("opacity", "1");
-        });
-        $(".cd-dot").click(function() {
-            $('.cd-label').css("opacity", "1");
-        });
-    }
-    if ($(window).scrollTop() < 50){
-        $('.cd-label').stop().animate({"opacity":"1"},100);
-        /*$("#top-menu").mouseout(function() {
-            $("#top-menu").css("opacity", "1");
-        })*/
-
-        /*$(".cd-dot").mouseenter(function() {
-            $('.cd-label').css("opacity", "1");
-        })
-        $(".cd-label").mouseleave(function() {
-            $('.cd-label').css("opacity", "0");
-        })
-        $(".cd-dot").mouseleave(function() {
-            $('.cd-label').css("opacity", "0");
-        })*/
-    }
-});
-
-
-/*Scroll to script*/
-
-$(".sub-menu").click(function() {
-        var link = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(link).offset().top
-        }, 1000);
-});
-
-
-/*
-$("#top-menu").mouseenter(function() {
-    $('.cd-label').css("opacity", "1");
-}).mouseleave(function() {
-    $('.cd-label').css("opacity", "0");
-});
-*/
-
-/*$("#top-menu").click(function() {
-    $(".cd-label").css("opacity", "1");
-});*/
-
 $(document).ready(function(){
+    /*Navigation ON / OFF States*/
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 50){
+            $('.cd-label').stop().animate({"opacity":"0"},100);
+            $(".cd-label").mouseover(function() {
+                $('.cd-label').css("opacity", "1");
+            })
+            $(".cd-dot").mouseover(function() {
+                $('.cd-label').css("opacity", "1");
+            })
+            $("#top-menu").hover(function() {
+                $('#top-menu').css("opacity", "1");
+            })
+            $("#top-menu").mouseleave(function() {
+                $('.cd-label').css("opacity", "0");
+            })
+            $(".cd-label").click(function() {
+                $('.cd-label').css("opacity", "1");
+            });
+            $(".cd-dot").click(function() {
+                $('.cd-label').css("opacity", "1");
+            });
+        }
+        if ($(window).scrollTop() < 50){
+            $('.cd-label').stop().animate({"opacity":"1"},100);
+        }
+    });
+    /*End Navigation ON / OFF States*/
+
+
     // $sections incleudes all of the container sections that relate to menu items.
     var $sections = $('.cd-section');
 
@@ -101,20 +66,26 @@ $(document).ready(function(){
         })
 
     });
-});
+    /*Lazy loading script*/
+    $("aside.lazy").lazyload({
+        effect : "fadeIn"
+    });
 
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
 
+    $(window).bind("load", function() {
+        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
+    });
+    /*END Lazy loading script*/
 
-/*End Navigation*/
-
-/*Lazy loading for background images*/
-$("aside.lazy").lazyload({
-    effect : "fadeIn"
-});
-
-$("img.lazy").lazyload({
-    event : "sporty"
-});
-$(window).bind("load", function() {
-    var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
+    /*Scroll to script*/
+    $(".sub-menu").click(function() {
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).offset().top
+        }, 1000);
+    });
+    /*END Scroll to script*/
 });
