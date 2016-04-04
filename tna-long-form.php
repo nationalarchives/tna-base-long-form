@@ -56,11 +56,11 @@ get_header();
                         <aside class="lf-image-bg-fixed-height" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
                             <?php get_template_part('breadcrumb'); ?>
                             <div class="container-lf">
-                                <div class="intro-text">
-                                    <h1 class="intro-heading"><?php the_title();  ?></h1>
-                                    <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                                    <p>In association with BT Archives</p>
-                                </div>
+                                 <div class="intro-text">
+                                     <h1 class="intro-heading"><?php the_title();  ?></h1>
+                                     <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
+                                     <p>In association with BT Archives</p>
+                                 </div>
                             </div>
                         </aside>
                         <?php

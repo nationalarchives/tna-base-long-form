@@ -79,17 +79,6 @@ p {
 	margin-left: 0px;
 }
 
-.intro-text {
-	padding-top: 150px;
-	width: auto;
-	margin: auto;
-}
-
-@media (min-width: 768px) {
-	.intro-text {
-	}
-}
-
 
 .intro-text .intro-heading {
 	font-weight: normal;
@@ -106,15 +95,7 @@ p {
 		font-size: 4em;
 		line-height: 1.2em;
 		letter-spacing: .5px;
-	}
-}
-
-
-@media (min-width: 768px) {
-	.intro-text .sub-heading {
-		font-size: 3em;
-		line-height: 1.2em;
-		letter-spacing: .5px;
+		padding-top: 150px;
 	}
 }
 
@@ -227,6 +208,7 @@ figure p {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: scroll;
+	height: 500px;
 }
 @media (max-width: 768px) {
 	.lf-image-bg-fixed-height {
@@ -236,10 +218,19 @@ figure p {
 		background-size: cover;
 	}
 	.intro-text {
-		padding-top: 285px;
+		padding-top: 225px;
+		width: auto;
+		margin: auto;
 	}
 }
 
+@media only screen and (max-width : 320px) {
+	.intro-text {
+		padding-top: 150px;
+		width: auto;
+		margin: auto;
+	}
+}
 
 
 
