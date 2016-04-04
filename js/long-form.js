@@ -3,6 +3,15 @@
  */
 
 $(document).ready(function(){
+    /*Scroll to script*/
+    $(".sub-menu").click(function() {
+        var link = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(link).top,
+            easing: "easein"
+        }, 1000);
+    });
+    /*END Scroll to script*/
     /*Navigation ON / OFF States*/
     $(window).scroll(function(){
         if ($(window).scrollTop() > 50){
@@ -80,12 +89,5 @@ $(document).ready(function(){
     });
     /*END Lazy loading script*/
 
-    /*Scroll to script*/
-    $(".sub-menu").click(function() {
-        var link = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(link).offset().top
-        }, 1000);
-    });
-    /*END Scroll to script*/
+
 });
