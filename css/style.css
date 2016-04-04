@@ -82,7 +82,7 @@ p {
 
 .intro-text .intro-heading {
 	font-weight: normal;
-	font-size: 40px;
+	font-size: 2.2em;
 	line-height: 48px;
 	margin-bottom: 25px;
 	word-spacing: 10px;
@@ -218,9 +218,10 @@ figure p {
 		background-size: cover;
 	}
 	.intro-text {
-		padding-top: 225px;
+		padding-top: 190px;
 		width: auto;
 		margin: auto;
+		overflow: hidden;
 	}
 }
 
