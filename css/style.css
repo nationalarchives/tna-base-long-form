@@ -25,44 +25,23 @@ body {
 
 }
 
+.intro-text {
+	padding: 1.5em;
+}
+
 .intro-text span {
 	margin-top: 200px;
 }
 
 .intro-text p {
 	color: #ffffff;
+	margin-left: 0px;
 }
 
 
 /*--------------------
 1.1 Reset bootstrap
 --------------------*/
-
-.row-0-gutter {
-	margin-left: -13px;
-	margin-right: -13px;
-}
-
-.col-0-gutter {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.col-sm-4 {
-	padding: 20px 0 20px 0;
-}
-
-.col-sm-8 {
-	padding: 20px 0 20px 0;
-}
-
-.col-sm-6 {
-	padding: 20px;
-}
-
-blockquote {
-	border: none;
-}
 
 ol, ul {
 	list-style: none;
@@ -88,26 +67,21 @@ nav {
 	z-index: 999;
 	position: relative;
 }
+.tna-breadcrumb {
+	margin: 0;
+}
 
+p {
+	margin:1.5em;
+}
 
 /*--------------------
 3. Section 1 Header
 --------------------*/
 
-.intro-header {
-	background-image: url(../images/demo/TCE_361_ARC03005.jpg);
-	background-repeat: no-repeat;
-	background-position: center 60%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	text-align: center;
-}
-
 .intro-text {
-	padding-top: 310px;
-	width: 756.391px;
+	padding-top: 150px;
+	width: auto;
 	margin: auto;
 }
 
@@ -159,30 +133,45 @@ nav {
 3. Section
 --------------------*/
 
-section {
-	background-color: #ffffee;
+@media (min-width: 768px) {
+	.container-lf {
+		max-width: 750px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
-.container-lf {
-	max-width: 756.391px;
-	margin: auto;
-}
+
 
 .full-width {
 	margin-top: 15px;
-	position: relative;
-	width: 100%;
-	height: auto;
 	box-shadow: 2px 2px 5px #eee;
 	border: 1px solid #ddd;
+	width: 100%;
 }
 
-
+figure {
+	margin: 1.5em;
+}
 
 /*--------------------
 4. Components
 --------------------*/
 
+.breadcrumbs {
+	color: #FFF;
+	background-color: #000;
+	background-color: rgba(0,0,0,.5);
+	display: inline-block;
+	padding: .4em;
+	font-size: .85em;
+	margin: 1em 0;
+}
+
+.breadcrumbs a:active, a:link, a:visited {
+	color: #ff0;
+	text-decoration: none;
+}
 
 blockquote{
 	display:block;
@@ -275,60 +264,6 @@ figure p {
 }
 
 
-.image-bg-fixed-height-2 {
-	height: 1000px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 75%;
-	background-attachment: scroll;
-}
-@media (max-width: 768px) {
-	.image-bg-fixed-height-2 {
-		background: url(../images/demo/zepplin.jpg) no-repeat 41% 75% scroll;
-		height: 240px;
-		background-size: cover;
-	}
-}
-
-.image-bg-fixed-height-3 {
-	background: url(../images/demo/Image%2014.jpg) no-repeat 50% 75% scroll;
-	height: 1000px;
-	background-size: cover;
-}
-@media (max-width: 768px) {
-	.image-bg-fixed-height-3 {
-		background: url(../images/demo/Image%2014.jpg) no-repeat 41% 75% scroll;
-		height: 240px;
-		background-size: cover;
-	}
-}
-
-.image-bg-fixed-height-4 {
-	background: url(../images/demo/Image%2017.jpg) no-repeat 50% 75% scroll;
-	height: 1000px;
-	background-size: cover;
-}
-@media (max-width: 768px) {
-	.image-bg-fixed-height-4 {
-		background: url(../images/demo/Image%2017.jpg) no-repeat 41% 75% scroll;
-		height: 240px;
-		background-size: cover;
-	}
-}
-
-.image-bg-fixed-height-5 {
-	background: url(../images/demo/Image%2020.jpg) no-repeat 50% 75% scroll;
-	height: 1000px;
-	background-size: cover;
-}
-@media (max-width: 768px) {
-	.image-bg-fixed-height-5 {
-		background: url(../images/demo/Image%2020.jpg) no-repeat 41% 75% scroll;
-		height: 240px;
-		background-size: cover;
-	}
-}
-
 
 
 /*Transition on page load*/
@@ -409,6 +344,21 @@ figure p {
 
 #cd-vertical-nav a.is-selected .cd-dot {
 	background-color: white;
+	border-color: #008484;
+	border-style: solid;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+#cd-vertical-nav a.is-selected .cd-label {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
 }
 
 #cd-vertical-nav .cd-dot {
@@ -420,12 +370,6 @@ figure p {
 	background-color: #008484;
 	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
 	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
-	transition: transform 0.2s, background-color 0.5s;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
 }
 
 #cd-vertical-nav a span {
@@ -438,7 +382,7 @@ figure p {
 	transform: scale(0.6);
 }
 
-#cd-vertical-nav .cd-label {
+/*.cd-label {
 	position: relative;
 	margin-right: 10px;
 	margin-top: 7px;
@@ -454,7 +398,8 @@ figure p {
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
-}
+}*/
+
 #cd-vertical-nav a:after {
 	content: "";
 	display: table;
@@ -471,17 +416,44 @@ figure p {
 #cd-vertical-nav a:hover .cd-label {
 	opacity: 1;
 }
-/*
-.alignright {
-	float: right;
-	width: 50%;
+
+#cd-vertical-nav .cd-label {
+	position: relative;
+	margin-right: 15px;
+	padding: .5em .5em;
+	color: white;
+	font-size: 14px;
+	font-size: 1em;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	opacity: 1;
+	-webkit-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
 }
 
-.alignleft {
-	float: left;
-	width: 50%;
-}*/
+.arrow_box {
+	position: relative;
+	background: #008484;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
 
-
-
-/*lazy loading*/
+}
+.arrow_box:after {
+	left: 93%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(153, 153, 153, 0);
+	border-left-color: #008484;
+	border-width: 15px;
+	margin-top: -15px;
+	border-radius: 25px;
+}
