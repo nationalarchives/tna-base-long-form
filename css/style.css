@@ -142,9 +142,13 @@ figure {
 	margin: 1em 0;
 }
 
-.breadcrumbs a:active, a:link, a:visited {
-	color: #ff0;
+.breadcrumbs {
+	color: #fff;
 	text-decoration: none;
+}
+
+.breadcrumbs > a {
+	color: #ff0;
 }
 
 blockquote{
