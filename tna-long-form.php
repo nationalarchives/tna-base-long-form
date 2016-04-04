@@ -57,7 +57,7 @@ get_header(); ?>
         <?php
         $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
         if(!empty($get_description)){
-            echo '<figcaption class="wp-caption-text">Caption: ' . $get_description . '</figcaption>';
+            echo '<figure><figcaption class="wp-caption-text">' . $get_description . '</figcaption></figure>';
         }
         ?>
         <?php endif; ?>

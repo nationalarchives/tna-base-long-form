@@ -9,9 +9,16 @@ Primary use: Long form template
 [Table of contents]
 
 1. General
-2. Header
-3. Footer
+	1.1 Reset Bootstrap
+	1.2 Reset TNA Base
+
+2. Sections
+
+3. Container
+
 4. Components
+
+5. Navigation
 
 -------------------------------------------------------------------*/
 
@@ -23,16 +30,6 @@ body {
 	margin: 0px;
 	background-color:#ffffee;
 }
-
-.intro-text {
-	padding: 1.5em;
-}
-
-.intro-text p {
-	color: #ffffff;
-	margin-left: 0px;
-}
-
 
 /*--------------------
 1.1 Reset bootstrap
@@ -71,8 +68,16 @@ p {
 }
 
 /*--------------------
-3. Section 1 Header
+3. Sections
 --------------------*/
+.intro-text {
+	padding: 1.5em;
+}
+
+.intro-text p {
+	color: #ffffff;
+	margin-left: 0px;
+}
 
 .intro-text {
 	padding-top: 150px;
@@ -104,15 +109,6 @@ p {
 	}
 }
 
-.intro-text .sub-heading {
-	font-weight: normal;
-	font-size: 30px;
-	line-height: 48px;
-	margin-bottom: 25px;
-	word-spacing: 10px;
-	color: #FFFFFF;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
 
 @media (min-width: 768px) {
 	.intro-text .sub-heading {
@@ -125,7 +121,7 @@ p {
 
 
 /*--------------------
-3. Section
+3. Container
 --------------------*/
 
 @media (min-width: 768px) {
@@ -195,18 +191,6 @@ blockquote p{
 	color: #333;
 	margin-bottom: 1.5em;
 	font-weight: 500;
-}
-
-blockquote a{
-	text-decoration: none;
-	background: #eee;
-	cursor: pointer;
-	padding: 0 3px;
-	color: #c76c0c;
-}
-
-blockquote a:hover{
-	color: #666;
 }
 	/*Image captions*/
 .wp-caption-text {
