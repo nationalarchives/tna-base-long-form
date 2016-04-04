@@ -5,17 +5,16 @@ Template Name: Long form template
 get_header(); ?>
 <main role="main">
     <?php global $post ?>
-    <section>
-        <!--Navigation-->
-        <div id="cd-vertical-nav" role="navigation" class="hidden-xs">
-            <ul id="top-menu">
-                <li>
-                    <a href="#<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="sub-menu">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label arrow_box">Back to top</span>
-                    </a>
-                </li>
 
+    <!--Navigation-->
+    <div id="cd-vertical-nav" role="navigation" class="hidden-xs">
+        <ul id="top-menu">
+             <li>
+                 <a href="#<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="sub-menu">
+                     <span class="cd-dot"></span>
+                     <span class="cd-label arrow_box">Back to top</span>
+                 </a>
+             </li>
                 <?php
                     $args = array(
                         'post_type'      => 'post',
@@ -34,10 +33,9 @@ get_header(); ?>
                                 </a>
                             </li>
                 <?php endwhile; endif; wp_reset_postdata(); ?>
-            </ul>
-        </div>
+        </ul>
+    </div>
         <!--End Navigation-->
-    </section>
 
     <!--Get page content-->
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
