@@ -416,3 +416,20 @@ figure p {
 	margin-top: -15px;
 	border-radius: 25px;
 }
+
+/* Social media */
+.bt-archive-social-media {
+	padding: 5px;
+	z-index: 100;
+	position: fixed;
+	margin-left:10px
+}
+
+.fb-share-button span {
+	top: -7px;
+}
+@media (max-width: 768px) {
+	.bt-archive-social-media{
+		position:relative;
+	}
+}
