@@ -81,7 +81,8 @@ $(document).ready(function(){
     /*END Lazy loading script*/
 
     /*Scroll to script*/
-    $(".sub-menu").click(function() {
+    $(".sub-menu").click(function(e) {
+        e.preventDefault();
         var link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top
