@@ -126,6 +126,8 @@ p {
 figure {
 	margin-top:0;
 	margin-bottom: 1.5em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 /*--------------------
