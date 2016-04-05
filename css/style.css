@@ -161,6 +161,7 @@ blockquote{
 	font-size: 1.7em;
 	text-align: center;
 	width: 80%;
+	border: none;
 }
 
 blockquote::before{
@@ -168,7 +169,7 @@ blockquote::before{
 	color: rgba(0,0,0,.1);
 	font-family: "Times New Roman", Georgia, Serif;
 	position: absolute;
-	margin-top: -190px;
+	margin-top: -115px;
 	font-size: 12em;
 	left: -9px;
 }
@@ -178,6 +179,30 @@ blockquote p{
 	color: #333;
 	margin-bottom: 1.5em;
 	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	blockquote{
+		display:block;
+		padding: 23px 20px 15px 0px;
+		margin: 30px auto 30px auto;
+		position: relative;
+
+		/*Font*/
+		font-size: 1.2em;
+		text-align: center;
+		width: 85%;
+		border: none;
+	}
+	blockquote::before{
+		content: "\201C";
+		color: rgba(0,0,0,.1);
+		font-family: "Times New Roman", Georgia, Serif;
+		position: absolute;
+		margin-top: -60px;
+		font-size: 10em;
+		left: -9px;
+	}
 }
 	/*Image captions*/
 .wp-caption-text {
