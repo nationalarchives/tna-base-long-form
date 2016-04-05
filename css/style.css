@@ -417,6 +417,10 @@ figure p {
 	transform-origin: 100% 50%;
 }
 
+#top-menu > li {
+	margin: 0 0 -1.25em;
+}
+
 .arrow_box {
 	position: relative;
 	background: #008484;
@@ -438,6 +442,20 @@ figure p {
 	border-width: 15px;
 	margin-top: -15px;
 	border-radius: 25px;
+}
+
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+	#cd-vertical-nav {
+		display: none;
+	}
+	.intro-text {
+		padding-top: 0px;
+	}
 }
 
 /* Social media */
