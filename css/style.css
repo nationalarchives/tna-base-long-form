@@ -149,7 +149,7 @@ figure {
 	text-decoration: none;
 }
 
-.breadcrumbs > a {
+.breadcrumbs > a, .breadcrumbs > a:active, .breadcrumbs > a:link, .breadcrumbs > a:visited {
 	color: #ff0;
 }
 
