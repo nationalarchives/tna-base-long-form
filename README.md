@@ -1,2 +1,6 @@
 # Long Form template
-An HTML prototype of the TNA long form template.
+## Version number: 1.0
+
+This is the TNA Wordpress theme to use on Long Form template pages.
+
+Build using bootstrap with customisation.
