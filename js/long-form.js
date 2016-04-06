@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
     /*Navigation ON / OFF States*/
-    $(window).scroll(function(){
+    /*$(window).scroll(function(){
         if ($(window).scrollTop() > 50){
             $('.cd-label').stop().animate({"opacity":"0"},100);
             $(".cd-label").mouseover(function() {
@@ -29,7 +29,7 @@ $(document).ready(function(){
         if ($(window).scrollTop() < 50){
             $('.cd-label').stop().animate({"opacity":"1"},100);
         }
-    });
+    });*/
     /*End Navigation ON / OFF States*/
 
 
