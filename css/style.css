@@ -342,6 +342,15 @@ figure p {
 	vertical-align: baseline;
 }
 
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+	#cd-vertical-nav {
+		top: 45%;
+	}
+}
+
 #cd-vertical-nav li {
 	text-align: right;
 }
@@ -488,5 +497,20 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
 	.bt-archive-social-media{
 		position:relative;
+	}
+}
+
+
+/* Parralax Effects */
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+	.lf-image-bg-fixed-height {
+		position: fixed;
+	}
+	.container-lf {
+		position: relative;
 	}
 }

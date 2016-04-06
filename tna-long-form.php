@@ -31,7 +31,7 @@ get_header();
                         <li>
                             <a href="#<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="sub-menu">
                                 <span class="cd-dot"></span>
-                                <span id="<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="cd-label arrow_box"><?php the_title(); ?></span>
+                                <span class="cd-label arrow_box"><?php the_title(); ?></span>
                             </a>
                         </li>
                         <?php
@@ -53,7 +53,8 @@ get_header();
                     <?php
                     if (has_post_thumbnail($post->ID)): ?>
                         <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');  ?>
-                        <aside class="lf-image-bg-fixed-height" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
+                    <figure>
+                        <div class="lf-image-bg-fixed-height" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
                             <?php get_template_part('breadcrumb'); ?>
                             <div class="bt-archive-social-media">
                    <span>
@@ -92,7 +93,7 @@ get_header();
                                      <p>In association with BT Archives</p>
                                  </div>
                             </div>
-                        </aside>
+                        </div>
                         <?php
                         $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
                         if (!empty($get_description))
@@ -109,6 +110,7 @@ get_header();
                         echo $the_content;
                         ?>
                     </div>
+                        <figure>
                 </section>
                 <?php
             endwhile;
@@ -140,7 +142,7 @@ get_header();
                         <?php
                         $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
                         ?>
-                        <aside class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('wp-content/themes/tna-base-long-form/images/grey.gif'); ?>')"> </aside>
+                        <div class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('wp-content/themes/tna-base-long-form/images/grey.gif'); ?>')"> </div>
                         <?php
                         $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
                         if (!empty($get_description))

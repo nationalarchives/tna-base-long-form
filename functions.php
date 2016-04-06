@@ -89,8 +89,6 @@ function my_register_mce_button( $buttons ) {
 }
 
 
-
-
 function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
     $src  = wp_get_attachment_image_src( $id, $size, false );
     $html = get_image_tag($id, '', $title, $align, $size);
@@ -110,22 +108,25 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
 }
 add_filter( 'image_send_to_editor', 'align_image', 10, 9 );
 
-
+/* Adds grey.gif for lazy loading */
 function add_lazyload($content) {
+    $content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
     $dom = new DOMDocument();
     @$dom->loadHTML($content);
-
-
-    foreach ($dom->getElementsByTagName('img[class=lazy]') as $node) {
-        $oldsrc = $node->getAttribute('src');
-        $node->setAttribute("data-original", $oldsrc );
-        $newsrc = ''.make_path_relative().'/wp-content/themes/tna-base-long-form/images/grey.gif';
-        $node->setAttribute("src", $newsrc);
+    foreach ($dom->getElementsByTagName('img') as $node) {
+        $classes = $node->getAttribute('class');
+        if (strpos($classes, 'lazy')) {
+            $oldsrc = $node->getAttribute('src');
+            $node->setAttribute("data-original", $oldsrc );
+            $newsrc = ''.make_path_relative().'/wp-content/themes/tna-base-long-form/images/grey.gif';
+            $node->setAttribute("src", $newsrc);
+        }
     }
-    $newHtml = $dom->saveHtml();
+    $newHtml = preg_replace('/^<!DOCTYPE.+?>/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $dom->saveHTML()));
     return $newHtml;
 }
-
+add_filter('the_content', 'add_lazyload', 99);
+/* Adds grey.gif for lazy loading */
 
 
 /* Change the name of posts */

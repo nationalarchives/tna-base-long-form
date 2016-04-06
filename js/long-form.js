@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     });
     /*Lazy loading script*/
-    $("aside.lazy").lazyload({
+    $("div.lazy").lazyload({
         effect : "fadeIn"
     });
 
