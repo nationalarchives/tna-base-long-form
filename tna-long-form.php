@@ -31,7 +31,7 @@ get_header();
                         <li>
                             <a href="#<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="sub-menu">
                                 <span class="cd-dot"></span>
-                                <span id="<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="cd-label arrow_box"><?php the_title(); ?></span>
+                                <span class="cd-label arrow_box"><?php the_title(); ?></span>
                             </a>
                         </li>
                         <?php
