@@ -68,9 +68,9 @@ get_header();
                                fjs.parentNode.insertBefore(js, fjs);
                            }(document, 'script', 'facebook-jssdk'));</script>
                        <div class="fb-share-button" data-href="http://nationalarchives.gov.uk"
-                            data-layout="button_count"></div>
+                            data-layout="button_count" tabindex="0"></div>
                    </span>
-                    <span>
+                    <span tabindex="0">
                         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nationalarchives.gov.uk"
                            data-via="UKNatArchives">Tweet</a>
                    <script>!function (d, s, id) {
