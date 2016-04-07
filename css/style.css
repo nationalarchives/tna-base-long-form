@@ -271,7 +271,11 @@ figure p {
 
 .image-bg-fixed-height-2 {
 	height: 1000px;
+	width: auto;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
@@ -502,5 +506,16 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
 	.bt-archive-social-media{
 		position:relative;
+	}
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.intro-text > .intro-heading {
+		font-size: 1.8em;
+		line-height: 35px;
+		overflow-y: hidden;
 	}
 }
