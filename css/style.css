@@ -130,6 +130,11 @@ figure {
 	margin-right: 1.5em;
 }
 
+.cd-section:nth-of-type(1) > figure {
+	margin-right: 0;
+	margin-left: 0;
+}
+
 /*--------------------
 4. Components
 --------------------*/
@@ -497,20 +502,5 @@ and (-webkit-min-device-pixel-ratio: 1) {
 @media (max-width: 768px) {
 	.bt-archive-social-media{
 		position:relative;
-	}
-}
-
-
-/* Parralax Effects */
-
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 1) {
-	.lf-image-bg-fixed-height {
-		position: fixed;
-	}
-	.container-lf {
-		position: relative;
 	}
 }
