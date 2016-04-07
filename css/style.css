@@ -27,7 +27,7 @@ Primary use: Long form template
 --------------------*/
 
 body {
-	margin: 0px;
+	margin: 0;
 	background-color:#ffffee;
 }
 
@@ -87,6 +87,8 @@ p {
 	margin-bottom: 25px;
 	word-spacing: 10px;
 	color: #FFFFFF;
+
+	text-shadow: #a3a39a;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -141,7 +143,7 @@ figure {
 
 .breadcrumbs {
 	color: #FFF;
-	background-color: #000;
+	background-color: #7E7D72;
 	background-color: rgba(0,0,0,.5);
 	display: inline-block;
 	padding: .4em;
@@ -173,6 +175,7 @@ blockquote{
 
 blockquote::before{
 	content: "\201C";
+	color: #E6E6D7;
 	color: rgba(0,0,0,.1);
 	font-family: "Times New Roman", Georgia, Serif;
 	position: absolute;
@@ -203,6 +206,7 @@ blockquote p{
 	}
 	blockquote::before{
 		content: "\201C";
+		color: #E6E6D7;
 		color: rgba(0,0,0,.1);
 		font-family: "Times New Roman", Georgia, Serif;
 		position: absolute;
@@ -408,7 +412,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 #cd-vertical-nav a span {
 	float: right;
-	display: inline-block;
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
 	-ms-transform: scale(0.6);
@@ -460,6 +463,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	background: #008484;
 	-moz-border-radius: 7px 7px 7px 7px;
 	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
 
 }
 .arrow_box:after {
@@ -471,6 +475,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
+	border-color: #f0f0f0;
 	border-color: rgba(153, 153, 153, 0);
 	border-left-color: #008484;
 	border-width: 15px;
