@@ -94,10 +94,10 @@ p {
 
 @media (min-width: 768px) {
 	.intro-text .intro-heading {
-		font-size: 4em;
+		font-size: 3em;
 		line-height: 1.2em;
 		letter-spacing: .5px;
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 }
 
