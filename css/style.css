@@ -117,14 +117,6 @@ p {
 }
 
 
-
-.full-width {
-	margin-top: 15px;
-	box-shadow: 2px 2px 5px #eee;
-	border: 1px solid #ddd;
-	width: 100%;
-}
-
 figure {
 	margin-top:0;
 	margin-bottom: 1.5em;
@@ -519,6 +511,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) {
+
+	.intro-text {
+		padding: 0;
+	}
+
 	.intro-text > .intro-heading {
 		font-size: 1.8em;
 		line-height: 35px;
