@@ -136,6 +136,11 @@ figure > br {
 	display: none;
 }
 
+.full-width {
+	margin-right: 0;
+	margin-left: 0;
+}
+
 .cd-section:nth-of-type(1) > figure {
 	margin-right: 0;
 	margin-left: 0;
