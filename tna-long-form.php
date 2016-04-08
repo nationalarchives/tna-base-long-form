@@ -98,7 +98,7 @@ get_header();
                         $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
                         if (!empty($get_description))
                         {
-                            echo '<figure><figcaption class="wp-caption-text">' . $get_description . '</figcaption></figure>';
+                            echo '<figcaption class="wp-caption-text">' . $get_description . '</figcaption>';
                         }
                         ?>
                         <?php
@@ -110,7 +110,7 @@ get_header();
                         echo $the_content;
                         ?>
                     </div>
-                        <figure>
+                        </figure>
                 </section>
                 <?php
             endwhile;

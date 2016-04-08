@@ -132,6 +132,10 @@ figure {
 	margin-right: 1.5em;
 }
 
+figure > br {
+	display: none;
+}
+
 .cd-section:nth-of-type(1) > figure {
 	margin-right: 0;
 	margin-left: 0;
