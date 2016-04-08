@@ -486,7 +486,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		display: none;
 	}
 	.intro-text {
-		padding-top: 0px;
+		padding-top: 80px;
 	}
 }
 
@@ -513,7 +513,8 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) {
 
 	.intro-text {
-		padding: 0;
+		padding-left: 1.5em;
+		padding-top: 7em;
 	}
 
 	.intro-text > .intro-heading {

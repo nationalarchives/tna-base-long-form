@@ -140,21 +140,20 @@ get_header();
                     $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
                     if (has_post_thumbnail($post->ID)):
                         ?>
-                    <figure class="full-width">
-                        <div class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('wp-content/themes/tna-base-long-form/images/grey.gif'); ?>')">
-                        </div>
-                        <?php endif; ?>
-                        <?php
-                        $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
-                        if (!empty($get_description))
-                        {
-                            echo '<figcaption class="wp-caption-text">' . $get_description . '</figcaption>';
-                        }
-                        ?>
-                        <?php if (has_post_thumbnail($post->ID)):
-                        ?>
-                </figure>
-                <?php endif; ?>
+                        <figure class="full-width">
+                            <div class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('wp-content/themes/tna-base-long-form/images/grey.gif'); ?>')">
+                            </div>
+                            <?php endif; ?>
+                            <?php
+                            $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
+                            if (!empty($get_description))
+                            {
+                              echo '<figcaption class="wp-caption-text">' . $get_description . '</figcaption>';
+                            }
+                            ?>
+                            <?php if (has_post_thumbnail($post->ID)): ?>
+                        </figure>
+                    <?php endif; ?>
                     <div class="container-lf">
                         <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
                         <?php
