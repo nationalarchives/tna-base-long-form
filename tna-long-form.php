@@ -57,7 +57,7 @@ get_header();
                         <div class="lf-image-bg-fixed-height" style="background-image: url('<?php echo make_path_relative($image[0]); ?>')">
                             <?php get_template_part('breadcrumb'); ?>
                             <div class="bt-archive-social-media">
-                   <span>
+
                        <div id="fb-root"></div>
                        <script>(function (d, s, id) {
                                var js, fjs = d.getElementsByTagName(s)[0];
@@ -69,7 +69,7 @@ get_header();
                            }(document, 'script', 'facebook-jssdk'));</script>
                        <div class="fb-share-button" data-href="http://nationalarchives.gov.uk"
                             data-layout="button_count" tabindex="0"></div>
-                   </span>
+
                     <span tabindex="0">
                         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nationalarchives.gov.uk"
                            data-via="UKNatArchives">Tweet</a>
