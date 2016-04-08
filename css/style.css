@@ -241,7 +241,7 @@ blockquote p{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: scroll;
-	height: 500px;
+	min-height: 500px;
 }
 @media (max-width: 768px) {
 	.lf-image-bg-fixed-height {
@@ -267,7 +267,7 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	height: 1000px;
+	min-height: 1000px;
 	width: auto;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -276,7 +276,7 @@ blockquote p{
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
-		height: 240px;
+		min-height: 240px;
 		background-size: cover;
 	}
 }

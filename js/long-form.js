@@ -90,3 +90,9 @@ $(document).ready(function(){
     });
     /*END Scroll to script*/
 });
+
+
+/* Parallax Scrolling */
+
+
+
