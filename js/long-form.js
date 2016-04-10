@@ -94,5 +94,45 @@ $(document).ready(function(){
 
 /* Parallax Scrolling */
 
+// Now for the parallaxing -- here we use some cool CSS3 stuff to find the position of the window.
 
+// jQuery doesn't have a scrollBottom function to detect how far away the scrolling window is from the bottom, so let's create that:
+var scrollBottom = function() {
+    return $(document).height() - $(window).height() - $(window).scrollTop();
+}
+var scrolled = $(window).scrollTop();
 
+// When everything is loaded...
+$(document).ready(function() {
+
+    // Start listening for the user to scroll...
+    $(window).scroll(function() {
+
+        // Parallax the header with css3 tech (Note: keep in mind the minus sign, we want this to peek *UP* instead of DOWN)...
+        $('.intro-text').css({
+            transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
+        });
+
+        //$('figure').css('top', -(scrolled * 0.2) + 'px');
+        // ...and parallax the footer! (No minus sign here!)
+        /*$('footer').css({
+            transform: "translateY(" + scrollBottom() / 1 - "px)"
+        });*/
+    });
+
+    // We divide the "$(window).scrollTop()" and "scrollBottom()" numbers by half because we want the content to scroll at half speed -- this creates the parallaxing effect. Feel free to play with these numbers -- they can have some real cool effects. I like everything between 1.2 and 2.5.
+
+});
+
+/*
+
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('figure').css('top', -(scrolled * 0.2) + 'px');
+}
+
+$(window).scroll(function(e){
+    parallax();
+});
+
+*/

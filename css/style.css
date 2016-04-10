@@ -26,6 +26,8 @@ Primary use: Long form template
 1. General
 --------------------*/
 
+@import "compass/css3";
+
 body {
 	margin: 0;
 	background-color:#ffffee;
@@ -90,6 +92,11 @@ p {
 
 	text-shadow: #a3a39a;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.full-div {
+	width: 100%;
+	background-color: #ffffee;
 }
 
 @media (min-width: 768px) {
@@ -240,8 +247,9 @@ blockquote p{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	min-height: 500px;
+	position: relative;
 }
 @media (max-width: 768px) {
 	.lf-image-bg-fixed-height {
