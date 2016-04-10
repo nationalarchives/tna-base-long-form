@@ -3,36 +3,6 @@
  */
 
 $(document).ready(function(){
-    /*Navigation ON / OFF States*/
-    /*$(window).scroll(function(){
-        if ($(window).scrollTop() > 50){
-            $('.cd-label').stop().animate({"opacity":"0"},100);
-            $(".cd-label").mouseover(function() {
-                $('.cd-label').css("opacity", "1");
-            })
-            $(".cd-dot").mouseover(function() {
-                $('.cd-label').css("opacity", "1");
-            })
-            $("#top-menu").hover(function() {
-                $('#top-menu').css("opacity", "1");
-            })
-            $("#top-menu").mouseleave(function() {
-                $('.cd-label').css("opacity", "0");
-            })
-            $(".cd-label").click(function() {
-                $('.cd-label').css("opacity", "1");
-            });
-            $(".cd-dot").click(function() {
-                $('.cd-label').css("opacity", "1");
-            });
-        }
-        if ($(window).scrollTop() < 50){
-            $('.cd-label').stop().animate({"opacity":"1"},100);
-        }
-    });*/
-    /*End Navigation ON / OFF States*/
-
-
     // $sections incleudes all of the container sections that relate to menu items.
     var $sections = $('.cd-section');
 
@@ -72,12 +42,10 @@ $(document).ready(function(){
     });
 
     $("img.lazy").lazyload({
-        event : "sporty"
+        //event : "sporty"
+        effect : "fadeIn"
     });
 
-    $(window).bind("load", function() {
-        var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
-    });
     /*END Lazy loading script*/
 
     /*Scroll to script*/
@@ -89,21 +57,8 @@ $(document).ready(function(){
         }, 1000);
     });
     /*END Scroll to script*/
-});
 
-
-/* Parallax Scrolling */
-
-// Now for the parallaxing -- here we use some cool CSS3 stuff to find the position of the window.
-
-// jQuery doesn't have a scrollBottom function to detect how far away the scrolling window is from the bottom, so let's create that:
-var scrollBottom = function() {
-    return $(document).height() - $(window).height() - $(window).scrollTop();
-}
-var scrolled = $(window).scrollTop();
-
-// When everything is loaded...
-$(document).ready(function() {
+    /* Parallax Scrolling */
 
     // Start listening for the user to scroll...
     $(window).scroll(function() {
@@ -112,27 +67,7 @@ $(document).ready(function() {
         $('.intro-text').css({
             transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
         });
-
-        //$('figure').css('top', -(scrolled * 0.2) + 'px');
-        // ...and parallax the footer! (No minus sign here!)
-        /*$('footer').css({
-            transform: "translateY(" + scrollBottom() / 1 - "px)"
-        });*/
     });
-
-    // We divide the "$(window).scrollTop()" and "scrollBottom()" numbers by half because we want the content to scroll at half speed -- this creates the parallaxing effect. Feel free to play with these numbers -- they can have some real cool effects. I like everything between 1.2 and 2.5.
-
 });
 
-/*
 
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('figure').css('top', -(scrolled * 0.2) + 'px');
-}
-
-$(window).scroll(function(e){
-    parallax();
-});
-
-*/
