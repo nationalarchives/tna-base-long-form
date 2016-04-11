@@ -141,3 +141,11 @@ function post_label() {
 }
 add_action( 'admin_menu', 'post_label' );
 
+
+/* Adding Menu Order to Posts*/
+function menu_order()
+{
+    add_post_type_support( 'post', 'page-attributes' );
+}
+add_action( 'admin_init', 'menu_order' );
+/* END Adding Menu Order to Posts*/

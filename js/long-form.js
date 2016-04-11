@@ -42,7 +42,6 @@ $(document).ready(function(){
     });
 
     $("img.lazy").lazyload({
-        //event : "sporty"
         effect : "fadeIn"
     });
 
@@ -61,12 +60,36 @@ $(document).ready(function(){
     /* Parallax Scrolling */
 
     // Start listening for the user to scroll...
-    $(window).scroll(function() {
 
-        // Parallax the header with css3 tech (Note: keep in mind the minus sign, we want this to peek *UP* instead of DOWN)...
-        $('.intro-text').css({
-            transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
-        });
+    $(window).scroll(function() {
+        // Parallax the header with css3 tech
+        if ( $(window).width() > 1024) {
+            $('.intro-text').css({
+                transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
+            });
+        }
+        else {
+            $('.intro-text').css({
+                display: "block"
+            });
+        }
+    });
+
+    $(window).scroll(function(){
+        var element = $(".image-bg-fixed-height-2").offset().top;
+        var scrollTop = $(window).scrollTop();
+        var width = $(window).width()
+        if (scrollTop >= element && width > 1024){
+                $(".image-bg-fixed-height-2").css({
+                    'background-attachment' : 'fixed',
+                    'background-size' : 'cover'
+                });
+        }
+        else {
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment' : 'scroll'
+            });
+        }
     });
 });
 

@@ -87,7 +87,6 @@ p {
 	margin-bottom: 25px;
 	word-spacing: 10px;
 	color: #FFFFFF;
-
 	text-shadow: #a3a39a;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -274,11 +273,14 @@ blockquote p{
 
 .image-bg-fixed-height-2 {
 	min-height: 1000px;
-	width: auto;
+	max-width: 100%;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
+	/*background-attachment: scroll;*/
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
