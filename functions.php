@@ -39,7 +39,7 @@ function tna_child_styles() {
     wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
     wp_deregister_script('jquery');
     wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', '1.6.1', true);
-    wp_register_script('jquerylazyload', get_stylesheet_directory_uri().'/js/jquery.lazyload.min.js', '', '1.5.0', true);
+    wp_register_script('jquerylazyload', get_stylesheet_directory_uri().'/js/jquery.lazyload.min.js', '', '1.9.3', true);
     wp_register_script('long-form', get_stylesheet_directory_uri(). '/js/long-form.js','','1.1', true);
 
     wp_enqueue_script( 'jquery' );
