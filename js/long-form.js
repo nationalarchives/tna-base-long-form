@@ -80,10 +80,10 @@ $(document).ready(function(){
         var scrollTop = $(window).scrollTop();
         var width = $(window).width()
         if (scrollTop >= element && width > 1024){
-                $(".image-bg-fixed-height-2").css({
-                    'background-attachment' : 'fixed',
-                    'background-size' : 'cover'
-                });
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment': 'fixed',
+                'background-size': 'cover'
+            });
         }
         else {
             $(".image-bg-fixed-height-2").css({
