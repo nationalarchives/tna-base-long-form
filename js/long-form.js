@@ -74,6 +74,11 @@ $(document).ready(function(){
     $("img.lazy").lazyload({
         effect : "fadeIn"
     });
+        /* Lazy load fallback */
+        if($('.lazy').css('display','block')){
+            $('.no-lazy').css('display','none');
+        }
+        /* END Lazy load fallback */
     /*END Lazy loading script*/
 
     /*Scroll to script*/
@@ -85,4 +90,5 @@ $(document).ready(function(){
         }, 1000);
     });
     /*END Scroll to script*/
+
 });

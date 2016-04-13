@@ -96,7 +96,8 @@ function align_image($html, $id, $caption, $title, $align, $url, $size, $alt) {
         $html5 = "<div class='col-md-6'>";
     }
     $html5 .= "<figure>";
-    $html5 .= "<img src='$src[0]' data-original='$src[0]' alt='$alt' class='img-responsive full-width lazy' />";
+    $html5 .= "<img src='$src[0]' data-original='$src[0]' alt='$alt' class='img-responsive full-width lazy' style='display:none' />";
+    $html5 .= "<img src='$src[0]' alt='$alt' class='img-responsive full-width no-lazy' style='display:block' />";
     if ($caption) {
         $html5 .= "<figcaption class='wp-caption-text'>$caption</figcaption>";
     }
@@ -120,6 +121,10 @@ function add_lazyload($content) {
             $node->setAttribute("data-original", $oldsrc );
             $newsrc = ''.make_path_relative().'/wp-content/themes/tna-base-long-form/images/grey.gif';
             $node->setAttribute("src", $newsrc);
+        }
+        if (strpos($classes, 'no-lazy')) {
+            $oldsrc = $node->getAttribute('data-original');
+            $node->setAttribute("src", $oldsrc );
         }
     }
     $newHtml = preg_replace('/^<!DOCTYPE.+?>/', '', str_replace( array('<html>', '</html>', '<body>', '</body>'), array('', '', '', ''), $dom->saveHTML()));

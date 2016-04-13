@@ -153,6 +153,23 @@ get_header();
                             ?>
                             <?php if (has_post_thumbnail($post->ID)): ?>
                         </figure>
+                        <!-- Fallback for Lazy Loading -->
+                        <noscript>
+                            <figure class="full-width">
+                                <div class="image-bg-fixed-height-2"  style="background-image: url(<?php echo make_path_relative($image[0]); ?>);')">
+                                </div>
+                                <?php endif; ?>
+                                <?php
+                                $get_description = get_post(get_post_thumbnail_id())->post_excerpt;
+                                if (!empty($get_description))
+                                {
+                                    echo '<figcaption class="wp-caption-text">' . $get_description . '</figcaption>';
+                                }
+                                ?>
+                                <?php if (has_post_thumbnail($post->ID)): ?>
+                            </figure>
+                        </noscript>
+                        <!-- END Fallback for Lazy Loading -->
                     <?php endif; ?>
                     <div class="container-lf">
                         <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
