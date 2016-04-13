@@ -46,9 +46,17 @@ $(document).ready(function(){
     });
 
         /* Lazy load fallback */
+
+        /* For Content Images */
         if($('.lazy').css('display','block')){
             $('.no-lazy').css('display','none');
         }
+        /* END For Content Images */
+
+        /* For Background Images */
+        $('.no-lazy').css('display','block');
+        /* END For Background Images */
+
         /* END Lazy load fallback */
 
     /*END Lazy loading script*/

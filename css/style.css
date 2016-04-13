@@ -536,3 +536,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		overflow-y: hidden;
 	}
 }
+
+.no-lazy {
+	display: none;
+}

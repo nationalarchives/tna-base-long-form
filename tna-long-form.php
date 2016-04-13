@@ -142,7 +142,7 @@ get_header();
                     $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
                     if (has_post_thumbnail($post->ID)):
                         ?>
-                        <figure class="full-width">
+                        <figure class="full-width no-lazy">
                             <div class="lazy image-bg-fixed-height-2" data-original="<?php echo make_path_relative($image[0]); ?>" style="background-image: url('wp-content/themes/tna-base-long-form/images/grey.gif'); ?>')">
                             </div>
                             <?php endif; ?>
