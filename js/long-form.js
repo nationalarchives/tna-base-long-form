@@ -3,36 +3,6 @@
  */
 
 $(document).ready(function(){
-    /*Navigation ON / OFF States*/
-    /*$(window).scroll(function(){
-        if ($(window).scrollTop() > 50){
-            $('.cd-label').stop().animate({"opacity":"0"},100);
-            $(".cd-label").mouseover(function() {
-                $('.cd-label').css("opacity", "1");
-            })
-            $(".cd-dot").mouseover(function() {
-                $('.cd-label').css("opacity", "1");
-            })
-            $("#top-menu").hover(function() {
-                $('#top-menu').css("opacity", "1");
-            })
-            $("#top-menu").mouseleave(function() {
-                $('.cd-label').css("opacity", "0");
-            })
-            $(".cd-label").click(function() {
-                $('.cd-label').css("opacity", "1");
-            });
-            $(".cd-dot").click(function() {
-                $('.cd-label').css("opacity", "1");
-            });
-        }
-        if ($(window).scrollTop() < 50){
-            $('.cd-label').stop().animate({"opacity":"1"},100);
-        }
-    });*/
-    /*End Navigation ON / OFF States*/
-
-
     // $sections incleudes all of the container sections that relate to menu items.
     var $sections = $('.cd-section');
 
@@ -74,11 +44,13 @@ $(document).ready(function(){
     $("img.lazy").lazyload({
         effect : "fadeIn"
     });
+
         /* Lazy load fallback */
         if($('.lazy').css('display','block')){
             $('.no-lazy').css('display','none');
         }
         /* END Lazy load fallback */
+
     /*END Lazy loading script*/
 
     /*Scroll to script*/
@@ -91,4 +63,40 @@ $(document).ready(function(){
     });
     /*END Scroll to script*/
 
+
+    /* Parallax Scrolling */
+
+    // Start listening for the user to scroll...
+
+    $(window).scroll(function() {
+        // Parallax the header with css3 tech
+        if ( $(window).width() > 1024) {
+            $('.intro-text').css({
+                transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
+            });
+        }
+        else {
+            $('.intro-text').css({
+                display: "block"
+            });
+        }
+    });
+
+    $(window).scroll(function(){
+        var element = $(".image-bg-fixed-height-2").offset().top;
+        var scrollTop = $(window).scrollTop();
+        var width = $(window).width()
+        if (scrollTop >= element && width > 1024){
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment': 'fixed',
+                'background-size': 'cover'
+            });
+        }
+        else {
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment' : 'scroll'
+            });
+        }
+    });
 });
+

@@ -87,9 +87,13 @@ p {
 	margin-bottom: 25px;
 	word-spacing: 10px;
 	color: #FFFFFF;
-
 	text-shadow: #a3a39a;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.full-div {
+	width: 100%;
+	background-color: #ffffee;
 }
 
 @media (min-width: 768px) {
@@ -131,6 +135,11 @@ figure > br {
 .full-width {
 	margin-right: 0;
 	margin-left: 0;
+}
+
+.col-md-6 img {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .cd-section:nth-of-type(1) > figure {
@@ -240,8 +249,9 @@ blockquote p{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: scroll;
-	height: 500px;
+	background-attachment: fixed;
+	min-height: 500px;
+	position: relative;
 }
 @media (max-width: 768px) {
 	.lf-image-bg-fixed-height {
@@ -267,16 +277,19 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	height: 1000px;
-	width: auto;
+	min-height: 1000px;
+	max-width: 100%;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: scroll;
+	/*background-attachment: scroll;*/
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
-		height: 240px;
+		min-height: 240px;
 		background-size: cover;
 	}
 }
