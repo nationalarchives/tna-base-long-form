@@ -149,3 +149,6 @@ function menu_order()
 }
 add_action( 'admin_init', 'menu_order' );
 /* END Adding Menu Order to Posts*/
+
+/* Changeing Medium size Thumbnail */
+add_image_size( 'medium', 600, 9999 );
