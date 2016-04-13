@@ -37,14 +37,6 @@ $(document).ready(function(){
 
     });
     /*Lazy loading script*/
-    $("div.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
         /* Lazy load fallback */
 
         /* For Content Images */
@@ -58,6 +50,14 @@ $(document).ready(function(){
         /* END For Background Images */
 
         /* END Lazy load fallback */
+
+    $("div.lazy").lazyload({
+        effect : "fadeIn"
+    });
+
+    $("img.lazy").lazyload({
+        effect : "fadeIn"
+    });
 
     /*END Lazy loading script*/
 
