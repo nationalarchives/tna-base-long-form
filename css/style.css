@@ -1,25 +1,17 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-
 Version:	1.0
 Date published:	04/03/2016
 Designed by: Punal C
 Primary use: Long form template
-
 [Table of contents]
-
 1. General
 	1.1 Reset Bootstrap
 	1.2 Reset TNA Base
-
 2. Sections
-
 3. Container
-
 4. Components
-
 5. Navigation
-
 -------------------------------------------------------------------*/
 
 /*--------------------
@@ -225,7 +217,7 @@ blockquote p{
 		left: -9px;
 	}
 }
-	/*Image captions*/
+/*Image captions*/
 .wp-caption-text {
 	position: relative;
 	font-size: .8em;
@@ -537,6 +529,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-.no-lazy {
+figure.full-width.no-lazy {
 	display: none;
 }

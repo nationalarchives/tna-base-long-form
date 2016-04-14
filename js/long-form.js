@@ -37,19 +37,19 @@ $(document).ready(function(){
 
     });
     /*Lazy loading script*/
-        /* Lazy load fallback */
+    /* Lazy load fallback */
 
-        /* For Content Images */
-        if($('.lazy').css('display','block')){
-            $('.no-lazy').css('display','none');
-        }
-        /* END For Content Images */
+    /* For Content Images */
+    if($('.lazy').css('display','block')){
+        $('.no-lazy').css('display','none');
+    }
+    /* END For Content Images */
 
-        /* For Background Images */
-        $('.no-lazy').css('display','block');
-        /* END For Background Images */
+    /* For Background Images */
+    $('figure.no-lazy').css('display','block');
+    /* END For Background Images */
 
-        /* END Lazy load fallback */
+    /* END Lazy load fallback */
 
     $("div.lazy").lazyload({
         effect : "fadeIn"
@@ -107,4 +107,3 @@ $(document).ready(function(){
         }
     });
 });
-

@@ -9,3 +9,11 @@ i.mce-i-icon:before {
     margin-left: -2px;
     padding-right: 2px;
 }
+
+.lazy {
+    display: none;
+}
+
+.no-lazy {
+    display: block;
+}
