@@ -91,7 +91,7 @@ add_filter('the_content', 'filter_lazyload');
 /* END preg_replace_callback for Lazy Loader */
 /* Filter function for Lazy Load */
 function preg_lazyload($img_match) {
-    $img_replace = $img_match[1] . 'src="' . get_stylesheet_directory_uri() . '/img/grey.gif" data-original' . substr($img_match[2], 3) . $img_match[3];
+    $img_replace = $img_match[1] . 'src="' . get_stylesheet_directory_uri() . '/images/grey.gif" data-original' . substr($img_match[2], 3) . $img_match[3];
     $img_replace = preg_replace('/class\s*=\s*"/i', 'class="lazy ', $img_replace);
     $img_replace .= '<noscript>' . $img_match[0] . '</noscript>';
     return $img_replace;
