@@ -126,3 +126,23 @@ function wpse_74735_caption_shortcode( $attr, $content = NULL )
     $caption = str_replace( 'class="wp-caption', 'class="wp-caption img-responsive', $caption );
     return $caption;
 }
+
+
+/* Change the name of posts */
+function post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Long Form Sections';
+    $submenu['edit.php'][5][0] = 'Sections';
+    $submenu['edit.php'][10][0] = 'Add Sections';
+    $submenu['edit.php'][16][0] = 'Section Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'post_label' );
+/* Adding Menu Order to Posts*/
+function menu_order()
+{
+    add_post_type_support( 'post', 'page-attributes' );
+}
+add_action( 'admin_init', 'menu_order' );
+/* END Adding Menu Order to Posts*/

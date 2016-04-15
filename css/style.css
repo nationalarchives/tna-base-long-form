@@ -557,3 +557,18 @@ p.wp-caption.img-responsive-text {
 	font-size: 14px;
 	margin-top: 2px;
 }
+
+.gallery-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+.gallery-icon > img {
+	flex-shrink: 0;
+	min-width:100%;
+	height: auto;
+}
