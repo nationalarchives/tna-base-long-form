@@ -225,7 +225,7 @@ blockquote p{
 	clear: both;
 	margin-bottom: .5em;
 	text-align: center;
-	top: 0px;
+	margin-top: .5em;
 }
 
 .wp-cation-inline {
@@ -531,4 +531,29 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 figure.full-width.no-lazy {
 	display: none;
+}
+
+.container-lf {
+	display: block;
+}
+
+noscript .no-lazy {
+	display: block;
+}
+
+
+img.lazy {
+	display: none;
+}
+
+
+div.wp-caption {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+p.wp-caption.img-responsive-text {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 2px;
 }

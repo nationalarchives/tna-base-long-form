@@ -39,11 +39,7 @@ $(document).ready(function(){
     /*Lazy loading script*/
     /* Lazy load fallback */
 
-    /* For Content Images */
-    if($('.lazy').css('display','block')){
-        $('.no-lazy').css('display','none');
-    }
-    /* END For Content Images */
+
 
     /* For Background Images */
     $('figure.no-lazy').css('display','block');
@@ -55,9 +51,16 @@ $(document).ready(function(){
         effect : "fadeIn"
     });
 
+
+    $( window ).load(function() {
+        $('img.img-responsive').css('display','block');
+    });
+
     $("img.lazy").lazyload({
         effect : "fadeIn"
     });
+
+
 
     /*END Lazy loading script*/
 
@@ -106,4 +109,8 @@ $(document).ready(function(){
             });
         }
     });
+
+
+    /*Removing style attribute from caption class*/
+    $("div.wp-caption").removeAttr("style")
 });
