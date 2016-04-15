@@ -67,87 +67,42 @@ function my_register_mce_button( $buttons ) {
     return $buttons;
 }
 
-
-/* Change the name of posts */
-
-function post_label() {
-    global $menu;
-    global $submenu;
-    $menu[5][0] = 'Long Form Sections';
-    $submenu['edit.php'][5][0] = 'Sections';
-    $submenu['edit.php'][10][0] = 'Add Sections';
-    $submenu['edit.php'][16][0] = 'Section Tags';
-    echo '';
-}
-add_action( 'admin_menu', 'post_label' );
-
-/* Adding Menu Order to Posts*/
-function menu_order()
-{
-    add_post_type_support( 'post', 'page-attributes' );
-}
-add_action( 'admin_init', 'menu_order' );
-/* END Adding Menu Order to Posts*/
-
-/* Changeing Medium size Thumbnail */
-add_image_size( 'medium', 600, 9999 );
-
-
 /* Removes Soursesets */
-
 add_filter( 'wp_get_attachment_image_attributes', function( $attr )
 {
     /*if( isset( $attr['sizes'] ) )
         unset( $attr['sizes'] );*/
-
     if( isset( $attr['srcset'] ) )
         unset( $attr['srcset'] );
-
     return $attr;
-
 }, PHP_INT_MAX );
-
 // Override the calculated image sizes
 add_filter( 'wp_calculate_image_sizes', '__return_false',  PHP_INT_MAX );
-
 // Override the calculated image sources
 add_filter( 'wp_calculate_image_srcset', '__return_false', PHP_INT_MAX );
-
 // Remove the reponsive stuff from the content
 remove_filter( 'the_content', 'wp_make_content_images_responsive' );
-
 /* END Removes Soursesets */
-
-
 /* preg_replace_callback for Lazy Loader */
-
 function filter_lazyload($content) {
     return preg_replace_callback('/(<\s*img[^>]+)(src\s*=\s*"[^"]+")([^>]+>)/i', 'preg_lazyload', $content);
 }
 add_filter('the_content', 'filter_lazyload');
-
 /* END preg_replace_callback for Lazy Loader */
-
-
 /* Filter function for Lazy Load */
 function preg_lazyload($img_match) {
-
     $img_replace = $img_match[1] . 'src="' . get_stylesheet_directory_uri() . '/img/grey.gif" data-original' . substr($img_match[2], 3) . $img_match[3];
-
     $img_replace = preg_replace('/class\s*=\s*"/i', 'class="lazy ', $img_replace);
-
     $img_replace .= '<noscript>' . $img_match[0] . '</noscript>';
     return $img_replace;
 }
 /* END Filter function for Lazy Load */
-
 /* Adds a class to every image element */
 function img_responsive($content){
     return str_replace('<img class="','<img class="img-responsive ',$content);
 }
 add_filter('the_content','img_responsive');
 /* END Adds a class to every image element */
-
 /* Removes in-line width and height attributes from any DOM element */
 function remove_width_attribute( $html ) {
     $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
@@ -158,21 +113,16 @@ add_filter( 'the_content', 'remove_width_attribute', 10 );
 
 
 add_action( 'after_setup_theme', 'wpse_74735_replace_wp_caption_shortcode' );
-
-/* Replacing the default caption shortcode handler */
-function wp_caption_shortcode() {
+function wpse_74735_replace_wp_caption_shortcode() {
     remove_shortcode( 'caption', 'img_caption_shortcode' );
     remove_shortcode( 'wp_caption', 'img_caption_shortcode' );
     add_shortcode( 'caption', 'wpse_74735_caption_shortcode' );
     add_shortcode( 'wp_caption', 'wpse_74735_caption_shortcode' );
 }
-/* END Replacing the default caption shortcode handler */
 
-/* Adding a class to image wrapper div */
-function class_caption_shortcode( $attr, $content = NULL )
+function wpse_74735_caption_shortcode( $attr, $content = NULL )
 {
     $caption = img_caption_shortcode( $attr, $content );
     $caption = str_replace( 'class="wp-caption', 'class="wp-caption img-responsive', $caption );
     return $caption;
 }
-/* END Adding a class to image wrapper div */
