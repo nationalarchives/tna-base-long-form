@@ -6,7 +6,7 @@ function tnatheme_globals() {
     if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
-            'Fighting talk: First World War Communications' => '/fighting-talk-first-world-war-communications/'
+            'Fighting talk: First World War telecommunications' => '/first-world-war/telecommunications-in-war/'
         );
     } else {
         $pre_crumbs = array(
