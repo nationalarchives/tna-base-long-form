@@ -11,7 +11,7 @@ function tnatheme_globals() {
     } else {
         $pre_crumbs = array(
             'First World War' => '/first-world-war/',
-            'Fighting talk: First World War Communications' => '/first-world-war/fighting-talk-first-world-war-communications/'
+            'Fighting talk: First World War telecommunications' => '/first-world-war/telecommunications-in-war/'
         );
         $pre_path = '';
     }

@@ -66,11 +66,11 @@ get_header();
                                         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
                                         fjs.parentNode.insertBefore(js, fjs);
                                     }(document, 'script', 'facebook-jssdk'));</script>
-                                <div class="fb-share-button" data-href="http://nationalarchives.gov.uk"
+                                <div class="fb-share-button" data-href="http://www.nationalarchives.gov.uk/first-world-war/telecommunications-in-war/"
                                      data-layout="button_count" tabindex="0"></div>
 
                             <span tabindex="0">
-                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nationalarchives.gov.uk"
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.nationalarchives.gov.uk/first-world-war/telecommunications-in-war/"
                                    data-via="UKNatArchives">Tweet</a>
                            <script>!function (d, s, id) {
                                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
