@@ -56,7 +56,10 @@ nav {
 }
 
 p {
-	margin:1.5em;
+	margin-top:1.5em;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 /*--------------------
@@ -164,7 +167,7 @@ figure > br {
 
 blockquote{
 	display:block;
-	padding: 40px 20px 15px 50px;
+	padding: 20px 20px 15px 50px;
 	margin: 30px auto 30px auto;
 	position: relative;
 
@@ -181,7 +184,7 @@ blockquote::before{
 	color: rgba(0,0,0,.1);
 	font-family: "Times New Roman", Georgia, Serif;
 	position: absolute;
-	margin-top: -115px;
+	margin-top: -155px;
 	font-size: 12em;
 	left: -9px;
 }

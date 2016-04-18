@@ -13,7 +13,7 @@ get_header();
                 <li>
                     <a href="#<?php echo sanitize_title_with_dashes(get_the_title()); ?>" class="sub-menu">
                         <span class="cd-dot"></span>
-                        <span class="cd-label arrow_box">Back to top</span>
+                        <span class="cd-label arrow_box">Introduction</span>
                     </a>
                 </li>
                 <?php
