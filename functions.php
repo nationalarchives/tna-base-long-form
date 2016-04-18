@@ -6,11 +6,12 @@ function tnatheme_globals() {
     if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
-            'BT Archives' => '/btarchives'
+            'Fighting talk: First World War Communications' => '/fighting-talk-first-world-war-communications/'
         );
     } else {
         $pre_crumbs = array(
-            'BT Archives' => '/btarchives/'
+            'First World War' => '/first-world-war/',
+            'Fighting talk: First World War Communications' => '/first-world-war/fighting-talk-first-world-war-communications/'
         );
         $pre_path = '';
     }
