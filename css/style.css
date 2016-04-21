@@ -343,11 +343,11 @@ blockquote p{
 	right: 40px;
 	top: 35%;
 	bottom: auto;
+	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
 	z-index: 1;
 	display: block;
 	margin: 0;
@@ -409,6 +409,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	width: 35px;
 	border-radius: 50%;
 	background-color: #008484;
+	transition: transform 0.2s, background-color 0.5s;
 	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
 	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
 }
@@ -627,3 +628,4 @@ and (-webkit-min-device-pixel-ratio: 2) {
 		height: auto;
 	}
 }
+
