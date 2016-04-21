@@ -98,18 +98,22 @@ function preg_lazyload($img_match) {
     return $img_replace;
 }
 /* END Filter function for Lazy Load */
-/* Adds a class to every image element */
+/* Removes in-line width and height attributes from any DOM element */
+/*function remove_width_attribute( $html ) {
+        $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
+        return $html;
+}
+add_filter( 'the_content', 'remove_width_attribute', 10 );*/
+
+ /* END Removes in-line width and height attributes from any DOM element */
+
 function img_responsive($content){
     return str_replace('<img class="','<img class="img-responsive ',$content);
 }
 add_filter('the_content','img_responsive');
 /* END Adds a class to every image element */
 /* Removes in-line width and height attributes from any DOM element */
-function remove_width_attribute( $html ) {
-    $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
-    return $html;
-}
-add_filter( 'the_content', 'remove_width_attribute', 10 );
+
 /* END Removes in-line width and height attributes from any DOM element */
 
 
