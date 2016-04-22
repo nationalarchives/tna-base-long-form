@@ -629,3 +629,19 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
+
+.position-top-right {
+	right: 280px;
+	background-position: -40px 0;
+	background-image: url(../images/icons-compressed.png);
+	width: 40px;
+	height: 40px;
+	margin: 5px 5px 5px 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 999;
+}
+
+.position-top-right:hover {
+	background-position: -40px 40px;
+}

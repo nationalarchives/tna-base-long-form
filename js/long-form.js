@@ -123,6 +123,8 @@ $(document).ready(function(){
     });
     /*END Scroll to script*/
 
+    $("<span class='position-top-right'></span>").insertBefore(".wp-caption > a > img.lazy");
+
 
 
 });
