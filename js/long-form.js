@@ -43,7 +43,7 @@ $(document).ready(function(){
         // Parallax the header with css3 tech
         if ( $(window).width() > 1024) {
             $('.intro-text').css({
-                transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
+                transform: "translate(0px,-" + $(window).scrollTop() /3 + "px)"
             });
         }
         else {
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
             // If the sectionPosition is less the the currentScroll position the section we are testing has moved above the window edge.
             // the -1 is so that it includes the section 1px before the section leave the top of the window.
-            if( sectionPosition - 200 < currentScroll ){
+            if( sectionPosition - 1 < currentScroll ){
                 // We have either read the section or are currently reading the section so we'll call it our current section
                 $currentSection = $(this);
 
@@ -119,8 +119,10 @@ $(document).ready(function(){
         var link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top
-        }, 1000);
+        }, 'slow');
     });
+
+
     /*END Scroll to script*/
 
     $("<span class='position-top-right'></span>").insertBefore(".wp-caption > a > img.lazy");

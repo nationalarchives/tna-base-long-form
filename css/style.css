@@ -246,9 +246,8 @@ blockquote p{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 	min-height: 500px;
-	position: relative;
+	width: 100%;
 }
 @media (max-width: 768px) {
 	.lf-image-bg-fixed-height {
@@ -256,6 +255,7 @@ blockquote p{
 		background-attachment: scroll;
 		height: 477px;
 		background-size: cover;
+		width: 100%;
 	}
 	.intro-text {
 		padding-top: 190px;
@@ -274,7 +274,7 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	min-height: 1000px;
+	min-height: 1200px;
 	max-width: 100%;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -282,7 +282,6 @@ blockquote p{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	/*background-attachment: scroll;*/
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
@@ -553,7 +552,7 @@ noscript .no-lazy {
 
 
 img.lazy {
-	display: none;
+	display: block;
 }
 
 
@@ -644,4 +643,26 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 .position-top-right:hover {
 	background-position: -40px 40px;
+}
+
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+	.image-bg-fixed-height-2 {
+		height: 250px;
+	}
+}
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+	.image-bg-fixed-height-2 {
+		height: 400px;
+	}
 }

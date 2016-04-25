@@ -153,7 +153,7 @@ get_header();
                         ?>
                         <?php if (has_post_thumbnail($post->ID)): ?>
                     </figure>
-                    <!-- Fallback for Lazy Loading -->
+                <!-- Fallback for Lazy Loading -->
                     <noscript>
                         <figure class="full-width">
                             <div class="image-bg-fixed-height-2"  style="background-image: url(<?php echo make_path_relative($image[0]); ?>);')">
