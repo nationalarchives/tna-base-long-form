@@ -28,7 +28,6 @@ add_action( 'wp_head', 'dequeue_parent_style', 9999 );
 function tna_child_styles() {
     wp_register_style( 'tna-parent-styles', get_template_directory_uri() . '/css/base-sass.css.min', array(), EDD_VERSION, 'all' );
     wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
-    wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
     wp_deregister_script('jquery');
     wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', '1.6.1', true);
     wp_register_script('jquerylazyload', get_stylesheet_directory_uri().'/js/jquery.lazyload.min.js', '', '1.9.3', true);
@@ -40,10 +39,7 @@ function tna_child_styles() {
     wp_enqueue_script( 'long-form' );
 }
 add_action( 'wp_enqueue_scripts', 'tna_child_styles' );
-function admin_style() {
-    wp_enqueue_style( 'admin-tna-child-styles', get_stylesheet_directory_uri() . '/css/admin-css.css', array(), '0.1', 'all' );
-}
-add_action( 'admin_print_styles', 'admin_style' );
+
 // Hooks your functions into the correct filters
 function image_align() {
     // check user permissions
@@ -98,18 +94,22 @@ function preg_lazyload($img_match) {
     return $img_replace;
 }
 /* END Filter function for Lazy Load */
-/* Adds a class to every image element */
+/* Removes in-line width and height attributes from any DOM element */
+/*function remove_width_attribute( $html ) {
+        $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
+        return $html;
+}
+add_filter( 'the_content', 'remove_width_attribute', 10 );*/
+
+ /* END Removes in-line width and height attributes from any DOM element */
+
 function img_responsive($content){
     return str_replace('<img class="','<img class="img-responsive ',$content);
 }
 add_filter('the_content','img_responsive');
 /* END Adds a class to every image element */
 /* Removes in-line width and height attributes from any DOM element */
-function remove_width_attribute( $html ) {
-    $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
-    return $html;
-}
-add_filter( 'the_content', 'remove_width_attribute', 10 );
+
 /* END Removes in-line width and height attributes from any DOM element */
 
 
@@ -147,3 +147,4 @@ function menu_order()
 }
 add_action( 'admin_init', 'menu_order' );
 /* END Adding Menu Order to Posts*/
+

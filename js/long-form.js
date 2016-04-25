@@ -3,7 +3,83 @@
  */
 
 $(document).ready(function(){
-    // $sections incleudes all of the container sections that relate to menu items.
+
+    /*Lazy loading script*/
+    /* Lazy load fallback */
+
+
+
+    /* For Background Images */
+    $('figure.no-lazy').css('display','block');
+    /* END For Background Images */
+
+    /* END Lazy load fallback */
+
+    $("div.lazy").lazyload({
+        effect : "fadeIn"
+    });
+
+
+    $( window ).load(function() {
+        $('img.img-responsive').css('display','block');
+    });
+
+    $("img.lazy").lazyload({
+        effect : "fadeIn"
+    });
+
+
+
+    /*END Lazy loading script*/
+
+
+
+
+    /* Parallax Scrolling */
+
+    // Start listening for the user to scroll...
+
+    $(window).scroll(function() {
+        // Parallax the header with css3 tech
+        if ( $(window).width() > 1024) {
+            $('.intro-text').css({
+                transform: "translate(0px,-" + $(window).scrollTop() /3 + "px)"
+            });
+        }
+        else {
+            $('.intro-text').css({
+                display: "block"
+            });
+        }
+    });
+
+    $(window).scroll(function(){
+        var element = $(".image-bg-fixed-height-2").offset().top;
+        var scrollTop = $(window).scrollTop();
+        var width = $(window).width()
+        if (scrollTop >= element && width > 1024){
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment': 'fixed',
+                'background-size': 'cover'
+            });
+        }
+        else {
+            $(".image-bg-fixed-height-2").css({
+                'background-attachment' : 'scroll'
+            });
+        }
+    });
+
+
+    /*Removing style attribute from caption class*/
+    $("div.wp-caption").removeAttr("style");
+
+
+});
+
+$(document).ready(function(){
+    console.log('Ready!');
+
     var $sections = $('.cd-section');
 
     // The user scrolls
@@ -36,33 +112,6 @@ $(document).ready(function(){
         })
 
     });
-    /*Lazy loading script*/
-    /* Lazy load fallback */
-
-
-
-    /* For Background Images */
-    $('figure.no-lazy').css('display','block');
-    /* END For Background Images */
-
-    /* END Lazy load fallback */
-
-    $("div.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
-
-    $( window ).load(function() {
-        $('img.img-responsive').css('display','block');
-    });
-
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
-
-
-    /*END Lazy loading script*/
 
     /*Scroll to script*/
     $(".sub-menu").click(function(e) {
@@ -70,47 +119,14 @@ $(document).ready(function(){
         var link = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(link).offset().top
-        }, 1000);
+        }, 'slow');
     });
+
+
     /*END Scroll to script*/
 
-
-    /* Parallax Scrolling */
-
-    // Start listening for the user to scroll...
-
-    $(window).scroll(function() {
-        // Parallax the header with css3 tech
-        if ( $(window).width() > 1024) {
-            $('.intro-text').css({
-                transform: "translate(0px,-" + $(window).scrollTop() /2 + "%)"
-            });
-        }
-        else {
-            $('.intro-text').css({
-                display: "block"
-            });
-        }
-    });
-
-    $(window).scroll(function(){
-        var element = $(".image-bg-fixed-height-2").offset().top;
-        var scrollTop = $(window).scrollTop();
-        var width = $(window).width()
-        if (scrollTop >= element && width > 1024){
-            $(".image-bg-fixed-height-2").css({
-                'background-attachment': 'fixed',
-                'background-size': 'cover'
-            });
-        }
-        else {
-            $(".image-bg-fixed-height-2").css({
-                'background-attachment' : 'scroll'
-            });
-        }
-    });
+    $("<span class='position-top-right'></span>").insertBefore(".wp-caption > a > img.lazy");
 
 
-    /*Removing style attribute from caption class*/
-    $("div.wp-caption").removeAttr("style")
+
 });
