@@ -275,7 +275,7 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	min-height: 1200px;
+	min-height: 600px;
 	max-width: 100%;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -286,7 +286,7 @@ blockquote p{
 }
 @media (max-width: 768px) {
 	.image-bg-fixed-height-2 {
-		min-height: 240px;
+		min-height: 200px;
 		background-size: cover;
 	}
 }
@@ -501,7 +501,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		display: none;
 	}
 	.intro-text {
-		padding-top: 80px;
+		padding-top: 20px;
 	}
 }
 
@@ -655,6 +655,31 @@ and (orientation: landscape) {
 
 
 
+/* Portrait */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+	.intro-text {
+		padding-top: 20px;
+	}
+	.image-bg-fixed-height-2 {
+		min-height: 500px;
+	}
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+	.intro-text .intro-heading {
+		padding-top: 100px;
+	}
+}
+
 .position-top-right {
 	right: 45px;
 	top: 6px;
@@ -669,4 +694,15 @@ and (orientation: landscape) {
 
 .position-top-right:hover {
 	background-position: -40px 40px;
+}
+
+.logo {
+	margin: 1.5em auto;
+}
+
+.shadowed {
+	-webkit-filter: drop-shadow(2px 0px 12px #fff);
+	filter: url(#drop-shadow);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#fff')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#fff')";
 }
