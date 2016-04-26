@@ -103,11 +103,7 @@ add_filter( 'the_content', 'remove_width_attribute', 10 );*/
 
  /* END Removes in-line width and height attributes from any DOM element */
 
-function img_responsive($content){
-    return str_replace('<img class="','<img class="img-responsive ',$content);
-}
-add_filter('the_content','img_responsive');
-/* END Adds a class to every image element */
+
 /* Removes in-line width and height attributes from any DOM element */
 
 /* END Removes in-line width and height attributes from any DOM element */
@@ -119,13 +115,6 @@ function wpse_74735_replace_wp_caption_shortcode() {
     remove_shortcode( 'wp_caption', 'img_caption_shortcode' );
     add_shortcode( 'caption', 'wpse_74735_caption_shortcode' );
     add_shortcode( 'wp_caption', 'wpse_74735_caption_shortcode' );
-}
-
-function wpse_74735_caption_shortcode( $attr, $content = NULL )
-{
-    $caption = img_caption_shortcode( $attr, $content );
-    $caption = str_replace( 'class="wp-caption', 'class="wp-caption img-responsive', $caption );
-    return $caption;
 }
 
 
@@ -147,4 +136,19 @@ function menu_order()
 }
 add_action( 'admin_init', 'menu_order' );
 /* END Adding Menu Order to Posts*/
+
+
+function wpse_74735_caption_shortcode( $attr, $content = NULL )
+{
+    $caption = img_caption_shortcode( $attr, $content );
+    $caption = str_replace( 'class="wp-caption', 'class="wp-caption', $caption );
+    return $caption;
+}
+
+
+function img_responsive($content){
+    return str_replace('<img class="','<img class="img-responsive ',$content);
+}
+add_filter('the_content','img_responsive');
+/* END Adds a class to every image element */
 

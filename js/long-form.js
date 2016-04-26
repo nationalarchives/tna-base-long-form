@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
 
+
     /*Lazy loading script*/
     /* Lazy load fallback */
 
@@ -125,7 +126,8 @@ $(document).ready(function(){
 
     /*END Scroll to script*/
 
-    $("<span class='position-top-right'></span>").insertBefore(".wp-caption > a > img.lazy");
+    $("<div class='position-top-right'><span class='sprite icon-new-window'></span></div>").insertBefore(".wp-caption > a > img.lazy");
+
 
 
 

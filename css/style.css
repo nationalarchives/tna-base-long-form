@@ -65,6 +65,7 @@ p {
 /*--------------------
 3. Sections
 --------------------*/
+
 .intro-text {
 	padding: 1.5em;
 }
@@ -560,6 +561,7 @@ div.wp-caption {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	margin-top: 1.5em;
+	position: relative;
 
 }
 
@@ -629,22 +631,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 
-.position-top-right {
-	right: 280px;
-	background-position: -40px 0;
-	background-image: url(../images/icons-compressed.png);
-	width: 40px;
-	height: 40px;
-	margin: 5px 5px 5px 0;
-	cursor: pointer;
-	position: absolute;
-	z-index: 999;
-}
-
-.position-top-right:hover {
-	background-position: -40px 40px;
-}
-
 
 /* Portrait */
 @media only screen
@@ -665,4 +651,22 @@ and (orientation: landscape) {
 	.image-bg-fixed-height-2 {
 		height: 400px;
 	}
+}
+
+
+
+.position-top-right {
+	right: 45px;
+	top: 6px;
+	background-position: -40px 0;
+	background-image: url(../images/icons-compressed.png);
+	width: 40px;
+	height: 40px;
+	margin: 5px 5px 5px 0;
+	cursor: pointer;
+	position: absolute;
+}
+
+.position-top-right:hover {
+	background-position: -40px 40px;
 }
