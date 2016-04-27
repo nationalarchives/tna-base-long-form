@@ -194,7 +194,7 @@ get_header();
                         echo '<span class="sub-heading">'.$sub_heading.'</span>';
                     }
                 ?>
-                <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo">
+                <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo" title="BT Archives">
             </div>
         </div>
     </main>
