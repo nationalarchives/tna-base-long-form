@@ -187,13 +187,15 @@ get_header();
         ?>
         <!--End Loop through posts-->
         <div class="container-lf">
-            <?php
-            $sub_heading = get_post_meta($post->ID, 'sub_heading_sub_heading', true);
-            if ($sub_heading) {
-                echo '<p class="sub-heading">'.$sub_heading.'</p>';
-            }
-            ?>
-            <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo">
+            <div class="center">
+                <?php
+                    $sub_heading = get_post_meta($post->ID, 'sub_heading_sub_heading', true);
+                    if ($sub_heading) {
+                        echo '<span class="sub-heading">'.$sub_heading.'</span>';
+                    }
+                ?>
+                <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo">
+            </div>
         </div>
     </main>
 

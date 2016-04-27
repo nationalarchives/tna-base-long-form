@@ -667,6 +667,9 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	.image-bg-fixed-height-2 {
 		min-height: 500px;
 	}
+	.center {
+		padding-left: 4%;
+	}
 }
 
 /* Landscape */
@@ -677,6 +680,9 @@ and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
 	.intro-text .intro-heading {
 		padding-top: 100px;
+	}
+	.center	{
+		padding-left: 14px;
 	}
 }
 
@@ -696,13 +702,29 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	background-position: -40px 40px;
 }
 
+.center {
+	margin: .5em auto;
+	width: 50%;
+	padding-left: 13%;
+}
+
 .logo {
-	margin-top: .5em;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.5em;
+	padding-bottom: 5px;
 }
 
 .sub-heading {
-	text-align: center;
+	float: left;
+	margin-right: .5em;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+	.center {
+		padding-left: 5px;
+	}
 }

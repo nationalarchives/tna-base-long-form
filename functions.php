@@ -172,7 +172,7 @@ function sub_heading_get_meta( $value ) {
 function sub_heading_add_meta_box() {
     add_meta_box(
         'sub_heading-sub-heading',
-        __( 'Sub-Heading', 'sub_heading' ),
+        __( 'Text field before footer', 'sub_heading' ),
         'sub_heading_html',
         'page',
         'normal',
@@ -186,7 +186,6 @@ function sub_heading_html( $post) {
     wp_nonce_field( '_sub_heading_nonce', 'sub_heading_nonce' ); ?>
 
     <p>
-    <label for="sub_heading_sub_heading"><?php _e( 'Sub-Heading', 'sub_heading' ); ?></label><br>
     <input class="widefat" type="text" name="sub_heading_sub_heading" id="sub_heading_sub_heading" value="<?php echo sub_heading_get_meta( 'sub_heading_sub_heading' ); ?>">
     </p>
     <?php
