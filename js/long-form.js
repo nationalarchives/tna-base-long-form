@@ -79,7 +79,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    console.log('Ready!');
 
     var $sections = $('.cd-section');
 
