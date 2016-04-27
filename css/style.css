@@ -456,10 +456,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	-moz-transform-origin: 100% 50%;
 	-ms-transform-origin: 100% 50%;
 	-o-transform-origin: 100% 50%;
-	backface-visibility: inherit;
-	-webkit-backface-visibility: inherit;
-	-moz-backface-visibility: inherit;
-	-ms-backface-visibility: inherit;
+	backface-visibility: visible;
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	-ms-backface-visibility: visible;
 }
 
 #top-menu > li {
@@ -697,12 +697,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 .logo {
-	margin: 1.5em auto;
+	margin-top: .5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
 }
 
-.shadowed {
-	-webkit-filter: drop-shadow(2px 0px 12px #fff);
-	filter: url(#drop-shadow);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#fff')";
-	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#fff')";
+.sub-heading {
+	text-align: center;
 }

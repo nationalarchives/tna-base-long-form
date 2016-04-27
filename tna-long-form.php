@@ -89,13 +89,6 @@ get_header();
                                 <div class="intro-text">
                                     <h1 class="intro-heading"><?php the_title();  ?></h1>
                                     <h2><a href="#" class="sr-only sr-only-focusable"><?php the_title(); ?></a></h2>
-                                    <?php
-                                        $sub_heading = get_post_meta($post->ID, 'sub_heading_sub_heading', true);
-                                        if ($sub_heading) {
-                                            echo '<p>'.$sub_heading.'</p>';
-                                        }
-                                    ?>
-                                    <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo shadowed">
                                 </div>
                             </div>
                         </div>
@@ -194,6 +187,12 @@ get_header();
         ?>
         <!--End Loop through posts-->
         <div class="container-lf">
+            <?php
+            $sub_heading = get_post_meta($post->ID, 'sub_heading_sub_heading', true);
+            if ($sub_heading) {
+                echo '<p class="sub-heading">'.$sub_heading.'</p>';
+            }
+            ?>
             <img src="<?php echo make_path_relative(get_stylesheet_directory_uri()); ?>/images/bt_logo.png" alt="bt_logo" class="img-responsive logo">
         </div>
     </main>
