@@ -5,37 +5,6 @@
 $(document).ready(function(){
 
 
-    /*Lazy loading script*/
-    /* Lazy load fallback */
-
-
-
-    /* For Background Images */
-    $('figure.no-lazy').css('display','block');
-    /* END For Background Images */
-
-    /* END Lazy load fallback */
-
-    $("div.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
-
-    $( window ).load(function() {
-        $('img.img-responsive').css('display','block');
-    });
-
-    $("img.lazy").lazyload({
-        effect : "fadeIn"
-    });
-
-
-
-    /*END Lazy loading script*/
-
-
-
-
     /* Parallax Scrolling */
 
     // Start listening for the user to scroll...
@@ -125,7 +94,7 @@ $(document).ready(function(){
 
     /*END Scroll to script*/
 
-    $("<div class='position-top-right'><span class='sprite icon-new-window'></span></div>").insertBefore(".wp-caption > a > img.lazy");
+    $("<div class='position-top-right'><span class='sprite icon-new-window'></span></div>").insertBefore(".wp-caption > a > img");
 
 
 

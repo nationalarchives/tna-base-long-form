@@ -539,20 +539,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	}
 }
 
-figure.full-width.no-lazy {
-	display: none;
-}
 
 .container-lf {
-	display: block;
-}
-
-noscript .no-lazy {
-	display: block;
-}
-
-
-img.lazy {
 	display: block;
 }
 
