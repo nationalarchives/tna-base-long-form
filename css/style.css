@@ -186,7 +186,7 @@ blockquote::before{
 	color: rgba(0,0,0,.1);
 	font-family: "Times New Roman", Georgia, Serif;
 	position: absolute;
-	margin-top: -155px;
+	margin-top: -110px;
 	font-size: 12em;
 	left: -9px;
 }
@@ -703,8 +703,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 .sub-heading {
 	float: left;
 	margin-right: .5em;
-	font-size: 12px;
-	padding-top: 5px;
+	font-size: 10px;
+	padding-top: 7px;
 }
 
 @media only screen
