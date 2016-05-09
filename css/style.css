@@ -275,7 +275,7 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	min-height: 600px;
+	min-height: 900px;
 	max-width: 100%;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
