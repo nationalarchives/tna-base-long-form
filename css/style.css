@@ -732,3 +732,25 @@ and (orientation : landscape) {
 		min-height: 800px;
 	}
 }
+
+.image-bg-fixed-height-2 {
+	background-attachment: fixed;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.image-bg-fixed-height-2 {
+		background-attachment: scroll;
+	}
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.image-bg-fixed-height-2 {
+		background-attachment: scroll;
+	}
+}
