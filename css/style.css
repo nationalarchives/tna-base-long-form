@@ -276,7 +276,7 @@ blockquote p{
 
 .image-bg-fixed-height-2 {
 	min-height: 1200px;
-	max-width: 100%;
+	min-width: 100%;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -637,7 +637,10 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
 	.image-bg-fixed-height-2 {
-		height: 400px;
+		min-height: 800px;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
 	}
 }
 
@@ -653,7 +656,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		padding-top: 20px;
 	}
 	.image-bg-fixed-height-2 {
-		min-height: 500px;
+		min-height: 650px;
 	}
 	.center {
 		padding-left: 4%;
@@ -719,4 +722,13 @@ and (orientation: portrait) {
 
 .size-full {
 	width: 100%;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+	.image-bg-fixed-height-2 {
+		min-height: 800px;
+	}
 }

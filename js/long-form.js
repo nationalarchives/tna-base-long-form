@@ -29,8 +29,7 @@ $(document).ready(function(){
         var width = $(window).width()
         if (scrollTop >= element && width > 1024){
             $(".image-bg-fixed-height-2").css({
-                'background-attachment': 'fixed',
-                'background-size': 'cover'
+                'background-attachment': 'fixed'
             });
         }
         else {
