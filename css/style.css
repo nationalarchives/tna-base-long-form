@@ -275,8 +275,8 @@ blockquote p{
 }
 
 .image-bg-fixed-height-2 {
-	min-height: 600px;
-	max-width: 100%;
+	min-height: 1200px;
+	min-width: 100%;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -373,8 +373,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 #cd-vertical-nav a {
 	display: inline-block;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: visible;
+	-webkit-backface-visibility: visible;
 	text-decoration: none;
 }
 
@@ -505,6 +505,16 @@ and (-webkit-min-device-pixel-ratio: 1) {
 	}
 }
 
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#cd-vertical-nav {
+		display: none;
+	}
+}
+
 /* Social media */
 .bt-archive-social-media {
 	padding: 5px;
@@ -560,7 +570,6 @@ p.wp-caption.img-responsive-text {
 }
 
 .gallery-icon {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
@@ -568,7 +577,6 @@ p.wp-caption.img-responsive-text {
 }
 
 .gallery-icon > img {
-	flex-shrink: 0;
 	min-width:100%;
 	height: auto;
 }
@@ -637,7 +645,10 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
 	.image-bg-fixed-height-2 {
-		height: 400px;
+		min-height: 800px;
+		width: 100%;
+		background-size: cover;
+		background-position: center center;
 	}
 }
 
@@ -653,7 +664,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 		padding-top: 20px;
 	}
 	.image-bg-fixed-height-2 {
-		min-height: 500px;
+		min-height: 650px;
 	}
 	.center {
 		padding-left: 4%;
@@ -715,4 +726,51 @@ and (orientation: portrait) {
 	.center {
 		padding-left: 5px;
 	}
+}
+
+.size-full {
+	width: 100%;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+	.image-bg-fixed-height-2 {
+		min-height: 800px;
+	}
+}
+
+.image-bg-fixed-height-2 {
+	background-attachment: fixed;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.image-bg-fixed-height-2 {
+		background-attachment: scroll;
+	}
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.image-bg-fixed-height-2 {
+		background-attachment: scroll;
+	}
+}
+
+img.aligncenter {
+	width: 100%;
+}
+
+.img-reponsive {
+	width: 100%;
+}
+
+.size-large {
+	width: 100%;
 }

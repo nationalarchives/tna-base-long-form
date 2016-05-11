@@ -23,14 +23,13 @@ $(document).ready(function(){
         }
     });
 
-    $(window).scroll(function(){
+   /* $(window).scroll(function(){
         var element = $(".image-bg-fixed-height-2").offset().top;
         var scrollTop = $(window).scrollTop();
         var width = $(window).width()
-        if (scrollTop >= element && width > 1024){
+        if (scrollTop >= element && width >= 1024){
             $(".image-bg-fixed-height-2").css({
-                'background-attachment': 'fixed',
-                'background-size': 'cover'
+                'background-attachment': 'fixed'
             });
         }
         else {
@@ -38,7 +37,7 @@ $(document).ready(function(){
                 'background-attachment' : 'scroll'
             });
         }
-    });
+    });*/
 
 
     /*Removing style attribute from caption class*/
@@ -95,7 +94,6 @@ $(document).ready(function(){
     /*END Scroll to script*/
 
     $("<div class='position-top-right'><span class='sprite icon-new-window'></span></div>").insertBefore(".wp-caption > a > img");
-
 
 
 
