@@ -373,8 +373,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 #cd-vertical-nav a {
 	display: inline-block;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: visible;
+	-webkit-backface-visibility: visible;
 	text-decoration: none;
 }
 
@@ -755,5 +755,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 
 img.aligncenter {
-	width 100%;
+	width: 100%;
 }
