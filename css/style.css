@@ -568,7 +568,6 @@ p.wp-caption.img-responsive-text {
 }
 
 .gallery-icon > img {
-	flex-shrink: 0;
 	min-width:100%;
 	height: auto;
 }
@@ -753,4 +752,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
 	.image-bg-fixed-height-2 {
 		background-attachment: scroll;
 	}
+}
+
+img.aligncenter {
+	width 100%;
 }
