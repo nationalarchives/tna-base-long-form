@@ -757,3 +757,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 img.aligncenter {
 	width: 100%;
 }
+
+.img-reponsive {
+	width: 100%;
+}
