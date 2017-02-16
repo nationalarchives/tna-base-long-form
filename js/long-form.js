@@ -78,6 +78,15 @@ $(document).ready(function(){
 
     $("<div class='position-top-right'><span class='sprite icon-new-window'></span></div>").insertBefore(".wp-caption > a > img");
 
+    /*Fade right navigation when reaches footer*/
+    $(window).scroll(function() {
+        if ($(window).scrollTop() + 600 > $(document).height() - $(window).height() ) {
+            jQuery('#cd-vertical-nav').fadeOut(1000);
+        }else{
+            $('#cd-vertical-nav').fadeIn(1000);
+        }
+    });
+
 
 
 });
