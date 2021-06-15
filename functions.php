@@ -3,7 +3,14 @@
 function tnatheme_globals() {
     global $pre_path;
     global $pre_crumbs;
-    if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
+    $headers = apache_request_headers();
+    if ( isset($_SERVER['HTTP_X_NGINX_PROXY']) && isset($headers['X_HOST_TYPE']) && $headers['X_HOST_TYPE'] == 'public' ) {
+        $pre_crumbs = array(
+            'First World War' => '/first-world-war/',
+            'Fighting talk: First World War telecommunications' => '/first-world-war/telecommunications-in-war/'
+        );
+        $pre_path = '';
+    } elseif (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
             'Fighting talk: First World War telecommunications' => '/first-world-war/telecommunications-in-war/'
@@ -28,7 +35,7 @@ add_action( 'wp_head', 'dequeue_parent_style', 9999 );
 
 // Enqueue styles & scripts
 function tna_child_styles() {
-    wp_register_style( 'tna-parent-styles', get_template_directory_uri() . '/css/base-sass.css.min', array(), EDD_VERSION, 'all' );
+    wp_register_style( 'tna-parent-styles', get_template_directory_uri() . '/css/base-sass.min.css', array(), EDD_VERSION, 'all' );
     wp_register_style( 'tna-child-styles', get_stylesheet_directory_uri() . '/css/style.css', array(), '0.1', 'all' );
     wp_deregister_script('jquery');
     wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', '1.6.1', true);
