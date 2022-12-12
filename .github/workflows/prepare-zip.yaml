@@ -25,6 +25,7 @@ on:
 
 jobs:
   prepare:
+    runs-on: ubuntu-latest
     env:
       region: "eu-west-2"
       release: ${{ github.event.inputs.release }}
@@ -46,14 +47,14 @@ jobs:
 
       - name: run prep script
         run: |
-          cd ${{ github.workspace }}/theme
+          cd ..
           zip -r tna-base-long-form.zip tna-base-long-form
           zip  ../files/appspec.yml
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ AWS_ROLE_ARN_DEV }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           aws-region: eu-west-2
 
       - name: Copy zip to S3
