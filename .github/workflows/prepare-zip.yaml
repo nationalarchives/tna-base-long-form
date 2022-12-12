@@ -49,6 +49,8 @@ jobs:
           cp .github/files/appspec.yml ./appspec.yml
           cd ..
           zip -r tna-base-long-form.zip tna-base-long-form -x "*.git*"
+          pwd
+          ls -alh
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -58,5 +60,5 @@ jobs:
 
       - name: Copy zip to S3
         run: |
-          aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website
+          aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website/tna-base-long-form.zip
 ...
