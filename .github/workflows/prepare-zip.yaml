@@ -51,11 +51,8 @@ jobs:
 
       - name: run prep script
         run: |
-          pwd
           cp .github/files/appspec.yml ./appspec.yml
           cd ..
           zip -r tna-base-long-form.zip tna-base-long-form -x "*.git*"
-          pwd
-          ls -alh
           aws s3 cp tna-base-long-form.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/tna-base-long-form.zip
 ...
