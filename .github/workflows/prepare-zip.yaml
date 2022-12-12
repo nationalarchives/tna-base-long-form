@@ -47,6 +47,7 @@ jobs:
 
       - name: run prep script
         run: |
+          pwd
           cd ..
           zip -r tna-base-long-form.zip tna-base-long-form
           zip  ../files/appspec.yml
