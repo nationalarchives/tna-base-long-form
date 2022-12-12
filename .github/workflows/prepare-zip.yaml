@@ -47,7 +47,7 @@ jobs:
 
       - name: run prep script
         run: |
-          cd ${{ github.workspace }}/theme
+          cd ..
           zip -r tna-base-long-form.zip tna-base-long-form
           zip  ../files/appspec.yml
 
