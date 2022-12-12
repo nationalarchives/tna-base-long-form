@@ -53,7 +53,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ AWS_ROLE_ARN_DEV }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           aws-region: eu-west-2
 
       - name: Copy zip to S3
