@@ -46,10 +46,9 @@ jobs:
       - name: run prep script
         run: |
           pwd
-          cp tna-base-long-form/.github/files/appspec.yml ./appspec.yml
+          cp .github/files/appspec.yml ./appspec.yml
           cd ..
           zip -r tna-base-long-form.zip tna-base-long-form -x "*.git*"
-          zip  tna-base-long-form/files/appspec.yml
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
