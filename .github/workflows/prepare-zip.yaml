@@ -51,14 +51,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/theme
           zip -r tna-base-long-form.zip tna-base-long-form
-          cat << EOF > appspec.yml
-version: 0.0
-os: linux
-files:
-  - source: "/"
-    destination: "/var/www/html/wp-content/themes"
-file_exists_behavior: OVERWRITE
-EOF
+          zip  .github/workflows/appspec.yml
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
