@@ -24,6 +24,8 @@ on:
         default: ""
 
 jobs:
+  runs-on: ubuntu-latest
+
   prepare:
     env:
       region: "eu-west-2"
