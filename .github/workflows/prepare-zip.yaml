@@ -48,7 +48,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}/theme
           zip -r tna-base-long-form.zip tna-base-long-form
-          zip  .github/workflows/appspec.yml
+          zip  ../files/appspec.yml
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
