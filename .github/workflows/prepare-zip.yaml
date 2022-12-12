@@ -24,9 +24,8 @@ on:
         default: ""
 
 jobs:
-  runs-on: ubuntu-latest
-
   prepare:
+    runs-on: ubuntu-latest
     env:
       region: "eu-west-2"
       release: ${{ github.event.inputs.release }}
