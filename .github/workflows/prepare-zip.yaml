@@ -1,0 +1,63 @@
+---
+name: Prepare Zip File
+
+permissions:
+  id-token: write
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy-environment:
+        type: choice
+        description: Environment
+        required: true
+        default: "dev"
+        options:
+          - dev
+          - staging
+          - live
+      release:
+        type: string
+        description: Release
+        required: false
+        default: ""
+
+jobs:
+  prepare:
+    runs-on: windows-latest
+    timeout-minutes: 10
+
+    env:
+      region: "eu-west-2"
+      release: ${{ github.event.inputs.release }}
+
+    steps:
+      - name: checkout repo with release
+        if: "${{ env.release != '' }}"
+        uses: actions/checkout@v3
+        with:
+          ref: "${{ env.release }}"
+          path: "theme"
+
+      - name: checkout repo with branch
+        if: "${{ env.release == '' }}"
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
+          path: "theme"
+
+      - name: run prep script
+        run: |
+          cd ${{ github.workspace }}/theme
+          zip -r tna-base-long-form.zip tna-base-long-form
+          cat << EOF > appspec.yml
+version: 0.0
+os: linux
+files:
+  - source: "/"
+    destination: "/var/www/html/wp-content/themes"
+file_exists_behavior: OVERWRITE
+EOF
+          aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website
+...
