@@ -43,6 +43,12 @@ jobs:
         with:
           ref: ${{ github.event.inputs.branch }}
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
+          aws-region: eu-west-2
+
       - name: run prep script
         run: |
           pwd
@@ -51,14 +57,5 @@ jobs:
           zip -r tna-base-long-form.zip tna-base-long-form -x "*.git*"
           pwd
           ls -alh
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
-          aws-region: eu-west-2
-
-      - name: Copy zip to S3
-        run: |
-          aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website/tna-base-long-form.zip
+          aws s3 cp tna-base-long-form.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/tna-base-long-form.zip
 ...
