@@ -23,40 +23,40 @@ on:
         required: false
         default: ""
 
-tasks:
+jobs:
+  prepare:
+    env:
+      region: "eu-west-2"
+      release: ${{ github.event.inputs.release }}
 
-  env:
-    region: "eu-west-2"
-    release: ${{ github.event.inputs.release }}
+    steps:
+      - name: checkout repo with release
+        if: "${{ env.release != '' }}"
+        uses: actions/checkout@v3
+        with:
+          ref: "${{ env.release }}"
+          path: "theme"
 
-  steps:
-    - name: checkout repo with release
-      if: "${{ env.release != '' }}"
-      uses: actions/checkout@v3
-      with:
-        ref: "${{ env.release }}"
-        path: "theme"
+      - name: checkout repo with branch
+        if: "${{ env.release == '' }}"
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
+          path: "theme"
 
-    - name: checkout repo with branch
-      if: "${{ env.release == '' }}"
-      uses: actions/checkout@v3
-      with:
-        ref: ${{ github.event.inputs.branch }}
-        path: "theme"
+      - name: run prep script
+        run: |
+          cd ${{ github.workspace }}/theme
+          zip -r tna-base-long-form.zip tna-base-long-form
+          zip  .github/workflows/appspec.yml
 
-    - name: run prep script
-      run: |
-        cd ${{ github.workspace }}/theme
-        zip -r tna-base-long-form.zip tna-base-long-form
-        zip  .github/workflows/appspec.yml
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ AWS_ROLE_ARN_DEV }}
+          aws-region: eu-west-2
 
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        role-to-assume: ${{ AWS_ROLE_ARN_DEV }}
-        aws-region: eu-west-2
-
-    - name: Copy zip to S3
-      run: |
-        aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website
+      - name: Copy zip to S3
+        run: |
+          aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website
 ...
