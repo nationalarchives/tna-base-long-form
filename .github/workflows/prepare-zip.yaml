@@ -59,5 +59,14 @@ files:
     destination: "/var/www/html/wp-content/themes"
 file_exists_behavior: OVERWRITE
 EOF
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ AWS_ROLE_ARN_DEV }}
+          aws-region: eu-west-2
+
+      - name: Copy zip to S3
+        run: |
           aws s3 cp tna-base-long-form.zip s3://ds-dev-deployment-source/website
 ...
