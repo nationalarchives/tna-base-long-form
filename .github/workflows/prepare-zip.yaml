@@ -67,6 +67,6 @@ jobs:
       - name: run prep script
         run: |
           cd ..
-          zip -r tna-base-long-form.zip tna-base-long-form -x "*.git*"
+          zip -r "${{ ${{ github.event.repository.name }}.zip" "${{ ${{ github.event.repository.name }}" -x "*.git*"
           aws s3 cp tna-base-long-form.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/tna-base-long-form.zip
 ...
