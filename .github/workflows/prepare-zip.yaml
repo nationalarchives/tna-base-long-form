@@ -65,8 +65,10 @@ jobs:
           aws-region: eu-west-2
 
       - name: run prep script
+        env:
+          REPO_NAME: "${{ github.event.repository.name }}"
         run: |
           cd ..
-          zip -r "${{ github.event.repository.name }}.zip" "${{ github.event.repository.name }}" -x "*.git*"
-          aws s3 cp tna-base-long-form.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/tna-base-long-form.zip
+          zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*"
+          aws s3 cp $REPO_NAME.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/$REPO_NAME.zip
 ...
