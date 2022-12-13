@@ -44,25 +44,25 @@ jobs:
           ref: ${{ github.event.inputs.branch }}
 
       - name: Configure AWS Credentials for dev
+        if: "${{ github.event.inputs.deploy-environment == 'dev' }}"
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           aws-region: eu-west-2
-        when: github.event.inputs.deploy-environment == 'dev'
 
       - name: Configure AWS Credentials for staging
+        if: "${{ github.event.inputs.deploy-environment == 'staging' }}"
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_STAGING }}
           aws-region: eu-west-2
-        when: github.event.inputs.deploy-environment == 'staging'
 
       - name: Configure AWS Credentials for live
+        if: "${{ github.event.inputs.deploy-environment == 'live' }}"
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_LIVE }}
           aws-region: eu-west-2
-        when: github.event.inputs.deploy-environment == 'live'
 
       - name: run prep script
         run: |
