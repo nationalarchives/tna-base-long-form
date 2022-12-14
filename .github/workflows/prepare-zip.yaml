@@ -76,10 +76,10 @@ jobs:
           echo "file_exists_behavior: OVERWRITE" >> appspec.yml
           echo "hooks:" >> appspec.yml
           echo "  BeforeInstall:" >> appspec.yml
-          echo "  - location: 'prep-env.sh $REPO_NAME'" >> appspec.yml
+          echo "  - location: './prep-env.sh $REPO_NAME'" >> appspec.yml
           echo "    timeout: 60" >> appspec.yml
           echo "  - AfterInstall:" >> appspec.yml
-          echo "    location: 'permissions.sh $REPO_NAME'" >> appspec.yml
+          echo "    location: './permissions.sh $REPO_NAME'" >> appspec.yml
           echo "    timeout: 60" >> appspec.yml
           cp ./.devops-deployment-scripts/* .
           cd ..
