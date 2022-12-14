@@ -81,7 +81,10 @@ jobs:
           echo "  - AfterInstall:" >> appspec.yml
           echo "    location: './permissions.sh $REPO_NAME'" >> appspec.yml
           echo "    timeout: 60" >> appspec.yml
-          cp ./.devops-deployment-scripts/* .
+          echo "#!/bin/bash" > prep-env.sh
+          echo "mkdir -p "/var/www/html/wp-content/themes/$REPO_NAME" >> prep-env.sh
+          echo "#!/bin/bash" > permissions.sh
+          echo "sudo chown -R apache:apache "/var/www/html/wp-content/themes/$REPO_NAME" >> permissions.sh
           cd ..
           zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*" -x "*.devops*"
           aws s3 cp $REPO_NAME.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/$REPO_NAME.zip
