@@ -68,7 +68,21 @@ jobs:
         env:
           REPO_NAME: "${{ github.event.repository.name }}"
         run: |
+          echo "version: 0.0" > appspec.yml
+          echo "os: linux" >> appspec.yml
+          echo "files:" >> appspec.yml
+          echo "  - source: '/'" >> appspec.yml
+          echo "    destination: '/var/www/html/wp-content/themes'" >> appspec.yml
+          echo "file_exists_behavior: OVERWRITE" >> appspec.yml
+          echo "hooks:" >> appspec.yml
+          echo "  BeforeInstall:" >> appspec.yml
+          echo "  - location: 'prep-env.sh $REPO_NAME'" >> appspec.yml
+          echo "    timeout: 60" >> appspec.yml
+          echo "  - AfterInstall:" >> appspec.yml
+          echo "    location: 'permissions.sh $REPO_NAME'" >> appspec.yml
+          echo "    timeout: 60" >> appspec.yml
+          cp ./.devops-deployment-scripts/* .
           cd ..
-          zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*"
+          zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*" -x "*.devops*"
           aws s3 cp $REPO_NAME.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/$REPO_NAME.zip
 ...
