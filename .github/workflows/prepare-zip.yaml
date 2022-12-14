@@ -72,7 +72,7 @@ jobs:
           echo "os: linux" >> appspec.yml
           echo "files:" >> appspec.yml
           echo "  - source: '/'" >> appspec.yml
-          echo "    destination: '/var/www/html/wp-content/themes'" >> appspec.yml
+          echo "    destination: '/var/www/html/wp-content/themes/$REPO_NAME'" >> appspec.yml
           echo "file_exists_behavior: OVERWRITE" >> appspec.yml
           echo "hooks:" >> appspec.yml
           echo "  BeforeInstall:" >> appspec.yml
