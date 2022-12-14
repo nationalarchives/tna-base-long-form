@@ -76,10 +76,10 @@ jobs:
           echo "file_exists_behavior: OVERWRITE" >> appspec.yml
           echo "hooks:" >> appspec.yml
           echo "  BeforeInstall:" >> appspec.yml
-          echo "  - location: './prep-env.sh $REPO_NAME'" >> appspec.yml
+          echo "  - location: './prep-env.sh'" >> appspec.yml
           echo "    timeout: 60" >> appspec.yml
           echo "  - AfterInstall:" >> appspec.yml
-          echo "    location: './permissions.sh $REPO_NAME'" >> appspec.yml
+          echo "    location: './permissions.sh'" >> appspec.yml
           echo "    timeout: 60" >> appspec.yml
           echo "#!/bin/bash" > prep-env.sh
           echo "mkdir -p "/var/www/html/wp-content/themes/$REPO_NAME" >> prep-env.sh
