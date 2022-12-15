@@ -68,6 +68,34 @@ jobs:
         env:
           REPO_NAME: "${{ github.event.repository.name }}"
         run: |
+          mkdir .payload
+          mv * .payload
+          mv .payload payload
+          echo "version: 0.0" > appspec.yml
+          echo "os: linux" >> appspec.yml
+          echo "files:" >> appspec.yml
+          echo "  - source: '/payload'" >> appspec.yml
+          echo "    destination: '/var/www/html/wp-content/themes/$REPO_NAME'" >> appspec.yml
+          echo "file_exists_behavior: OVERWRITE" >> appspec.yml
+          echo "permissions:" >> appspec.yml
+          echo "  - object: '/var/www/html/wp-content/themes/$REPO_NAME'" >> appspec.yml
+          echo "    pattern: '**'" >> appspec.yml
+          echo "    owner: apache" >> appspec.yml
+          echo "    group: apache" >> appspec.yml
+          echo "    type:" >> appspec.yml
+          echo "      - directory" >> appspec.yml
+          echo "      - file" >> appspec.yml
+          echo "hooks:" >> appspec.yml
+          echo "  BeforeInstall:" >> appspec.yml
+          echo "  - location: './prep-env.sh'" >> appspec.yml
+          echo "    timeout: 60" >> appspec.yml
+          echo "  - AfterInstall:" >> appspec.yml
+          echo "    location: './permissions.sh'" >> appspec.yml
+          echo "    timeout: 60" >> appspec.yml
+          echo "#!/bin/bash" > prep-env.sh
+          echo "mkdir -p /var/www/html/wp-content/themes/$REPO_NAME" >> prep-env.sh
+          echo "#!/bin/bash" > permissions.sh
+          echo "chown apache:apache /var/www/html/wp-content/themes/$REPO_NAME" >> permissions.sh
           cd ..
           zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*"
           aws s3 cp $REPO_NAME.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/$REPO_NAME.zip
