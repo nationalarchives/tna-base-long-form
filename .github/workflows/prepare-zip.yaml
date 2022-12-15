@@ -80,7 +80,7 @@ jobs:
           echo "    owner: apache" >> appspec.yml
           echo "    group: apache" >> appspec.yml
           echo "    type:" >> appspec.yml
-          echo "      - file:" >> appspec.yml
+          echo "      - file" >> appspec.yml
           echo "hooks:" >> appspec.yml
           echo "  BeforeInstall:" >> appspec.yml
           echo "  - location: './prep-env.sh'" >> appspec.yml
