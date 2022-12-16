@@ -28,7 +28,7 @@ jobs:
     uses: nationalarchives/ds-github-actions/.github/workflows/wp-theme-deploy.yml@main
     with:
       deploy-repo: "${{ github.event.repository.name }}"
-      environment: "${{ inputs.environment }}"
+      deploy-environment: "${{ inputs.environment }}"
       release: "${{ inputs.release }}"
       branch: "${{ inputs.branch }}"
     secrets:
