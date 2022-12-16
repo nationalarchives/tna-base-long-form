@@ -1,0 +1,36 @@
+---
+name: Prepare Zip File - ext
+
+permissions:
+  id-token: write
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy-environment:
+        type: choice
+        description: Environment
+        required: true
+        default: "dev"
+        options:
+          - dev
+          - staging
+          - live
+      release:
+        type: string
+        description: Release
+        required: false
+        default: ""
+
+jobs:
+  terraform-deployment:
+    uses: nationalarchives/ds-github-actions/.github/workflows/wp-theme-deploy.yml@main
+    with:
+      deploy-repo: "${{ github.event.repository.name }}"
+      environment: "${{ inputs.environment }}"
+      release: "${{ inputs.release }}"
+      branch: "${{ inputs.branch }}"
+    secrets:
+      AWS_OPEN_ID_CONNECT_ROLE_ARN: ${{ secrets.ROLE_ARN }}
+...
