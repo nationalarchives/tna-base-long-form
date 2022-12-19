@@ -1,5 +1,5 @@
 ---
-name: Prepare Zip File
+name: Deploy Theme
 
 permissions:
   id-token: write
@@ -24,79 +24,13 @@ on:
         default: ""
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    env:
-      region: "eu-west-2"
-      release: ${{ github.event.inputs.release }}
-
-    steps:
-      - name: checkout repo with release
-        if: "${{ env.release != '' }}"
-        uses: actions/checkout@v3
-        with:
-          ref: "${{ env.release }}"
-
-      - name: checkout repo with branch
-        if: "${{ env.release == '' }}"
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.inputs.branch }}
-
-      - name: Configure AWS Credentials for dev
-        if: "${{ github.event.inputs.deploy-environment == 'dev' }}"
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
-          aws-region: eu-west-2
-
-      - name: Configure AWS Credentials for staging
-        if: "${{ github.event.inputs.deploy-environment == 'staging' }}"
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_STAGING }}
-          aws-region: eu-west-2
-
-      - name: Configure AWS Credentials for live
-        if: "${{ github.event.inputs.deploy-environment == 'live' }}"
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN_LIVE }}
-          aws-region: eu-west-2
-
-      - name: run prep script
-        env:
-          REPO_NAME: "${{ github.event.repository.name }}"
-        run: |
-          mkdir .payload
-          mv * .payload
-          mv .payload payload
-          echo "version: 0.0" > appspec.yml
-          echo "os: linux" >> appspec.yml
-          echo "files:" >> appspec.yml
-          echo "  - source: '/payload'" >> appspec.yml
-          echo "    destination: '/var/www/html/wp-content/themes/$REPO_NAME'" >> appspec.yml
-          echo "file_exists_behavior: OVERWRITE" >> appspec.yml
-          echo "permissions:" >> appspec.yml
-          echo "  - object: '/var/www/html/wp-content/themes/$REPO_NAME'" >> appspec.yml
-          echo "    pattern: '**'" >> appspec.yml
-          echo "    owner: apache" >> appspec.yml
-          echo "    group: apache" >> appspec.yml
-          echo "    type:" >> appspec.yml
-          echo "      - directory" >> appspec.yml
-          echo "      - file" >> appspec.yml
-          echo "hooks:" >> appspec.yml
-          echo "  BeforeInstall:" >> appspec.yml
-          echo "  - location: './prep-env.sh'" >> appspec.yml
-          echo "    timeout: 60" >> appspec.yml
-          echo "  - AfterInstall:" >> appspec.yml
-          echo "    location: './permissions.sh'" >> appspec.yml
-          echo "    timeout: 60" >> appspec.yml
-          echo "#!/bin/bash" > prep-env.sh
-          echo "mkdir -p /var/www/html/wp-content/themes/$REPO_NAME" >> prep-env.sh
-          echo "#!/bin/bash" > permissions.sh
-          echo "chown apache:apache /var/www/html/wp-content/themes/$REPO_NAME" >> permissions.sh
-          cd ..
-          zip -r $REPO_NAME.zip $REPO_NAME -x "*.git*"
-          aws s3 cp $REPO_NAME.zip s3://ds-${{ github.event.inputs.deploy-environment }}-deployment-source/website/$REPO_NAME.zip
+  deployment-run:
+    uses: nationalarchives/ds-github-actions/.github/workflows/wp-theme-deploy.yml@main
+    with:
+      deploy-repo: "${{ github.event.repository.name }}"
+      deploy-environment: "${{ inputs.deploy-environment }}"
+      release: "${{ inputs.release }}"
+      branch: "${{ inputs.branch }}"
+    secrets:
+      AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN_DEV }}
 ...
