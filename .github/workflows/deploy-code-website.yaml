@@ -1,5 +1,5 @@
 ---
-name: Deploy Theme
+name: Website Theme Deployment
 
 permissions:
   id-token: write
